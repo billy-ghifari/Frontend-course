@@ -43,7 +43,7 @@
                 </span>
                 <div class=" row" style="margin-top: 20px;">
                     <div class="col">
-                        <button class="submit" style="background-color:#80cfd1; border-radius:40px; width:180px; height:60px">
+                        <button class="submit" style="background-color:#80cfd1; border-radius:40px; width:180px; height:60px; border-color:#80cfd1">
                             <p style="font-weight: 500; color:white; margin-top:14px">Join for free</p>
                         </button>
                     </div>

@@ -18,7 +18,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" style="color: white;">About Us</a>
                     </li>
+                    <a href="#">
+                        <button class="submit" style="width:100px; height:50px; border-radius:38px; background-color:white; color:black;">
+                            Login</button>
+                    </a>
+                    <a href="#">
+                        <button class="submit" style="width:100px; height:50px; border-radius:38px; background-color:#80cfd1; color:white;">
+                            Sign Up</button>
+                    </a>
                 </ul>
+
             </div>
         </div>
     </div>
