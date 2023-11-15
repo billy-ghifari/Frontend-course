@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\C_auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('landingpage');
 });
+
+Route::get('login', [C_auth::class, 'index']);
