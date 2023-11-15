@@ -24,7 +24,7 @@
 <![endif]-->
 
 <!-- Template Main CSS File -->
-<link href="/assets/dist/css/style.css" rel="stylesheet">
+<link href="/public/dist/css/style.css" rel="stylesheet">
 @endsection
 
 @section('content')
@@ -233,7 +233,7 @@
             </div>
             <div style="margin-top: 6rem;">
                 <div class="row">
-                    <div class="col-6" style="text-align: start; margin-top:9rem">
+                    <div class="col-5" style="text-align: start; margin-top:9rem">
                         <h1 style="color:#2F327D; font-weight:500">Class Management
                             <br><span style="color: #00CBB8; font-weight:500">Tools for Educators</span>
                         </h1>
@@ -243,13 +243,149 @@
                             <br>quizzes in real-time.
                         </p>
                     </div>
+                    <div class="col-7">
+                        <img src="/assets/images/Group124.png" alt="" style="width:650px; height:450px">
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 6rem; text-align:start">
+
+                <button class="btn" type="submit" style="width: 60px; height: 60px; border-style:solid; border-color:#49BBBD; background-color:white; color:#49BBBD; 
+                position:absolute; z-index:1; border-radius:50%; margin-top:317px; margin-left:210px">
+                    <i class="fas fa-long-arrow-alt-right" style="color: #49BBBD; font-size:19px; padding-top:3px;"></i></button>
+
+                <button class="btn" type="submit" style="width: 60px; height: 60px; background-color:white; color:#49BBBD; 
+                position:absolute; z-index:1; border-radius:50%; margin-left:907px; margin-top:180px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <i class=" icon-arrow-right" style="color: #49BBBD; font-size:19px; margin-top:10px; font-weight:1000;"></i></button>
+
+                <div class="card" style="width:420px; height:180px ;border-left:8px solid; border-color:#F67766; border-radius:10px;
+                position:absolute; z-index:1; margin-left:620px; margin-top:307px">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-1">
+                                <div style=" border-style: solid;border-left:1px; height:73px ;border-color:#BDBDD1"></div>
+                            </div>
+                            <div class="col-11">
+                                <p style="font-size:13px;">"Thank you so much for your help. It's exactly what
+                                    <br>I've been looking for. You won't regret it. It really
+                                    <br>saves me time and effort. TOTC is exactly what our
+                                    <br>business has been lacking."
+                                </p>
+                                <div class="row" style="padding-top: 10px;">
+                                    <div class="col-6">
+                                        <p>Gloria Rose</p>
+                                    </div>
+                                    <div class="col-6" style="text-align: end;">
+                                        <div class="row" style="padding-left: 95px;">
+                                            <i class="fas fa-star" style="font-size: 12px; color:#FBA333"></i>
+                                            <i class="fas fa-star" style="font-size: 12px; color:#FBA333"></i>
+                                            <i class="fas fa-star" style="font-size: 12px; color:#FBA333"></i>
+                                            <i class="fas fa-star" style="font-size: 12px; color:#FBA333"></i>
+                                            <i class="fas fa-star" style="font-size: 12px; color:#FBA333"></i>
+                                        </div>
+                                        <span style="font-size: 10px;">12 reviews at Yelp</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-6">
-                        <img src="/assets/images/Group124.png" alt="" style="width:680px; height:480px">
+                        <div class="row">
+                            <div class="col-2">
+                                <hr style="border-color:#525596; width:60px; padding-bottom:15px; margin-top:10px;">
+                            </div>
+                            <div class="col-10">
+                                <span style="font-weight: 300; letter-spacing:4px">TESTIMONIAL</span>
+                            </div>
+                        </div>
+                        <h1 style="color: #2F327D; font-weight:500; margin-bottom:1rem">What They Say?</h1>
+                        <p style="font-size: 19px;">TOTC has got more than 100k positive ratings
+                            <br>from our users around the world.
+                        </p>
+                        <p style="font-size: 19px; margin-bottom:2rem">Some of the students and teachers were
+                            <br>greatly helped by the Skilline.
+                        </p>
+                        <p style="font-size: 19px; margin-bottom:25px;">Are you too? Please give your assessment</p>
+                        <button type=" button" class="btn btn-light" style="border-style:solid; border-color:#49BBBD; background-color:white; width:270px; height:60px ;border-radius:60px; text-align:left">
+                            <span style="color:#49BBBD; padding-left:9px">Write your assessment</span></button>
+                    </div>
+                    <div class="col-6">
+                        <img src="/assets/images/MaskGroup.png" alt="" style="width:360px; height:430px">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- END SECTION 5 -->
+
+    <!--  SECTION 6 -->
+    <div class="section6" style="margin-bottom: 7rem;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom:5rem">
+                <h2 style="font-weight: 500; color:#2F327D;">Lastest News and Resources</h2>
+                <span>See the developments that have occurred to TOTC in the world</span>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <img src="/assets/images/Group40.png" style="width: 460px; height:250px" alt="">
+                    <div class="card" style="width: 90px; height:30px; background-color: #49BBBD; border-radius:20px; margin-top:30px;">
+                        <span style="padding-top: 3px; padding-left:22px; color:white;">NEWS</span>
+                    </div>
+                    <p style="font-weight:600; color:#2F327D;">Class adds $30 million to its balance sheet for
+                        <br> a Zoom-friendly edtech solution
+                    </p>
+                    <p>Class, launched less than a year ago by Blackboard
+                        <br>co-founder Michael Chasen, integrates exclusively...
+                    </p>
+                    <p style="text-decoration: underline; color:#696984; padding-top:10px">Read more</p>
+                </div>
+                <div class="col-6">
+                    <div class="row mb-4" style="padding-left: 50px;">
+                        <div class="col-5">
+                            <img src="/assets/images/Rectangle33.png" alt="" style="width: 190px; height:130px;">
+                        </div>
+                        <div class="col-7">
+                            <p style="font-size: 11px; font-weight:500; color:#2F327D;">Class Technologies Inc. Closes $30 Million
+                                <br> Series A Financing to Meet High Demand
+                            </p>
+                            <p style="font-size: 11px; font-weight:500;">Class Technologies Inc., the company that
+                                <br>created Class,...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-4" style="padding-left: 50px;">
+                        <div class="col-5">
+                            <img src="/assets/images/Rectangle34.png" alt="" style="width: 190px; height:130px;">
+                        </div>
+                        <div class="col-7">
+                            <p style="font-size: 11px; font-weight:500; color:#2F327D;">Zoom’s earliest investors are betting
+                                <br>millions on a better Zoom for schools
+                            </p>
+                            <p style="font-size: 11px; font-weight:500;">Zoom was never created to be a consumer
+                                <br>product. Nonetheless, the...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 50px;">
+                        <div class="col-5">
+                            <img src="/assets/images/Group43.png" alt="" style="width: 190px; height:130px;">
+                        </div>
+                        <div class="col-7">
+                            <p style="font-size: 11px; font-weight:500; color:#2F327D;">Former Blackboard CEO Raises $16M to
+                                <br>Bring LMS Features to Zoom Classrooms
+                            </p>
+                            <p style="font-size: 11px; font-weight:500;">This year, investors have reaped big
+                                <br>financial returns from betting on Zoom...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION 6 -->
 </div>
 @endsection
