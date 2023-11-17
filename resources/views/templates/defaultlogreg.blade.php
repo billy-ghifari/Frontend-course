@@ -15,8 +15,10 @@
     <link href="/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
     <link href="/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <link href="/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
     <!-- Custom CSS -->
-    <link href="dist/css/style.min.css" rel="stylesheet">
+    <link href="/dist/css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js  doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -38,7 +40,7 @@
     <script>
         let signup = document.querySelector(".signup");
         let login = document.querySelector(".login");
-        let slider = document.querySelector(".slider");
+        let slider = document.querySelector(".slider-btn");
         let formSection = document.querySelector(".form-section");
 
         signup.addEventListener("click", () => {
@@ -51,6 +53,25 @@
             formSection.classList.remove("form-section-move");
         });
     </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.slider').slick({
+                infinite: true,
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                fade: true,
+                fadeSpeed: 1000
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
 </body>
 
 
@@ -68,4 +89,4 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <!-- Template Main JS File -->
-<script src="/assets/js/main.js"></script>
+<script src="/dist/js/custom.js"></script>

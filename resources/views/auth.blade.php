@@ -1,12 +1,36 @@
 @extends('templates.defaultlogreg')
 
 @section('content')
-<div class="justify-content-between" id="container1auth" style="padding: 5rem;">
+<div class="justify-content-between" id="container1auth">
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <img src="assets/images/login_icon.png" alt="" style="width: 320px; margin-left:6.5rem">
-                <h2 style="font-weight: bold;  margin-left:4rem;  color:#3C3A36">Metode Belajar Yang Seru</h2>
+                <div class="slider">
+                    <div class="slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="d-flex flex-column">
+                                <img src="assets/images/login_icon.png" alt="" style="width: 320px;">
+                                <h2 style="font-weight: bold;  color:#3C3A36">Metode Belajar Yang Seru</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="d-flex flex-column">
+                                <img src="assets/images/login_icon.png" alt="" style="width: 320px;">
+                                <h2 style="font-weight: bold;    color:#3C3A36">Ajari Belajar Yang Seru</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="d-flex flex-column">
+                                <img src="assets/images/login_icon.png" alt="" style="width: 320px;">
+                                <h2 style="font-weight: bold;  color:#3C3A36">Boleh Belajar Yang Seru</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class=" col-6">
                 <div class="container">
@@ -14,7 +38,7 @@
                     <p style="font-weight: 400; text-align:center; color:black;">Selamat Datang !</p>
                     <!-- upper button section to select
       the login or signup form -->
-                    <div class="slider"></div>
+                    <div class="slider-btn"></div>
                     <div id="btn">
                         <button class="login" style="margin-left: 6px;">Login</button>
                         <button class="signup" style="margin-left: 24px;">Register</button>
