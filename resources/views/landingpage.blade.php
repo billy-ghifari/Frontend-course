@@ -30,9 +30,47 @@
 @section('content')
 <div class="justify-content-between">
     <!-- SECTION 1 -->
-    <div class="section1" style=" background-color:#49BBBD; border-radius:  0px 0px 100px 100px;">
+    <div class="section1" style=" background-color:#49BBBD; border-radius:  0px 0px 100px 100px; padding-top:6rem; padding-bottom:4rem;">
         <div class="container">
-            <div class="section1 row">
+            <div class="card" style="position: absolute; z-index:1; width:250px; height:80px ; color:white; border-radius:17px; margin-left:530px; margin-top:170px; opacity:90%; backdrop-filter:blur(8px);">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card" style="width:40px; height:40px; background-color:#23BDEE; margin-left:20px; margin-top:20px">
+                            <i class=" far fa-calendar-alt" style="font-size: 24px; padding-left:9px; padding-top:6px;"></i>
+                        </div>
+                    </div>
+                    <div class="col-9" style="padding-left: 30px;">
+                        <p style="color:#595959; margin-bottom:0% ;padding-top:15px; font-size:17px; font-weight:500">250k</p>
+                        <span style="color:#595959">Assisted Student</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="position: absolute; z-index:1; width:300px; height:90px ; color:white; border-radius:17px; margin-left:950px; margin-top:320px">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card" style="width:40px; height:40px; background-color:#F88C3D; margin-left:20px; margin-top:25px">
+                            <i class="fas fa-envelope" style="font-size: 24px; padding-left:9px; padding-top:7px;"></i>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <p style="color:#595959; margin-bottom:0% ;padding-top:20px; font-size:17px; font-weight:500">Congratulations</p>
+                        <span style="color:#595959">Your admission completed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="position: absolute; z-index:1; width:300px; height:140px ; color:white; border-radius:17px; margin-left:510px; margin-top:420px; backdrop-filter:blur(8px), opcacity(90%);">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="/assets/images/Ellipse.png" alt="" class="rounded-circle" style="width:50px; height:50px; margin-top:23px; margin-left:20px">
+                    </div>
+                    <div class="col-9" style="padding-left: 20px;">
+                        <p style="margin-bottom:0% ;padding-top:20px; font-size:17px; font-weight:500; color:#595959">User Experience Class</p>
+                        <span style="color:#595959">Today at 12.00 PM</span>
+                        <button type="submit" class="btn" style="width: 140px; height:40px; background-color:#D8587E; border-radius:30px; margin-top: 17px; color:white"> Join Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class=" row">
                 <div class="col-6" style="margin-top:7rem">
                     <h1 style="font-size:30px; font-weight:600; color:white; margin-bottom:20px">
                         <span style="color: black;">Belajar secara online</span> kini menjadi
@@ -49,17 +87,17 @@
                         font-weight: 500; color:white; margin-top:10px; padding-top:17px"> Join for free </a>
                         </div>
                         <div class="col-2 pl-3 pr-0">
-                            <div class="card mt-2" style="border-radius: 50%; width:60px; height:60px; background-color:white;">
-                                <i class="fas fa-play" style="color: #23BDEE;  font-size: 21px;padding-top:21px; padding-left:23px;"></i>
+                            <div class="card mt-2" style="border-radius: 50%; width:60px; height:60px; background-color:white; margin-top:10px;">
+                                <i class="fas fa-play" style="color: #23BDEE;  font-size: 21px;padding-top:20px; padding-left:22px;"></i>
                             </div>
                         </div>
-                        <div class="col-4 mt-4 mr-5 pl-0">
+                        <div class="col-4 mt-4 mr-5 pl-0" style="padding-top: 8px;">
                             <span style="color: black;">Watch how it works</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-6" style="margin-top:9rem; margin-bottom:4rem">
-                    <img src="/assets/images/unsplash_section1.png" alt="" style="width:600px; height:400px">
+                    <img src="/assets/images/unsplash_section1.png" alt="" style="width:570px; height:400px">
                 </div>
             </div>
         </div>
@@ -171,6 +209,9 @@
             <div class="card" style="background-color: #33EFA0; width:160px; height:160px; position:absolute; z-index:0;
             margin-left:978px; margin-bottom:30rem; margin-top: 223px;border-radius:16px">
             </div>
+            <div class="card mt-2" style="border-radius: 50%; width:50px; height:50px; background-color:white; margin-left:825px; position:absolute; z-index:2; margin-top:180px;">
+                <i class="fas fa-play" style="color: #23BDEE;  font-size: 20px;padding-top:16px; padding-left:18px;"></i>
+            </div>
             <div class="row">
                 <div class="col-6" style="text-align: start;">
                     <p style="color: #2F327D; margin-top:3rem; font-weight:500; font-size:25px">Everything you can do in a physical
@@ -193,7 +234,7 @@
     <!-- END SECTION 4 -->
 
     <!-- SECTION 5 -->
-    <div class="section5" style="margin-bottom: 10rem;">
+    <div class="section5" style="margin-bottom: 13rem;">
         <div class="container">
             <div style="text-align: center; margin-bottom:6rem">
                 <p style="color: #2F327D; font-weight:600; font-size:25px">Our <span style="color: #00CBB8; font-weight:600; font-size:25px;">Features</span></p>
@@ -204,13 +245,13 @@
                     <h1 style="color: #00CBB8;font-weight:500">Tools <span style="color: #2F327D;font-weight:500">For Teachers
                             <br>And Learners</span>
                     </h1>
-                    <p>Class has a dynamic set of teaching tools built to
+                    <p style="font-size: 18px;">Class has a dynamic set of teaching tools built to
                         <br>be deployed and used during class. Teachers can
                         <br>handout assignments in real-time for students to
                         <br>complete and submit.
                     </p>
                 </div>
-                <div class="col-6">
+                <div class=" col-6">
                     <img src="/assets/images/Group122.png" alt="" style="width:510px; height:410px; padding-left:4rem">
                 </div>
             </div>
@@ -224,31 +265,31 @@
                         <h1 style="font-weight:500; color:#2F327D">Assessments,
                             <br><span style="color: #00CBB8;">Quizzes,<span style="color: #2F327D;"> Tests</span></span>
                         </h1>
-                        <span>Easily launch live assignments, quizzes, and
+                        <p style="font-size: 18px;">Easily launch live assignments, quizzes, and
                             <br> tests.Student results are automatically entered in
                             <br>the online gradebook.
-                        </span>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div style="margin-top: 6rem;">
+            <div style="margin-top: 3rem;">
                 <div class="row">
-                    <div class="col-5" style="text-align: start; margin-top:9rem">
+                    <div class="col-6 " style="text-align: start; margin-top:9rem">
                         <h1 style="color:#2F327D; font-weight:500">Class Management
                             <br><span style="color: #00CBB8; font-weight:500">Tools for Educators</span>
                         </h1>
-                        <p>Class provides tools to help run and manage the class
+                        <p style="font-size: 18px;">Class provides tools to help run and manage the class
                             <br>such as Class Roster, Attendance, and more. With the
                             <br>Gradebook, teachers can review and grade tests and
                             <br>quizzes in real-time.
                         </p>
                     </div>
-                    <div class="col-7">
-                        <img src="/assets/images/Group124.png" alt="" style="width:650px; height:450px">
+                    <div class="col-6">
+                        <img src="/assets/images/Group124.png" alt="" style="width:630px; height:420px">
                     </div>
                 </div>
             </div>
-            <div style="margin-top: 6rem; text-align:start">
+            <div style="margin-top: 7rem; text-align:start">
 
                 <button class="btn" type="submit" style="width: 60px; height: 60px; border-style:solid; border-color:#49BBBD; background-color:white; color:#49BBBD; 
                 position:absolute; z-index:1; border-radius:50%; margin-top:317px; margin-left:210px">

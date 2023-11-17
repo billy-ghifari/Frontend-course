@@ -1,10 +1,10 @@
-<header class="topbar fixed-top d-flex header-scrolled" data-navbarbg="skin6" style="background-color:#49BBBD; height:70px; ">
+<header class="topbar fixed-top d-flex " data-navbarbg="skin6" style="background-color:#49BBBD; height:95px; position:fixed; top:0; ">
     <div class=" justify-content-between container">
         <div class="row">
             <div class="col-4" style="margin-top: 25px;">
                 <img src="/assets/images/Union.png" alt="" style="width: 47px; height: 51.6px">
             </div>
-            <div class="col-8" style="margin-top:25px ;">
+            <div class="col-8" style="margin-top:27px ;">
                 <ul class="nav justify-content-center">
                     <li class="nav-item mr-4">
                         <a class="nav-link" href="#" style="color: white;">Home</a>
@@ -13,7 +13,7 @@
                         <a class="nav-link" href="#" style="color: white;">Courses</a>
                     </li>
                     <li class=" nav-item mr-4">
-                        <a class="nav-link" href="#" style="color: white;">Blog</a>
+                        <a class="nav-link" href="/blogpage" style="color: white;">Blog</a>
                     </li>
                     <li class="nav-item mr-4">
                         <a class="nav-link" href="#" style="color: white;">About Us</a>
