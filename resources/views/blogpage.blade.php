@@ -70,5 +70,10 @@
         </div>
 
     </div>
+    <div class="section3">
+        <div class="container">
+            <p style="font-weight: 600; font-size:20px; color:black">Related Blog </p>
+        </div>
+    </div>
 </div>
 @endsection
