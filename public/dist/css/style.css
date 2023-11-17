@@ -163,6 +163,7 @@
 }
 
 
+
 :root {
   --blue: #5f76e8;
   --indigo: #6610f2;
@@ -9032,11 +9033,14 @@ button.bg-purple:focus {
   margin: 0.25rem !important;
 }
 
+<<<<<<< HEAD
 .mt-1,
 .my-1 {
   margin-top: 0.25rem !important;
 }
 
+=======
+>>>>>>> e6cec7522aa2611610b5554888433ceb189e5fdd
 .mr-1,
 .mx-1 {
   margin-right: 0.25rem !important;
@@ -9056,11 +9060,14 @@ button.bg-purple:focus {
   margin: 0.5rem !important;
 }
 
+<<<<<<< HEAD
 .mt-2,
 .my-2 {
   margin-top: 0.5rem !important;
 }
 
+=======
+>>>>>>> e6cec7522aa2611610b5554888433ceb189e5fdd
 .mr-2,
 .mx-2 {
   margin-right: 0.5rem !important;

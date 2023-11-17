@@ -8,7 +8,7 @@
 <body>
 
     <!-- ======= Header ======= -->
-    @include('templates.partials.headerlanding')
+    @include('templates.partials.header')
     <!-- End Header -->
 
     <!-- ======= Main ======= -->
