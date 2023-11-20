@@ -10,4 +10,9 @@ class C_auth extends Controller
     {
         return view('auth');
     }
+
+    public function loginadmin()
+    {
+        return view('authadmin');
+    }
 }
