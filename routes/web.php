@@ -3,6 +3,7 @@
 use App\Http\Controllers\C_admin;
 use App\Http\Controllers\C_auth;
 use App\Http\Controllers\C_Blog;
+use App\Http\Controllers\C_Course;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,5 @@ Route::get('/blogpage', [C_Blog::class, 'index']);
 
 Route::get('loginadmin', [C_auth::class, 'loginadmin']);
 Route::get('admin', [C_admin::class, 'admin']);
+
+Route::get('/courseview', [C_Course::class, 'courseview']);
