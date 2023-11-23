@@ -50,7 +50,7 @@
             </div>
         </div>
     </div>
-    <div class="section2" style="margin-top: 3rem;">
+    <div class="section2" style="margin-top: 3rem; margin-bottom:4rem;">
         <div class="container">
             <p style="font-weight: 600; font-size:20px; color:black">Reading blog list</p>
             <div class="row">
@@ -70,10 +70,74 @@
         </div>
 
     </div>
-    <div class="section3">
+    <div class="section3" style="background-color: #ebf5ff; padding-top:3rem; padding-bottom:4rem;">
         <div class="container">
-            <p style="font-weight: 600; font-size:20px; color:black">Related Blog </p>
+            <div class="row">
+                <div class="col-6" style="text-align: start;">
+                    <p style="font-weight: 500; font-size:20px; color:black;">Related Blog </p>
+                </div>
+                <div class="col-6 " style="text-align: end; ">
+                    <a href="" style="font-weight: 500; color:#49BBBD; padding-right:15px;">See all</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <div class="card" style="border-radius: 15px; height:613px; width:520px; margin-right:16px;">
+                        <div class="card-head" style="align-self: center;">
+                            <img src="/assets/images/Rectangle23.png" alt="" style="width: 460px; height:250px; margin-top: 35px;">
+                            <p style="font-weight: 500; padding-top:15px; color:black; font-size:20px">Class adds $30 million to its balance sheet for
+                                <br>a Zoom-friendly edtech solution
+                            </p>
+                        </div>
+                        <div class="card-body pt-1">
+                            <img src="/assets/images/Group237.png" alt="" style="width: 50px; height:50px; margin-left:15px">
+                            <span style="margin-left: 10px; color:black">Lina</span>
+                            <p style="padding-top: 20px;">Class, launched less than a year ago by Blackboard co-founder
+                                <br>Michael Chasen, integrates exclusively...
+                            </p>
+                            <div class="row pt-4">
+                                <div class="col-6" style="text-align: start;">
+                                    <a href="">
+                                        <p style="text-decoration: underline; color:#696984; padding-top:10px">Read more</p>
+                                    </a>
+                                </div>
+                                <div class="col-6" style="text-align: end;">
+                                    <i class="fas fa-eye" style="font-size: 15px; color:#49BBBD;"><span>251,232</span></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card" style="border-radius: 15px; height:613px; width:520px; margin-left:20px;">
+                        <div class="card-head" style="align-self: center;">
+                            <img src="/assets/images/Rectangle23.png" alt="" style="width: 460px; height:250px; margin-top: 35px;">
+                            <p style="font-weight: 500; padding-top:15px; color:black; font-size:20px">Class adds $30 million to its balance sheet for
+                                <br>a Zoom-friendly edtech solution
+                            </p>
+                        </div>
+                        <div class="card-body pt-1">
+                            <img src="/assets/images/Group237.png" alt="" style="width: 50px; height:50px; margin-left:15px">
+                            <span style="margin-left: 10px; color:black">Lina</span>
+                            <p style="padding-top: 20px;">Class, launched less than a year ago by Blackboard co-founder
+                                <br>Michael Chasen, integrates exclusively...
+                            </p>
+                            <div class="row pt-4">
+                                <div class="col-6" style="text-align: start;">
+                                    <a href="">
+                                        <p style="text-decoration: underline; color:#696984; padding-top:10px">Read more</p>
+                                    </a>
+                                </div>
+                                <div class="col-6" style="text-align: end;">
+                                    <i class="fas fa-eye" style="font-size: 15px; color:#49BBBD;"><span>251,232</span></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 </div>
 @endsection

@@ -18,4 +18,6 @@
 
     <!-- ======= Footer ======= -->
     @include('templates.partials.footer')
+
+
 </body>

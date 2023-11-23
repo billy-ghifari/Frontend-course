@@ -40,6 +40,17 @@
                         </a>
                     </li>
 
+                    <li class="sidebar-item">
+                        <a href="">
+                            <button class="btn text-white mt-3" style="height:50px; background-color:#fad0ce; border-radius:10px; font-size:13px; width:365px;">
+                                <div class="row pl-3">
+                                    <i class="fas fa-book text-dark" style="padding-top: 3px; padding-left:5px"></i>
+                                    <span style="padding-left: 20px; color:black">Lesson 01 : Introduction about XD</span>
+                                    <span style="padding-left: 50px; color:black">30mins</span>
+                                </div>
+                            </button>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- End Sidebar navigation -->

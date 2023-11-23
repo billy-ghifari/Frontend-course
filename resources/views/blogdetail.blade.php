@@ -30,7 +30,7 @@
 @section('content')
 <div class="justify-content-center">
     <div class="jumbotron" style="background-image:url(/assets/images/Group236.png);
-    background-position: center center;background-repeat: no-repeat;background-size: cover; padding-top:400px; margin-top:90px ;height:500px">
+    background-position: center center;background-repeat: no-repeat;background-size: cover; padding-top:400px; margin-top:90px ;height:500px; ">
     </div>
     <div class="section1" style="margin-bottom: 4rem;">
         <div class="container">

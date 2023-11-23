@@ -23,6 +23,35 @@
 # myindex
 --------------------------------------------------------------*/
 
+.search_wrap.search_wrap_1 .search_box .btn{
+  width: 125px;
+  height: 45px;
+  top: 8px;
+  right: 5px;
+  border-radius: 5px;
+  color:#fff ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_wrap .search_box{
+  position: relative;
+  width: 500px;
+  height: 60px;
+}
+
+.search_wrap .search_box .input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
 .slider {
   width: 40rem;
 }
@@ -9033,7 +9062,7 @@ button.bg-purple:focus {
   margin: 0.25rem !important;
 }
 
-<<<<<<< HEAD
+
 .mt-1,
 .my-1 {
   margin-top: 0.25rem !important;

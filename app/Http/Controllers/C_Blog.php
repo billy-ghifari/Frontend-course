@@ -10,4 +10,14 @@ class C_Blog extends Controller
     {
         return view('blogpage');
     }
+
+    public function blogdetail()
+    {
+        return view('blogdetail');
+    }
+
+    public function searchview()
+    {
+        return view('search');
+    }
 }
