@@ -407,7 +407,7 @@
                     <p style="font-weight: 500; font-size:20px; color:black">Recommended for you</p>
                 </div>
                 <div class="col-6 " style="text-align: end; ">
-                    <a href="" style="font-weight: 500; color:#49BBBD; padding-right:15px;">See all</a>
+                    <a href="" style="font-weight: 500; color:#49BBBD; padding-right:50px;">See all</a>
                 </div>
             </div>
             <div class="row">
@@ -550,6 +550,192 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section5">
+        <div class="container">
+
+            <img src="/assets/images/image10.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
+           margin-top:70px; margin-left:110px;">
+
+            <img src="/assets/images/image11.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
+            margin-top:70px; margin-left:550px;">
+
+            <img src="/assets/images/image12.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
+            margin-top:70px; margin-left:990px;">
+
+            <div class="row" style="margin-bottom: 120px;">
+                <div class="col-6">
+                    <p style="font-weight:600; font-size:23px;">Classes tought by real creators</p>
+                </div>
+                <div class="col-6" style="text-align: end;">
+                    <a href="" style="color: #49BBBD; font-weight:600;">
+                        <p>See all</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="text-align: center; height:250px;">
+                        <div class="card-body" style="padding-top:120px;">
+                            <p style="font-weight:500; font-size:21px;">Jane Cooper</p>
+                            <p style="color: #252641;">Lorem ipsum dolor sit amet, consectetur
+                                <br> adipising elit, sed do eiusmod tempor
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="text-align: center; height:250px;">
+                        <div class="card-body" style="padding-top:120px;">
+                            <p style="font-weight:500; font-size:21px;">Adam</p>
+                            <p style="color: #252641;">Lorem ipsum dolor sit amet, consectetur
+                                <br> adipising elit, sed do eiusmod tempor
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="text-align: center; height:250px;">
+                        <div class="card-body" style="padding-top:120px;">
+                            <p style="font-weight:500; font-size:21px;">Tomara</p>
+                            <p style="color: #252641;">Lorem ipsum dolor sit amet, consectetur
+                                <br> adipising elit, sed do eiusmod tempor
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="/assets/images/image10.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
+            margin-left:110px;">
+
+            <img src="/assets/images/image11.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
+            margin-left:550px;">
+
+            <img src="/assets/images/image12.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
+             margin-left:990px;">
+
+            <div style="margin-top: 6rem;">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" style="text-align: center; height:250px;">
+                            <div class="card-body" style="padding-top:120px;">
+                                <p style="font-weight:500; font-size:21px;">Jane Cooper</p>
+                                <p style="color: #252641;">Lorem ipsum dolor sit amet, consectetur
+                                    <br> adipising elit, sed do eiusmod tempor
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="text-align: center; height:250px;">
+                            <div class="card-body" style="padding-top:120px;">
+                                <p style="font-weight:500; font-size:21px;">Adam</p>
+                                <p style="color: #252641;">Lorem ipsum dolor sit amet, consectetur
+                                    <br> adipising elit, sed do eiusmod tempor
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="text-align: center; height:250px;">
+                            <div class="card-body" style="padding-top:120px;">
+                                <p style="font-weight:500; font-size:21px;">Tomara</p>
+                                <p style="color: #252641;">Lorem ipsum dolor sit amet, consectetur
+                                    <br> adipising elit, sed do eiusmod tempor
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section6 pb-4 pt-2" style="background-color: #e2f0ff; margin-bottom:4rem;">
+        <div class="container">
+            <p style="margin-top: 3rem; margin-bottom:3rem; font-size: 22px; font-weight:500">What our students have to say</p>
+        </div>
+
+        <div class="container pt-5 pb-5" style="background-color:white; margin-bottom:4rem; border-radius:20px;">
+            <div class="row">
+                <div class="col-5 pl-5">
+                    <img src="/assets/images/Group368.png" alt="" style="width:480px; height:472px;">
+                </div>
+                <div class="col-6 pl-5" style="padding-top:60px;">
+                    <h5 style="font-weight: 800;">Savannah Nguyen</h5>
+                    <h5 style="margin-top:20px;">tanya.hill@example.com</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipising elit, <br> sed do eiusmod tempor
+                        <br>Lorem ipsum dolor sit amet, consectetur adipising elit,<br> sed do eiusmod tempor
+                        <br>Lorem ipsum dolor sit amet, consectetur adipising elit,<br> sed do eiusmod tempor
+                    </p>
+                    <i class="fab fa-twitter-square pr-3 mt-3" style="color: #49BBBD; font-size:20px;"></i>
+                    <i class="fab fa-facebook pr-3" style="color: #49BBBD; font-size:20px;"></i>
+                    <i class="fab fa-instagram" style="color:#49BBBD; font-size:20px;"></i>
+                </div>
+                <div class="col-1" style="padding-top: 100px;">
+                    <div class="row">
+                        <img src="/assets/images/image10.png" alt="" style="width: 80px; height:60px; border-radius:50%; ">
+                        <img src="/assets/images/image11.png" alt="" style="width: 80px; height:60px; border-radius:50%; margin-top:15px;">
+                        <img src="/assets/images/image12.png" alt="" style="width: 80px; height:60px; border-radius:50%; margin-top:15px;">
+                        <img src="/assets/images/image11.png" alt="" style="width: 80px; height:60px; border-radius:50%; margin-top:15px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section7" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row" style="margin-bottom: 40px;">
+                <div class="col-6">
+                    <p style="font-weight:600; font-size:23px;">Top Education offers and deals are listed here</p>
+                </div>
+                <div class="col-6" style="text-align: end;">
+                    <a href="" style="color: #49BBBD; font-weight:600;">
+                        <p>See all</p>
+                    </a>
+                </div>
+            </div>
+
+            <div style="position: absolute; z-index:1; margin-left:40px; margin-top:40px;">
+                <button type="button " class="btn mb-3" style="width: 100px; height:100px; background-color:#49BBBD; font-size:40px; font-weight:700; color:white">50%</button>
+                <p style="color: white; font-weight:700; font-size:20px;">Lorem ipsum dolor</p>
+                <p style="color: white;">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
+                    <br>Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
+                </p>
+            </div>
+
+            <div style="position: absolute; z-index:1; margin-left:500px; margin-top:40px;">
+                <button type="button " class="btn mb-3" style="width: 100px; height:100px; background-color:#49BBBD; font-size:40px; font-weight:700; color:white">10%</button>
+                <p style="color: white; font-weight:700; font-size:20px;">Lorem ipsum dolor</p>
+                <p style="color: white;">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
+                    <br>Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
+                </p>
+            </div>
+
+            <div style="position: absolute; z-index:1; margin-left:960px; margin-top:40px;">
+                <button type="button " class="btn mb-3" style="width: 100px; height:100px; background-color:#49BBBD; font-size:40px; font-weight:700; color:white">50%</button>
+                <p style="color: white; font-weight:700; font-size:20px;">Lorem ipsum dolor</p>
+                <p style="color: white;">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
+                    <br>Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <img src="/assets/images/Rectangle187.png" alt="" style="background-size:cover; width:390px;">
+                </div>
+                <div class="col-4" style="padding-left: 30px;">
+                    <img src="/assets/images/Rectangle188.png" alt="" style="background-size:cover; width:390px;">
+                </div>
+                <div class="col-4 pl-5">
+                    <img src="/assets/images/Rectangle189.png" alt="" style="background-size:cover; width:390px; ">
                 </div>
             </div>
         </div>
