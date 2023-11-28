@@ -17,7 +17,7 @@
     </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    @include('templates.partials.footer')
+    @include('templates.partials.footerbs')
 
 
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
@@ -59,17 +59,7 @@
         })
         $("#hide-all-articles").click(function() {
             $(".hidden-articles").hide(500);
-        }); 
-
-        function menuToggle(){
-            const toggleMenu = document.querySelector('.menu');
-            toggleMenu.classList.toggle('active')
-        }
-
-        let subMenu = document.getElementById("subMenu");
-        function toggleMenu() {
-            subMenu.classList.toggle("open-menu");
-        }
+        });
     </script>
 
 </body>

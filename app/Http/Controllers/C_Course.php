@@ -10,4 +10,9 @@ class C_Course extends Controller
     {
         return view('courseview');
     }
+
+    public function index()
+    {
+        return view('course');
+    }
 }

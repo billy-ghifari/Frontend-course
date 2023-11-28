@@ -20,4 +20,9 @@ class C_Blog extends Controller
     {
         return view('search');
     }
+
+    public function test()
+    {
+        return view('test');
+    }
 }
