@@ -32,3 +32,5 @@ Route::get('/blogdetail', [C_Blog::class, 'blogdetail']);
 Route::get('/blogpage', [C_Blog::class, 'index']);
 Route::get('/searchview', [C_Blog::class, 'searchview']);
 Route::get('/course', [C_Course::class, 'index']);
+
+Route::get('/coursedetail', [C_Course::class, 'coursedetail']);

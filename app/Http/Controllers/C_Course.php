@@ -15,4 +15,9 @@ class C_Course extends Controller
     {
         return view('course');
     }
+
+    public function coursedetail()
+    {
+        return view('coursedetail');
+    }
 }

@@ -1,10 +1,11 @@
 <header class="topbar fixed-top d-flex " data-navbarbg="skin6" style="background-color:white; height:95px; position:fixed; top:0; ">
     <div class="header justify-content-between container">
-        <div class="row">
+        <div class="row" style="height: 400px;" >
+
             <div class="col-4" style="margin-top: 25px;">
                 <img src="/assets/images/dtc-blueicon.png" alt="" style="width: 50px; height: 50px">
             </div>
-            <div class="col-8" style="margin-top:27px ;">
+            <div class="col-5" style="margin-top:27px ;">
                 <ul class="nav justify-content-center">
                     <li class="nav-item mr-4">
                         <a class="nav-link" href="#" style="color: #5B5B5B;">Home</a>
@@ -18,41 +19,36 @@
                     <li class="nav-item mr-4">
                         <a class="nav-link" href="#" style="color: #5B5B5B;">About Us</a>
                     </li>
-                    <img src="/assets/images/image12.png" width="40px" height="40px" style="border-radius: 50%;" class="user-pic" onclick="menuToggle();">
-                    <p style="color: black; padding:8px;">Lina</p>
+
                 </ul>
             </div>
-        </div>
-        <div class="sub-menu-wrap" id="subMenu">
-            <div class="sub-menu">
-                <div class="user-info">
-                    <img src="/assets/images/image12.png">
-                    <h3>Lina Wongso</h3>
-                </div>
-                <hr>
-
-                <a href="" class="sub-menu-link">
-                    <img src="/assets/images/profile.png">
-                    <p>Edit Profile</p>
-                    <span>></span>
-                </a>
-                <a href="" class="sub-menu-link">
-                    <img src="/assets/images/setting.png">
-                    <p>Setting & Privacy</p>
-                    <span>></span>
-                </a>
-                <a href="" class="sub-menu-link">
-                    <img src="/assets/images/help.png">
-                    <p>Help & Support</p>
-                    <span>></span>
-                </a>
-                <a href="" class="sub-menu-link">
-                    <img src="/assets/images/logout.png">
-                    <p>Logout</p>
-                    <span>></span>
-                </a>
-
+            <div class="col-3" style="padding-left: 40px;">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:void()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle" width="40">
+                        <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span class="text-dark">Jason Doe</span> <i data-feather="chevron-down" class="svg-icon"></i></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
+                        <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user" class="svg-icon mr-2 ml-1"></i>
+                            My Profile</a>
+                        <a class="dropdown-item" href="javascript:void(0)"><i data-feather="credit-card" class="svg-icon mr-2 ml-1"></i>
+                            My Balance</a>
+                        <a class="dropdown-item" href="javascript:void(0)"><i data-feather="mail" class="svg-icon mr-2 ml-1"></i>
+                            Inbox</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="javascript:void(0)"><i data-feather="settings" class="svg-icon mr-2 ml-1"></i>
+                            Account Setting</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power" class="svg-icon mr-2 ml-1"></i>
+                            Logout</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="pl-4 p-3"><a href="javascript:void(0)" class="btn btn-sm btn-info">View
+                                Profile</a></div>
+                    </div>
+                </li>
             </div>
         </div>
+
+
     </div>
 </header>

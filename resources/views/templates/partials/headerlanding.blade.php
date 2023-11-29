@@ -10,7 +10,7 @@
                         <a class="nav-link" href="#" style="color: white;">Home</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="#" style="color: white;">Courses</a>
+                        <a class="nav-link" href="/course" style="color: white;">Courses</a>
                     </li>
                     <li class=" nav-item mr-4">
                         <a class="nav-link" href="/blogpage" style="color: white;">Blog</a>

@@ -52,6 +52,7 @@
                             <i class="far fa-clock text-white"><span>1 hour</span></i>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </nav>
@@ -94,7 +95,7 @@
                             <i class="fas fa-star" style="color: #FDB022;"></i>
                             <i class="fas fa-star" style="color: #FDB022;"></i>
                             <i class="fas fa-star" style="color: #FDB022;"></i>
-                            </span>
+                            
                         </div>
                     </div>
                     <p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit <br>amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem</p>

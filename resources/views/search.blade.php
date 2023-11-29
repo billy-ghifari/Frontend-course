@@ -1,4 +1,4 @@
-@extends('templates.defaultbs')
+@extends('templates.default')
 
 @section('head')
 <meta charset="utf-8">
@@ -365,9 +365,9 @@
         <div class="container" style="background-color: #e2f0ff; border-radius:20px;">
             <div class="row pl-5 pt-5">
                 <div class="col-5 pt-5 pl-5">
-                    <h2>Know about learning
+                    <p style="font-weight: 510; font-size:28px;">Know about learning
                         <br>learning platform
-                    </h2>
+                    </p>
                     <div class="row pt-3">
                         <div class="col-1 pr-0"><i class="fas fa-circle" style="width: 15px; height:15px; color:#55EFC4;">
                             </i></div>
@@ -376,7 +376,7 @@
                             <p>Free E-book, video & consolation</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row pt-2">
                         <div class="col-1 pr-0"><i class="fas fa-circle" style="width: 15px; height:15px; color:#55EFC4;">
                             </i></div>
 
@@ -384,7 +384,7 @@
                             <p>Top instructors from around world</p>
                         </div>
                     </div>
-                    <div class="row pb-2">
+                    <div class="row pb-3 pt-2">
                         <div class="col-1 pr-0"><i class="fas fa-circle" style="width: 15px; height:15px; color:#55EFC4;">
                             </i></div>
 
@@ -394,13 +394,13 @@
                     </div>
 
                     <div>
-                        <button type="button" class="btn" style="background-color: #49BBBD; height:45px; width:200px;">
+                        <button type="button" class="btn" style="background-color: #49BBBD; height:45px; width:200px; border-radius:10px;">
                             <p style="font-weight:600;color:white; margin-top:3px;">Start Learning now</p>
                         </button>
                     </div>
                 </div>
                 <div class="col-7">
-                    <img src="/assets/images/Group71.png" alt="" style="width: 700px; height: 430px;">
+                    <img src="/assets/images/Group71.png" alt="" style="width: 630px; height: 400px;">
                 </div>
             </div>
         </div>
@@ -712,13 +712,13 @@
         <div class="container">
 
             <img src="/assets/images/image10.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
-           margin-top:70px; margin-left:110px;">
+           margin-top:70px; margin-left:75px;">
 
             <img src="/assets/images/image11.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
-            margin-top:70px; margin-left:550px;">
+            margin-top:70px; margin-left:455px;">
 
             <img src="/assets/images/image12.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
-            margin-top:70px; margin-left:990px;">
+            margin-top:70px; margin-left:835px;">
 
             <div class="row" style="margin-bottom: 120px;">
                 <div class="col-6">
@@ -734,9 +734,9 @@
             <div class="row">
                 <div class="col-4">
                     <div class="card" style="text-align: center; height:250px; border-style:none;">
-                        <div class="card-body" style="padding-top:120px;">
-                            <p style="font-weight:500; font-size:21px;">Jane Cooper</p>
-                            <p style="color: #252641;">Lorem ipsum dolor sit amet, consectetur
+                        <div class="card-body" style="padding-top:130px;">
+                            <p style="font-weight:600; font-size:21px;">Jane Cooper</p>
+                            <p style="color: #252641; font-size:14px;">Lorem ipsum dolor sit amet, consectetur
                                 <br> adipising elit, sed do eiusmod tempor
                             </p>
                         </div>
@@ -744,9 +744,9 @@
                 </div>
                 <div class="col-4">
                     <div class="card" style="text-align: center; height:250px; border-style:none;">
-                        <div class="card-body" style="padding-top:120px;">
-                            <p style="font-weight:500; font-size:21px;">Adam</p>
-                            <p style="color: #252641;">Lorem ipsum dolor sit amet, consectetur
+                        <div class="card-body" style="padding-top:130px;">
+                            <p style="font-weight:600; font-size:21px;">Jane Cooper</p>
+                            <p style="color: #252641; font-size:14px;">Lorem ipsum dolor sit amet, consectetur
                                 <br> adipising elit, sed do eiusmod tempor
                             </p>
                         </div>
@@ -754,9 +754,9 @@
                 </div>
                 <div class="col-4">
                     <div class="card" style="text-align: center; height:250px; border-style:none;">
-                        <div class="card-body" style="padding-top:120px;">
-                            <p style="font-weight:500; font-size:21px;">Tomara</p>
-                            <p style="color: #252641;">Lorem ipsum dolor sit amet, consectetur
+                        <div class="card-body" style="padding-top:130px;">
+                            <p style="font-weight:600; font-size:21px;">Jane Cooper</p>
+                            <p style="color: #252641; font-size:14px;">Lorem ipsum dolor sit amet, consectetur
                                 <br> adipising elit, sed do eiusmod tempor
                             </p>
                         </div>
@@ -765,21 +765,21 @@
             </div>
 
             <img src="/assets/images/image10.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
-            margin-left:110px;">
+           margin-left:75px;">
 
             <img src="/assets/images/image11.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
-            margin-left:550px;">
+            margin-left:455px;">
 
             <img src="/assets/images/image12.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
-             margin-left:990px;">
+            margin-left:835px;">
 
             <div style="margin-top: 6rem;">
                 <div class="row">
                     <div class="col-4">
                         <div class="card" style="text-align: center; height:250px; border-style:none;">
-                            <div class="card-body" style="padding-top:120px;">
-                                <p style="font-weight:500; font-size:21px;">Jane Cooper</p>
-                                <p style="color: #252641;">Lorem ipsum dolor sit amet, consectetur
+                            <div class="card-body" style="padding-top:130px;">
+                                <p style="font-weight:600; font-size:21px;">Jane Cooper</p>
+                                <p style="color: #252641; font-size:14px;">Lorem ipsum dolor sit amet, consectetur
                                     <br> adipising elit, sed do eiusmod tempor
                                 </p>
                             </div>
@@ -787,9 +787,9 @@
                     </div>
                     <div class="col-4">
                         <div class="card" style="text-align: center; height:250px; border-style:none;">
-                            <div class="card-body" style="padding-top:120px;">
-                                <p style="font-weight:500; font-size:21px;">Adam</p>
-                                <p style="color: #252641;">Lorem ipsum dolor sit amet, consectetur
+                            <div class="card-body" style="padding-top:130px;">
+                                <p style="font-weight:600; font-size:21px;">Jane Cooper</p>
+                                <p style="color: #252641; font-size:14px;">Lorem ipsum dolor sit amet, consectetur
                                     <br> adipising elit, sed do eiusmod tempor
                                 </p>
                             </div>
@@ -797,9 +797,9 @@
                     </div>
                     <div class="col-4">
                         <div class="card" style="text-align: center; height:250px; border-style:none;">
-                            <div class="card-body" style="padding-top:120px;">
-                                <p style="font-weight:500; font-size:21px;">Tomara</p>
-                                <p style="color: #252641;">Lorem ipsum dolor sit amet, consectetur
+                            <div class="card-body" style="padding-top:130px;">
+                                <p style="font-weight:600; font-size:21px;">Jane Cooper</p>
+                                <p style="color: #252641; font-size:14px;">Lorem ipsum dolor sit amet, consectetur
                                     <br> adipising elit, sed do eiusmod tempor
                                 </p>
                             </div>
@@ -812,18 +812,18 @@
 
     <div class="section6 pb-4 pt-2" style="background-color: #e2f0ff; margin-bottom:4rem;">
         <div class="container">
-            <p style="margin-top: 3rem; margin-bottom:3rem; font-size: 22px; font-weight:500">What our students have to say</p>
+            <p style="margin-top: 3rem; margin-bottom:3rem; font-size: 22px; font-weight:600">What our students have to say</p>
         </div>
 
         <div class="container pt-5 pb-5" style="background-color:white; margin-bottom:4rem; border-radius:20px;">
             <div class="row">
                 <div class="col-5 pl-5">
-                    <img src="/assets/images/Group368.png" alt="" style="width:480px; height:472px;">
+                    <img src="/assets/images/Group368.png" alt="" style="width:410px; height:392px;">
                 </div>
                 <div class="col-6 pl-5" style="padding-top:60px;">
-                    <h5 style="font-weight: 800;">Savannah Nguyen</h5>
-                    <h5 style="margin-top:20px;">tanya.hill@example.com</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipising elit, <br> sed do eiusmod tempor
+                    <p style="font-weight: 800; font-size:21px;">Savannah Nguyen</p>
+                    <p style="font-size: 16px; font-weight:600">tanya.hill@example.com</p>
+                    <p style="color: #696984; font-size:15px;">Lorem ipsum dolor sit amet, consectetur adipising elit, <br> sed do eiusmod tempor
                         <br>Lorem ipsum dolor sit amet, consectetur adipising elit,<br> sed do eiusmod tempor
                         <br>Lorem ipsum dolor sit amet, consectetur adipising elit,<br> sed do eiusmod tempor
                     </p>
@@ -833,10 +833,10 @@
                 </div>
                 <div class="col-1" style="padding-top: 100px;">
                     <div class="row">
-                        <img src="/assets/images/image10.png" alt="" style="width: 80px; height:60px; border-radius:50%; ">
-                        <img src="/assets/images/image11.png" alt="" style="width: 80px; height:60px; border-radius:50%; margin-top:15px;">
-                        <img src="/assets/images/image12.png" alt="" style="width: 80px; height:60px; border-radius:50%; margin-top:15px;">
-                        <img src="/assets/images/image11.png" alt="" style="width: 80px; height:60px; border-radius:50%; margin-top:15px;">
+                        <img src="/assets/images/image10.png" alt="" style="width:60px; border-radius:50%; ">
+                        <img src="/assets/images/image11.png" alt="" style="width:60px; border-radius:50%; margin-top:15px;">
+                        <img src="/assets/images/image12.png" alt="" style="width:60px; border-radius:50%; margin-top:15px;">
+                        <img src="/assets/images/image11.png" alt="" style="width:60px; border-radius:50%; margin-top:15px;">
                     </div>
                 </div>
             </div>
@@ -856,39 +856,39 @@
                 </div>
             </div>
 
-            <div style="position: absolute; z-index:1; margin-left:40px; margin-top:40px;">
-                <button type="button " class="btn mb-3" style="width: 100px; height:100px; background-color:#49BBBD; font-size:40px; font-weight:700; color:white">50%</button>
-                <p style="color: white; font-weight:700; font-size:20px;">Lorem ipsum dolor</p>
-                <p style="color: white;">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
+            <div style="position: absolute; z-index:1; margin-left:25px; margin-top:30px;">
+                <button type="button " class="btn mb-3" style="width: 90px; height: 90px; background-color:#49BBBD; font-size:35px; font-weight:700; color:white;">50%</button>
+                <p style="color: white; font-weight:600; font-size:20px;">Lorem ipsum dolor</p>
+                <p style="color: white; font-size:14px;">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
                     <br>Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
                 </p>
             </div>
 
-            <div style="position: absolute; z-index:1; margin-left:500px; margin-top:40px;">
-                <button type="button " class="btn mb-3" style="width: 100px; height:100px; background-color:#49BBBD; font-size:40px; font-weight:700; color:white">10%</button>
-                <p style="color: white; font-weight:700; font-size:20px;">Lorem ipsum dolor</p>
-                <p style="color: white;">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
+            <div style="position: absolute; z-index:1; margin-left:423px; margin-top:40px;">
+                <button type="button " class="btn mb-3" style="width: 90px; height: 90px; background-color:#49BBBD; font-size:35px; font-weight:700; color:white;">50%</button>
+                <p style="color: white; font-weight:600; font-size:20px;">Lorem ipsum dolor</p>
+                <p style="color: white; font-size:14px;">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
                     <br>Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
                 </p>
             </div>
 
-            <div style="position: absolute; z-index:1; margin-left:960px; margin-top:40px;">
-                <button type="button " class="btn mb-3" style="width: 100px; height:100px; background-color:#49BBBD; font-size:40px; font-weight:700; color:white">50%</button>
-                <p style="color: white; font-weight:700; font-size:20px;">Lorem ipsum dolor</p>
-                <p style="color: white;">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
+            <div style="position: absolute; z-index:1; margin-left:820px; margin-top:40px;">
+                <button type="button " class="btn mb-3" style="width: 90px; height: 90px; background-color:#49BBBD; font-size:35px; font-weight:700; color:white;">50%</button>
+                <p style="color: white; font-weight:600; font-size:20px;">Lorem ipsum dolor</p>
+                <p style="color: white; font-size:14px;">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
                     <br>Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
                 </p>
             </div>
 
             <div class="row">
                 <div class="col-4">
-                    <img src="/assets/images/Rectangle187.png" alt="" style="background-size:cover; width:390px;">
+                    <img src="/assets/images/Rectangle187.png" alt="" style="background-size:cover; width:330px;">
                 </div>
                 <div class="col-4" style="padding-left: 30px;">
-                    <img src="/assets/images/Rectangle188.png" alt="" style="background-size:cover; width:390px;">
+                    <img src="/assets/images/Rectangle188.png" alt="" style="background-size:cover; width:330px;">
                 </div>
                 <div class="col-4 pl-5">
-                    <img src="/assets/images/Rectangle189.png" alt="" style="background-size:cover; width:390px; ">
+                    <img src="/assets/images/Rectangle189.png" alt="" style="background-size:cover; width:330px; ">
                 </div>
             </div>
         </div>
