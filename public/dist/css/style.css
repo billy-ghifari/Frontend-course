@@ -5,6 +5,22 @@
 @import url(icons/themify-icons/themify-icons.css);
 
 
+
+.color-primary{
+  color: #49BBBD;
+}
+.color-primary-bg {
+  background-color: #49BBBD;
+}
+
+.text-title {
+  color: #2F327D;
+}
+
+.text-header {
+  color: #252641;
+}
+
 .sub-menu-wrap {
   /* position: absolute; */
   /* top: 100%; */

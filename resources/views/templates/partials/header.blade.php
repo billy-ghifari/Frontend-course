@@ -1,7 +1,6 @@
 <header class="topbar fixed-top d-flex " data-navbarbg="skin6" style="background-color:white; height:95px; position:fixed; top:0; ">
     <div class="header justify-content-between container">
-        <div class="row" style="height: 400px;" >
-
+        <div class="row" style="height: 450px;" >
             <div class="col-4" style="margin-top: 25px;">
                 <img src="/assets/images/dtc-blueicon.png" alt="" style="width: 50px; height: 50px">
             </div>
@@ -22,8 +21,8 @@
 
                 </ul>
             </div>
-            <div class="col-3" style="padding-left: 40px;">
-                <li class="nav-item dropdown">
+            <div class="col-3 pt-3" style="padding-left: 40px;">
+                <li class="nav dropdown">
                     <a class="nav-link dropdown-toggle" href="javascript:void()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle" width="40">
                         <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span class="text-dark">Jason Doe</span> <i data-feather="chevron-down" class="svg-icon"></i></span>

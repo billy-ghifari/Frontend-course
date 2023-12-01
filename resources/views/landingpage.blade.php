@@ -292,13 +292,13 @@
             <div style="margin-top: 7rem; text-align:start">
 
                 <button class="btn" type="submit" style="width: 60px; height: 60px; border-style:solid; border-color:#49BBBD; background-color:white; color:#49BBBD; 
-                position:absolute; z-index:1; border-radius:50%; margin-top:317px; margin-left:210px">
+                position:absolute; z-index:1; border-radius:50%; margin-top:316px; margin-left:210px">
                     <i class="fas fa-long-arrow-alt-right" style="color: #49BBBD; font-size:19px; padding-top:3px;"></i></button>
 
                 <button class="btn" type="submit" style="width: 60px; height: 60px; background-color:white; color:#49BBBD; 
                 position:absolute; z-index:1; border-radius:50%; margin-left:907px; margin-top:180px;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <i class=" icon-arrow-right" style="color: #49BBBD; font-size:19px; margin-top:10px; font-weight:1000;"></i></button>
+                    <i class=" icon-arrow-right" style="color: #49BBBD; font-size:19px; margin-top:15px; font-weight:1000;"></i></button>
 
                 <div class="card" style="width:420px; height:180px ;border-left:8px solid; border-color:#F67766; border-radius:10px;
                 position:absolute; z-index:1; margin-left:620px; margin-top:307px">
@@ -349,7 +349,7 @@
                         <p style="font-size: 19px; margin-bottom:2rem">Some of the students and teachers were
                             <br>greatly helped by the Skilline.
                         </p>
-                        <p style="font-size: 19px; margin-bottom:25px;">Are you too? Please give your assessment</p>
+                        <p style="font-size: 19px; margin-bottom:24px;">Are you too? Please give your assessment</p>
                         <button type=" button" class="btn btn-light" style="border-style:solid; border-color:#49BBBD; background-color:white; width:270px; height:60px ;border-radius:60px; text-align:left">
                             <span style="color:#49BBBD; padding-left:9px">Write your assessment</span></button>
                     </div>

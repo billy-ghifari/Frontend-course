@@ -29,7 +29,7 @@
 
 @section('content')
 <div class="justify-content-between">
-    <div class="section1" style="margin-top: 7rem;">
+    <div class="section1" style="margin-top: 8rem;">
         <div class="container">
             <div class="row">
                 <div class="col" style="text-align: start;">
@@ -91,7 +91,7 @@
         </div>
     </div>
 
-    <div class="section2" style="margin-top: 4rem;">
+    <div class="section2" style="margin-top: 3rem;">
         <div class="container">
             <p style="font-size:21px; font-weight:600; margin-bottom:2rem;">Choice favourite course from top category</p>
             <div class="row">
@@ -112,7 +112,7 @@
                 <div class="col-3">
                     <div class="card pb-2" style="text-align: center; border-radius:10px;">
                         <div class="card" style="background-color: #ced5fa; width:70px; height:70px; text-align:center; margin-left:6rem; margin-top:2rem; padding-top:25px;">
-                            <i class="fas fa-paint-brush" style="color: #5B72EE; font-size:25px;"></i>
+                            <i class=" fas fa-laptop" style="color: #5B72EE; font-size:25px;"></i>
                         </div>
                         <p style="font-size: 20px; font-weight:600">Development</p>
                         <p style="font-size:13px; color:#696984;">Lorem ipsum dolor sit amet,
@@ -126,7 +126,7 @@
                 <div class="col-3">
                     <div class="card pb-2" style="text-align: center; border-radius:10px; ">
                         <div class="card" style="background-color: #fcddb4; width:70px; height:70px; text-align:center; margin-left:6rem; margin-top:2rem; padding-top:25px;">
-                            <i class="fas fa-paint-brush" style="color: #F48C06; font-size:25px;"></i>
+                            <i class="fas fa-diagnoses" style="color: #F48C06; font-size:25px;"></i>
                         </div>
                         <p style="font-size: 20px; font-weight:600">Marketing</p>
                         <p style="font-size:13px; color:#696984;">Lorem ipsum dolor sit amet,
@@ -140,7 +140,7 @@
                 <div class="col-3">
                     <div class="card pb-2" style="text-align: center; border-radius:10px; ">
                         <div class="card" style="background-color:#b3efea; width:70px; height:70px; text-align:center; margin-left:6rem; margin-top:2rem; padding-top:25px;">
-                            <i class="fas fa-paint-brush" style="color: #00CBB8; font-size:25px;"></i>
+                            <i class="fas fa-briefcase" style="color: #00CBB8; font-size:25px;"></i>
                         </div>
                         <p style="font-size: 20px; font-weight:600">Business</p>
                         <p style="font-size:13px; color:#696984;">Lorem ipsum dolor sit amet,
@@ -153,7 +153,7 @@
             </div>
         </div>
     </div>
-    <div class="section4" style="padding-bottom: 6rem; margin-bottom: 4rem; padding-top: 4rem; background-color:#e2f0ff;">
+    <div class="section3 mt-4" style="padding-bottom: 6rem; margin-bottom: 4rem; padding-top: 4rem; background-color:#e2f0ff;">
         <div class="container">
             <div class="row mb-3">
                 <div class="col-6" style="text-align: start;">
