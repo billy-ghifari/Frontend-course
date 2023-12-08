@@ -40,22 +40,23 @@
       the login or signup form -->
                     <div class="slider-btn"></div>
                     <div id="btn">
-                        <button class="login" style="margin-left: 6px;">Login</button>
-                        <button class="signup" style="margin-left: 24px;">Register</button>
+                        <button id="btnlogin" class="login">Login</button>
+                        <button id="btnsignup" class="signup">Register</button>
                     </div>
 
                     <!-- Form section that contains the
       login and the signup form -->
-                    <div class="form-section">
+                    <div class=" form-section">
 
                         <!-- login form -->
                         <div class="login-box">
-                            <form action="">
+                            <form action="/login" method="post">
+                                @csrf
                                 <span class="pb-3">Masukkan email dan password yang telah terdaftar.</span>
                                 <p>Email</p>
-                                <input type="email" class="email ele" placeholder="Masukkan Email Anda !">
+                                <input type="email" name="email" class="email ele" placeholder="Masukkan Email Anda !">
                                 <p>Password</p>
-                                <input type="password" class="password ele" placeholder="Masukkan Email Password !">
+                                <input type="password" name="password" class="password ele" placeholder="Masukkan Email Password !">
                                 <div style=" text-align: center; margin-top: 16px;">
                                     <a href=" #" style="font-family: 'poppins', 'sans-serif';">Lupa Password?</a>
                                 </div>
@@ -67,14 +68,19 @@
 
                         <!-- signup form -->
                         <div class="signup-box">
-                            <form action="">
-                                <span class="pb-3">Masukkan email dan password yang telah terdaftar.</span>
+                            <form action="/register" method="post" novalidate enctype="multipart/form-data">
+                                @csrf
+                                <span class="pb-3">Masukkan data dibawah ini untuk mendaftar</span>
                                 <p>Nama</p>
-                                <input type="text" placeholder="Masukan Nama Anda" class="nama ele">
+                                <input type="text" name="name" placeholder="Masukan Nama Anda" class="nama ele">
                                 <p>Email</p>
-                                <input type="email" placeholder="Masukan Email Anda" class="email ele">
+                                <input type="email" name="email" placeholder="Masukan Email Anda" class="email ele">
                                 <p>Password</p>
-                                <input type="password" placeholder="Masukan Password Anda !" class="password ele">
+                                <input type="password" name="password" placeholder="Masukan Password Anda !" class="password ele">
+                                <p>Photo</p>
+                                <fieldset class="images">
+                                    <input type="file" name="images" id="images">
+                                </fieldset>
                                 <div style="text-align: center; margin-top: 16px;">
                                     <button type=" submit" id="buttonauth" class="btn">Register</button>
                                 </div>

@@ -832,6 +832,9 @@
 
 /* /////////landing///////// */
 
+
+
+
 .color-primary {
   color: #49BBBD;
 }
@@ -994,7 +997,8 @@
 
 
 
-/* authform */
+/* /////////auth///////// */
+
 #container1auth {
   padding-top: 100px;
   background-color: white;
@@ -1026,6 +1030,23 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+#btnlogin {
+  margin-left: 6px;
+}
+
+#btnsignup {
+  margin-left: 24px;
+}
+
+#btnlogin:focus {
+  outline: none;
+}
+
+
+#btnsignup:focus {
+  outline: none;
 }
 
 .login,
@@ -1115,6 +1136,9 @@
   border: none;
   cursor: pointer;
 }
+
+/* /////////auth///////// */
+
 
 
 

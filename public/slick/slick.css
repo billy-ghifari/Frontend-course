@@ -109,6 +109,7 @@
     list-style-type: none;
 }
 
+
 .slick-dots li {
     margin: 0 0.80rem;
 }
@@ -127,6 +128,11 @@
 
     transition: all 0.5s ease-in-out;
 
+}
+
+
+.slick-dots button:focus {
+    outline: none;
 }
 
 .slick-dots li.slick-active button {
