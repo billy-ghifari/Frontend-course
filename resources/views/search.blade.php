@@ -36,16 +36,15 @@
 
 @section('content')
 <div class="justify-content-between">
-    <div class="jumbotron" style="background-image:url(/assets/images/Rectangle180.png); background-position: center center;     background-repeat: no-repeat;background-size: cover; margin-top:90px; height:260px;">
+    <div class="jumbotron j-search">
         <div class="justify-content-between">
             <div class="container">
-                <button type="submit" class="btn" style="width: 100px; background-color:#49BBBD; position:absolute; z-index: 1; cursor:pointer; border-radius:8px; color:white; font-weight:500; margin-left:54.5rem; margin-top: 6px;">search</button>
-                <div class="customize-input " style="padding-left: 180px;">
-                    <input class="form-control custom-shadow border-0 bg-white mb-2" type="search" placeholder="Search your favourite course" aria-label="Search" style="width: 800px; border-radius:8px; height:50px;">
-
-                    <div class="row pr-2" style="float: inline-end; margin-right: 7.5rem;">
+                <button type="submit" class="btn btn-search">search</button>
+                <div class="customize-input input">
+                    <input class="form-control custom-shadow border-0 bg-white mb-2" type="search" placeholder="Search your favourite course" aria-label="Search">
+                    <div class="row row-dropdown pr-2">
                         <div class="dropdown pr-2">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 7px; background-color:white; color:black; border-style:none;">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Abaliability
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -55,7 +54,7 @@
                             </div>
                         </div>
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 7px; background-color:white; color:black; border-style:none;">
+                            <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ii>
                                 Learning Type
                             </button>
                             <div class=" dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -72,287 +71,292 @@
 
     </div>
 
-    <div class="section2" style="margin-top: 4rem;">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                        <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                            <img src="/assets/images/Rectangle33.png" alt="" width="230" height="160">
-                            <div class="row pt-2">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                    <span style="font-size:14px">Design</span>
+    <div class="section-2-search">
+        <div class="section-4-blogpage pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-head pt-3">
+                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <div class="row pt-3">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group259.png" width="17" height="17">
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
+                                    </div>
+                                    <p>AWS Certified solutions
+                                        <br>Architect
+                                    </p>
                                 </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
-                                </div>
-                                <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
-                                    <br>Architect
-                                </p>
                             </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                    <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
-                                </div>
-                                <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                    <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
+                            <div class="card-body pt-0 pl-3">
+                                <p class="p-descript">Lorem ipsum dolor sit amet,
+                                    <br>consectetur adipising elit, sed do
+                                    <br>eiusmod tempor
+                                </p>
+                                <div class="row pt-2">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group237.png" height="35" width="35">
+                                        <span>Lina</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <p>$100 <span>$80</span></p>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                        <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                            <img src="/assets/images/Rectangle33.png" alt="" width="230" height="160">
-                            <div class="row pt-2">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                    <span style="font-size:14px">Design</span>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-head pt-3">
+                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <div class="row pt-3">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group259.png" width="17" height="17">
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
+                                    </div>
+                                    <p>AWS Certified solutions
+                                        <br>Architect
+                                    </p>
                                 </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
-                                </div>
-                                <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
-                                    <br>Architect
-                                </p>
                             </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                    <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
-                                </div>
-                                <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                    <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
+                            <div class="card-body pt-0 pl-3">
+                                <p class="p-descript">Lorem ipsum dolor sit amet,
+                                    <br>consectetur adipising elit, sed do
+                                    <br>eiusmod tempor
+                                </p>
+                                <div class="row pt-2">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group237.png" height="35" width="35">
+                                        <span>Lina</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <p>$100 <span>$80</span></p>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                        <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                            <img src="/assets/images/Rectangle33.png" alt="" width="230" height="160">
-                            <div class="row pt-2">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                    <span style="font-size:14px">Design</span>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-head pt-3">
+                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <div class="row pt-3">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group259.png" width="17" height="17">
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
+                                    </div>
+                                    <p>AWS Certified solutions
+                                        <br>Architect
+                                    </p>
                                 </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
-                                </div>
-                                <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
-                                    <br>Architect
-                                </p>
                             </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                    <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
-                                </div>
-                                <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                    <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
+                            <div class="card-body pt-0 pl-3">
+                                <p class="p-descript">Lorem ipsum dolor sit amet,
+                                    <br>consectetur adipising elit, sed do
+                                    <br>eiusmod tempor
+                                </p>
+                                <div class="row pt-2">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group237.png" height="35" width="35">
+                                        <span>Lina</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <p>$100 <span>$80</span></p>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                        <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                            <img src="/assets/images/Rectangle33.png" alt="" width="230" height="160">
-                            <div class="row pt-2">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                    <span style="font-size:14px">Design</span>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-head pt-3">
+                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <div class="row pt-3">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group259.png" width="17" height="17">
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
+                                    </div>
+                                    <p>AWS Certified solutions
+                                        <br>Architect
+                                    </p>
                                 </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
-                                </div>
-                                <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
-                                    <br>Architect
-                                </p>
                             </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                    <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
-                                </div>
-                                <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                    <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
+                            <div class="card-body pt-0 pl-3">
+                                <p class="p-descript">Lorem ipsum dolor sit amet,
+                                    <br>consectetur adipising elit, sed do
+                                    <br>eiusmod tempor
+                                </p>
+                                <div class="row pt-2">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group237.png" height="35" width="35">
+                                        <span>Lina</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <p>$100 <span>$80</span></p>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-3">
-                    <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                        <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                            <img src="/assets/images/Rectangle33.png" alt="" width="230" height="160">
-                            <div class="row pt-2">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                    <span style="font-size:14px">Design</span>
+        </div>
+        <div class="section-4-blogpage pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-head pt-3">
+                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <div class="row pt-3">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group259.png" width="17" height="17">
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
+                                    </div>
+                                    <p>AWS Certified solutions
+                                        <br>Architect
+                                    </p>
                                 </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
-                                </div>
-                                <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
-                                    <br>Architect
-                                </p>
                             </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                    <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
-                                </div>
-                                <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                    <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
+                            <div class="card-body pt-0 pl-3">
+                                <p class="p-descript">Lorem ipsum dolor sit amet,
+                                    <br>consectetur adipising elit, sed do
+                                    <br>eiusmod tempor
+                                </p>
+                                <div class="row pt-2">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group237.png" height="35" width="35">
+                                        <span>Lina</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <p>$100 <span>$80</span></p>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                        <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                            <img src="/assets/images/Rectangle33.png" alt="" width="230" height="160">
-                            <div class="row pt-2">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                    <span style="font-size:14px">Design</span>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-head pt-3">
+                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <div class="row pt-3">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group259.png" width="17" height="17">
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
+                                    </div>
+                                    <p>AWS Certified solutions
+                                        <br>Architect
+                                    </p>
                                 </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
-                                </div>
-                                <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
-                                    <br>Architect
-                                </p>
                             </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                    <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
-                                </div>
-                                <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                    <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
+                            <div class="card-body pt-0 pl-3">
+                                <p class="p-descript">Lorem ipsum dolor sit amet,
+                                    <br>consectetur adipising elit, sed do
+                                    <br>eiusmod tempor
+                                </p>
+                                <div class="row pt-2">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group237.png" height="35" width="35">
+                                        <span>Lina</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <p>$100 <span>$80</span></p>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                        <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                            <img src="/assets/images/Rectangle33.png" alt="" width="230" height="160">
-                            <div class="row pt-2">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                    <span style="font-size:14px">Design</span>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-head pt-3">
+                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <div class="row pt-3">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group259.png" width="17" height="17">
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
+                                    </div>
+                                    <p>AWS Certified solutions
+                                        <br>Architect
+                                    </p>
                                 </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
-                                </div>
-                                <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
-                                    <br>Architect
-                                </p>
                             </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                    <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
-                                </div>
-                                <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                    <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
+                            <div class="card-body pt-0 pl-3">
+                                <p class="p-descript">Lorem ipsum dolor sit amet,
+                                    <br>consectetur adipising elit, sed do
+                                    <br>eiusmod tempor
+                                </p>
+                                <div class="row pt-2">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group237.png" height="35" width="35">
+                                        <span>Lina</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <p>$100 <span>$80</span></p>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                        <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                            <img src="/assets/images/Rectangle33.png" alt="" width="230" height="160">
-                            <div class="row pt-2">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                    <span style="font-size:14px">Design</span>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-head pt-3">
+                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <div class="row pt-3">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group259.png" width="17" height="17">
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
+                                    </div>
+                                    <p>AWS Certified solutions
+                                        <br>Architect
+                                    </p>
                                 </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
-                                </div>
-                                <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
-                                    <br>Architect
-                                </p>
                             </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                    <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
-                                </div>
-                                <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                    <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
+                            <div class="card-body pt-0 pl-3">
+                                <p class="p-descript">Lorem ipsum dolor sit amet,
+                                    <br>consectetur adipising elit, sed do
+                                    <br>eiusmod tempor
+                                </p>
+                                <div class="row pt-2">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group237.png" height="35" width="35">
+                                        <span>Lina</span>
+                                    </div>
+                                    <div class="col-6 left">
+                                        <p>$100 <span>$80</span></p>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -361,15 +365,15 @@
             </div>
         </div>
     </div>
-    <div class="section3" style="margin-top: 5rem; margin-bottom:5rem">
-        <div class="container" style="background-color: #e2f0ff; border-radius:20px;">
+    <div class="section-3-search">
+        <div class="container">
             <div class="row pl-5 pt-5">
                 <div class="col-5 pt-5 pl-5">
-                    <p style="font-weight: 510; font-size:28px;">Know about learning
+                    <p class="text-head">Know about learning
                         <br>learning platform
                     </p>
                     <div class="row pt-3">
-                        <div class="col-1 pr-0"><i class="fas fa-circle" style="width: 15px; height:15px; color:#55EFC4;">
+                        <div class="col-1 pr-0"><i class="fas fa-circle">
                             </i></div>
 
                         <div class="col-11 pl-0">
@@ -377,7 +381,7 @@
                         </div>
                     </div>
                     <div class="row pt-2">
-                        <div class="col-1 pr-0"><i class="fas fa-circle" style="width: 15px; height:15px; color:#55EFC4;">
+                        <div class="col-1 pr-0"><i class="fas fa-circle">
                             </i></div>
 
                         <div class="col-11 pl-0">
@@ -385,7 +389,7 @@
                         </div>
                     </div>
                     <div class="row pb-3 pt-2">
-                        <div class="col-1 pr-0"><i class="fas fa-circle" style="width: 15px; height:15px; color:#55EFC4;">
+                        <div class="col-1 pr-0"><i class="fas fa-circle">
                             </i></div>
 
                         <div class="col-11 pl-0">
@@ -394,201 +398,59 @@
                     </div>
 
                     <div>
-                        <button type="button" class="btn" style="background-color: #49BBBD; height:45px; width:200px; border-radius:10px;">
-                            <p style="font-weight:600;color:white; margin-top:3px;">Start Learning now</p>
+                        <button type="button" class="btn">
+                            <p>Start Learning now</p>
                         </button>
                     </div>
                 </div>
                 <div class="col-7">
-                    <img src="/assets/images/Group71.png" alt="" style="width: 630px; height: 400px;">
+                    <img src="/assets/images/Group71.png" alt="">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="section4" style="padding-bottom: 6rem; margin-bottom: 4rem; padding-top: 4rem; background-color:#e2f0ff;">
-        <div class="container">
-            <div class="row">
-                <div class="col-6" style="text-align: start;">
-                    <p style="font-weight: 500; font-size:20px; color:black">Recommended for you</p>
-                </div>
-                <div class="col-6 " style="text-align: end; ">
-                    <button class="btn" type="button" style="background-color:#49BBBD; width: 100px; border-radius:10px; color:white;" id="see-all-articles">see all</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                        <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                            <img src="/assets/images/Rectangle36.png" alt="" width="230" height="160">
-                            <div class="row pt-2">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                    <span style="font-size:14px">Design</span>
-                                </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
-                                </div>
-                                <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
-                                    <br>Architect
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                    <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
-                                </div>
-                                <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                    <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
-
-                                </div>
-                            </div>
-                        </div>
+    <div class="section-4-search">
+        <div class="section-4-blogpage pt-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-6 left">
+                        <p class="p-title">Recommended for you</p>
+                    </div>
+                    <div class="col-6 right">
+                        <button class="btn" type="button" id="see-all-articles">see all</button>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                        <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px; ">
-                            <img src="/assets/images/Rectangle33.png" alt="" width="230" height="160">
-                            <div class="row pt-2">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                    <span style="font-size:14px">Design</span>
-                                </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
-                                </div>
-                                <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
-                                    <br>Architect
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                    <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
-                                </div>
-                                <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                    <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                        <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                            <img src="/assets/images/Rectangle32.png" alt="" width="230" height="160">
-                            <div class="row pt-2">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                    <span style="font-size:14px">Design</span>
-                                </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
-                                </div>
-                                <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
-                                    <br>Architect
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                    <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
-                                </div>
-                                <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                    <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                        <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                            <img src="/assets/images/Rectangle35.png" alt="" width="230" height="160">
-                            <div class="row pt-2">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                    <span style="font-size:14px">Design</span>
-                                </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
-                                </div>
-                                <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
-                                    <br>Architect
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                    <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
-                                </div>
-                                <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                    <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hidden-articles" style="display: none;">
                 <div class="row">
                     <div class="col-3">
-                        <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                            <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                                <img src="/assets/images/Rectangle36.png" alt="" width="230" height="160">
-                                <div class="row pt-2">
-                                    <div class="col-6">
-                                        <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                        <span style="font-size:14px">Design</span>
+                        <div class="card">
+                            <div class="card-head pt-3">
+                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <div class="row pt-3">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group259.png" width="17" height="17">
+                                        <span>Design</span>
                                     </div>
-                                    <div class="col-6" style="text-align: end;">
-                                        <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
+                                    <div class="col-6 left">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
                                     </div>
-                                    <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
+                                    <p>AWS Certified solutions
                                         <br>Architect
                                     </p>
                                 </div>
                             </div>
                             <div class="card-body pt-0 pl-3">
-                                <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
+                                <p class="p-descript">Lorem ipsum dolor sit amet,
                                     <br>consectetur adipising elit, sed do
                                     <br>eiusmod tempor
                                 </p>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                        <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
+                                <div class="row pt-2">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group237.png" height="35" width="35">
+                                        <span>Lina</span>
                                     </div>
-                                    <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                        <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
+                                    <div class="col-6 left">
+                                        <p>$100 <span>$80</span></p>
 
                                     </div>
                                 </div>
@@ -596,34 +458,34 @@
                         </div>
                     </div>
                     <div class="col-3">
-                        <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                            <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px; ">
-                                <img src="/assets/images/Rectangle33.png" alt="" width="230" height="160">
-                                <div class="row pt-2">
-                                    <div class="col-6">
-                                        <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                        <span style="font-size:14px">Design</span>
+                        <div class="card">
+                            <div class="card-head pt-3">
+                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <div class="row pt-3">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group259.png" width="17" height="17">
+                                        <span>Design</span>
                                     </div>
-                                    <div class="col-6" style="text-align: end;">
-                                        <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
+                                    <div class="col-6 left">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
                                     </div>
-                                    <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
+                                    <p>AWS Certified solutions
                                         <br>Architect
                                     </p>
                                 </div>
                             </div>
                             <div class="card-body pt-0 pl-3">
-                                <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
+                                <p class="p-descript">Lorem ipsum dolor sit amet,
                                     <br>consectetur adipising elit, sed do
                                     <br>eiusmod tempor
                                 </p>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                        <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
+                                <div class="row pt-2">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group237.png" height="35" width="35">
+                                        <span>Lina</span>
                                     </div>
-                                    <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                        <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
+                                    <div class="col-6 left">
+                                        <p>$100 <span>$80</span></p>
 
                                     </div>
                                 </div>
@@ -631,34 +493,34 @@
                         </div>
                     </div>
                     <div class="col-3">
-                        <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                            <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                                <img src="/assets/images/Rectangle32.png" alt="" width="230" height="160">
-                                <div class="row pt-2">
-                                    <div class="col-6">
-                                        <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                        <span style="font-size:14px">Design</span>
+                        <div class="card">
+                            <div class="card-head pt-3">
+                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <div class="row pt-3">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group259.png" width="17" height="17">
+                                        <span>Design</span>
                                     </div>
-                                    <div class="col-6" style="text-align: end;">
-                                        <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
+                                    <div class="col-6 left">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
                                     </div>
-                                    <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
+                                    <p>AWS Certified solutions
                                         <br>Architect
                                     </p>
                                 </div>
                             </div>
                             <div class="card-body pt-0 pl-3">
-                                <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
+                                <p class="p-descript">Lorem ipsum dolor sit amet,
                                     <br>consectetur adipising elit, sed do
                                     <br>eiusmod tempor
                                 </p>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                        <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
+                                <div class="row pt-2">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group237.png" height="35" width="35">
+                                        <span>Lina</span>
                                     </div>
-                                    <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                        <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
+                                    <div class="col-6 left">
+                                        <p>$100 <span>$80</span></p>
 
                                     </div>
                                 </div>
@@ -666,34 +528,34 @@
                         </div>
                     </div>
                     <div class="col-3">
-                        <div class="card" style="width: 260px; border-radius:10px; border-style:none;">
-                            <div class="card-head pt-3" style="padding-left: 15px; padding-right: 15px;">
-                                <img src="/assets/images/Rectangle35.png" alt="" width="230" height="160">
-                                <div class="row pt-2">
-                                    <div class="col-6">
-                                        <img src="/assets/images/Group259.png" alt="" width="17" height="17">
-                                        <span style="font-size:14px">Design</span>
+                        <div class="card">
+                            <div class="card-head pt-3">
+                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <div class="row pt-3">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group259.png" width="17" height="17">
+                                        <span>Design</span>
                                     </div>
-                                    <div class="col-6" style="text-align: end;">
-                                        <i class="far fa-clock" style="font-size:14px"><span style="padding-left: 5px;">3 Month</span></i>
+                                    <div class="col-6 left">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
                                     </div>
-                                    <p style="font-size: 20px; font-weight:500; color:black; margin:15px;">AWS Certified solutions
+                                    <p>AWS Certified solutions
                                         <br>Architect
                                     </p>
                                 </div>
                             </div>
                             <div class="card-body pt-0 pl-3">
-                                <p style="font-size: 14px;">Lorem ipsum dolor sit amet,
+                                <p class="p-descript">Lorem ipsum dolor sit amet,
                                     <br>consectetur adipising elit, sed do
                                     <br>eiusmod tempor
                                 </p>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <img src="/assets/images/Group237.png" alt="" height="35" width="35">
-                                        <span style="color: black; font-size:15px; font-weight:500; margin-left:5px;">Lina</span>
+                                <div class="row pt-2">
+                                    <div class="col-6 right">
+                                        <img src="/assets/images/Group237.png" height="35" width="35">
+                                        <span>Lina</span>
                                     </div>
-                                    <div class="col-6" style="text-align: end; padding-top:5px; font-size:14px">
-                                        <p>$100 <span style="font-weight: 600; color:#49BBBD; padding-left:5px;">$80</span></p>
+                                    <div class="col-6 left">
+                                        <p>$100 <span>$80</span></p>
 
                                     </div>
                                 </div>
@@ -701,30 +563,171 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row pr-2" style="float: inline-end;">
-                <button class="btn" type="button" style="background-color: white; width: 100px; border-radius:8px; color:#49BBBD; border-color:#49BBBD;" id="hide-all-articles">Hide</button>
+                <div class="hidden-articles" style="display: none;">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-head pt-3">
+                                    <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                    <div class="row pt-3">
+                                        <div class="col-6 right">
+                                            <img src="/assets/images/Group259.png" width="17" height="17">
+                                            <span>Design</span>
+                                        </div>
+                                        <div class="col-6 left">
+                                            <i class="far fa-clock"><span>3 Month</span></i>
+                                        </div>
+                                        <p>AWS Certified solutions
+                                            <br>Architect
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0 pl-3">
+                                    <p class="p-descript">Lorem ipsum dolor sit amet,
+                                        <br>consectetur adipising elit, sed do
+                                        <br>eiusmod tempor
+                                    </p>
+                                    <div class="row pt-2">
+                                        <div class="col-6 right">
+                                            <img src="/assets/images/Group237.png" height="35" width="35">
+                                            <span>Lina</span>
+                                        </div>
+                                        <div class="col-6 left">
+                                            <p>$100 <span>$80</span></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-head pt-3">
+                                    <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                    <div class="row pt-3">
+                                        <div class="col-6 right">
+                                            <img src="/assets/images/Group259.png" width="17" height="17">
+                                            <span>Design</span>
+                                        </div>
+                                        <div class="col-6 left">
+                                            <i class="far fa-clock"><span>3 Month</span></i>
+                                        </div>
+                                        <p>AWS Certified solutions
+                                            <br>Architect
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0 pl-3">
+                                    <p class="p-descript">Lorem ipsum dolor sit amet,
+                                        <br>consectetur adipising elit, sed do
+                                        <br>eiusmod tempor
+                                    </p>
+                                    <div class="row pt-2">
+                                        <div class="col-6 right">
+                                            <img src="/assets/images/Group237.png" height="35" width="35">
+                                            <span>Lina</span>
+                                        </div>
+                                        <div class="col-6 left">
+                                            <p>$100 <span>$80</span></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-head pt-3">
+                                    <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                    <div class="row pt-3">
+                                        <div class="col-6 right">
+                                            <img src="/assets/images/Group259.png" width="17" height="17">
+                                            <span>Design</span>
+                                        </div>
+                                        <div class="col-6 left">
+                                            <i class="far fa-clock"><span>3 Month</span></i>
+                                        </div>
+                                        <p>AWS Certified solutions
+                                            <br>Architect
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0 pl-3">
+                                    <p class="p-descript">Lorem ipsum dolor sit amet,
+                                        <br>consectetur adipising elit, sed do
+                                        <br>eiusmod tempor
+                                    </p>
+                                    <div class="row pt-2">
+                                        <div class="col-6 right">
+                                            <img src="/assets/images/Group237.png" height="35" width="35">
+                                            <span>Lina</span>
+                                        </div>
+                                        <div class="col-6 left">
+                                            <p>$100 <span>$80</span></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-head pt-3">
+                                    <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                    <div class="row pt-3">
+                                        <div class="col-6 right">
+                                            <img src="/assets/images/Group259.png" width="17" height="17">
+                                            <span>Design</span>
+                                        </div>
+                                        <div class="col-6 left">
+                                            <i class="far fa-clock"><span>3 Month</span></i>
+                                        </div>
+                                        <p>AWS Certified solutions
+                                            <br>Architect
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0 pl-3">
+                                    <p class="p-descript">Lorem ipsum dolor sit amet,
+                                        <br>consectetur adipising elit, sed do
+                                        <br>eiusmod tempor
+                                    </p>
+                                    <div class="row pt-2">
+                                        <div class="col-6 right">
+                                            <img src="/assets/images/Group237.png" height="35" width="35">
+                                            <span>Lina</span>
+                                        </div>
+                                        <div class="col-6 left">
+                                            <p>$100 <span>$80</span></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hidden-button pr-2 mb-5 ">
+                    <button class="btn" type="button" id="hide-all-articles">Hide</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="section5">
+    <div class="section-5-search">
         <div class="container">
 
-            <img src="/assets/images/image10.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
-           margin-top:70px; margin-left:75px;">
+            <img src="/assets/images/image10.png" class="img-floating" id="img-1">
 
-            <img src="/assets/images/image11.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
-            margin-top:70px; margin-left:455px;">
+            <img src="/assets/images/image11.png" class="img-floating" id="img-2">
 
-            <img src="/assets/images/image12.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
-            margin-top:70px; margin-left:835px;">
+            <img src="/assets/images/image12.png" class="img-floating" id="img-3">
 
-            <div class="row" style="margin-bottom: 120px;">
+            <div class="row p-bottom">
                 <div class="col-6">
                     <p style="font-weight:600; font-size:23px;">Classes tought by real creators</p>
                 </div>
-                <div class="col-6" style="text-align: end;">
+                <div class="col-6 right" style="text-align: end;">
                     <a href="" style="color: #49BBBD; font-weight:600;">
                         <p>See all</p>
                     </a>
@@ -733,30 +736,30 @@
 
             <div class="row">
                 <div class="col-4">
-                    <div class="card" style="text-align: center; height:250px; border-style:none;">
-                        <div class="card-body" style="padding-top:130px;">
-                            <p style="font-weight:600; font-size:21px;">Jane Cooper</p>
-                            <p style="color: #252641; font-size:14px;">Lorem ipsum dolor sit amet, consectetur
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="p-name">Jane Cooper</p>
+                            <p class="p-text">Lorem ipsum dolor sit amet, consectetur
                                 <br> adipising elit, sed do eiusmod tempor
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card" style="text-align: center; height:250px; border-style:none;">
-                        <div class="card-body" style="padding-top:130px;">
-                            <p style="font-weight:600; font-size:21px;">Jane Cooper</p>
-                            <p style="color: #252641; font-size:14px;">Lorem ipsum dolor sit amet, consectetur
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="p-name">Jane Cooper</p>
+                            <p class="p-text">Lorem ipsum dolor sit amet, consectetur
                                 <br> adipising elit, sed do eiusmod tempor
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card" style="text-align: center; height:250px; border-style:none;">
-                        <div class="card-body" style="padding-top:130px;">
-                            <p style="font-weight:600; font-size:21px;">Jane Cooper</p>
-                            <p style="color: #252641; font-size:14px;">Lorem ipsum dolor sit amet, consectetur
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="p-name">Jane Cooper</p>
+                            <p class="p-text">Lorem ipsum dolor sit amet, consectetur
                                 <br> adipising elit, sed do eiusmod tempor
                             </p>
                         </div>
@@ -764,42 +767,39 @@
                 </div>
             </div>
 
-            <img src="/assets/images/image10.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
-           margin-left:75px;">
+            <img src="/assets/images/image10.png" class="img-floating" id="img-4">
 
-            <img src="/assets/images/image11.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
-            margin-left:455px;">
+            <img src="/assets/images/image11.png" class="img-floating" id="img-5">
 
-            <img src="/assets/images/image12.png" alt="" style="width: 200px; height:200px; position:absolute; z-index: 1;
-            margin-left:835px;">
+            <img src="/assets/images/image12.png" class="img-floating" id="img-6">
 
-            <div style="margin-top: 6rem;">
+            <div class="m-top">
                 <div class="row">
                     <div class="col-4">
-                        <div class="card" style="text-align: center; height:250px; border-style:none;">
-                            <div class="card-body" style="padding-top:130px;">
-                                <p style="font-weight:600; font-size:21px;">Jane Cooper</p>
-                                <p style="color: #252641; font-size:14px;">Lorem ipsum dolor sit amet, consectetur
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="p-name">Jane Cooper</p>
+                                <p class="p-text">Lorem ipsum dolor sit amet, consectetur
                                     <br> adipising elit, sed do eiusmod tempor
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="text-align: center; height:250px; border-style:none;">
-                            <div class="card-body" style="padding-top:130px;">
-                                <p style="font-weight:600; font-size:21px;">Jane Cooper</p>
-                                <p style="color: #252641; font-size:14px;">Lorem ipsum dolor sit amet, consectetur
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="p-name">Jane Cooper</p>
+                                <p class="p-text">Lorem ipsum dolor sit amet, consectetur
                                     <br> adipising elit, sed do eiusmod tempor
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="text-align: center; height:250px; border-style:none;">
-                            <div class="card-body" style="padding-top:130px;">
-                                <p style="font-weight:600; font-size:21px;">Jane Cooper</p>
-                                <p style="color: #252641; font-size:14px;">Lorem ipsum dolor sit amet, consectetur
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="p-name">Jane Cooper</p>
+                                <p class="p-text">Lorem ipsum dolor sit amet, consectetur
                                     <br> adipising elit, sed do eiusmod tempor
                                 </p>
                             </div>
@@ -810,28 +810,28 @@
         </div>
     </div>
 
-    <div class="section6 pb-4 pt-2" style="background-color: #e2f0ff; margin-bottom:4rem;">
-        <div class="container">
-            <p style="margin-top: 3rem; margin-bottom:3rem; font-size: 22px; font-weight:600">What our students have to say</p>
+    <div class="section-6-search pb-4 pt-2">
+        <div class="container cont-top">
+            <p>What our students have to say</p>
         </div>
 
-        <div class="container pt-5 pb-5" style="background-color:white; margin-bottom:4rem; border-radius:20px;">
+        <div class="container pt-5 pb-5">
             <div class="row">
                 <div class="col-5 pl-5">
-                    <img src="/assets/images/Group368.png" alt="" style="width:410px; height:392px;">
+                    <img src="/assets/images/Group368.png">
                 </div>
-                <div class="col-6 pl-5" style="padding-top:60px;">
-                    <p style="font-weight: 800; font-size:21px;">Savannah Nguyen</p>
-                    <p style="font-size: 16px; font-weight:600">tanya.hill@example.com</p>
-                    <p style="color: #696984; font-size:15px;">Lorem ipsum dolor sit amet, consectetur adipising elit, <br> sed do eiusmod tempor
+                <div class="col-6 pl-5">
+                    <p class="p-name">Savannah Nguyen</p>
+                    <p class="p-email">tanya.hill@example.com</p>
+                    <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipising elit, <br> sed do eiusmod tempor
                         <br>Lorem ipsum dolor sit amet, consectetur adipising elit,<br> sed do eiusmod tempor
                         <br>Lorem ipsum dolor sit amet, consectetur adipising elit,<br> sed do eiusmod tempor
                     </p>
-                    <i class="fab fa-twitter-square pr-3 mt-3" style="color: #49BBBD; font-size:20px;"></i>
-                    <i class="fab fa-facebook pr-3" style="color: #49BBBD; font-size:20px;"></i>
-                    <i class="fab fa-instagram" style="color:#49BBBD; font-size:20px;"></i>
+                    <i class="fab fa-twitter-square pr-3 mt-3"></i>
+                    <i class="fab fa-facebook pr-3"></i>
+                    <i class="fab fa-instagram"></i>
                 </div>
-                <div class="col-1" style="padding-top: 100px;">
+                <div class="col-1">
                     <div class="row">
                         <img src="/assets/images/image10.png" alt="" style="width:60px; border-radius:50%; ">
                         <img src="/assets/images/image11.png" alt="" style="width:60px; border-radius:50%; margin-top:15px;">
@@ -843,7 +843,7 @@
         </div>
     </div>
 
-    <div class="section7" style="padding-bottom: 100px;">
+    <div class="section-7-search" style="padding-bottom: 100px;">
         <div class="container">
             <div class="row" style="margin-bottom: 40px;">
                 <div class="col-6">

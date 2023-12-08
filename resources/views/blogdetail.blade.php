@@ -24,17 +24,16 @@
 <![endif]-->
 
 <!-- Template Main CSS File -->
-<link href="/public/dist/css/style.css" rel="stylesheet">
+<link href="/dist/css/style.css" rel="stylesheet">
 @endsection
 
 @section('content')
 <div class="justify-content-center">
-    <div class="jumbotron" style="background-image:url(/assets/images/Group236.png);
-    background-position: center center;background-repeat: no-repeat;background-size: cover; padding-top:400px; margin-top:90px ;height:500px; ">
+    <div class="jumbotron j-blog">
     </div>
-    <div class="section1" style="margin-bottom: 4rem;">
+    <div class="section-1-blogdetail">
         <div class="container">
-            <p style="color: #2F327D; font-size:33px; font-weight:500;">Why Swift UI Should Be on the Radar of Every Mobile Developer</p>
+            <p class="p-title">Why Swift UI Should Be on the Radar of Every Mobile Developer</p>
             <p>TOTC is a platform that allows educators to create online classes whereby they can store the course materials online; manage
                 <br>assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.
             </p>
@@ -50,60 +49,60 @@
             </p>
             <div class="row">
                 <div class="col">
-                    <a href="" class="btn mr-3" style="width: 140px; height:40px ;border-radius:18px; background-color:#d8f2f2 "><span style="color: #696984;">affordable</span></a>
-                    <a href="" class="btn mr-3" style="width: 140px; height:40px ;border-radius:18px; background-color:#d8f2f2 "><span style="color: #696984;">stunning</span></a>
-                    <a href="" class=" btn mr-3" style="width: 140px; height:40px ;border-radius:18px; background-color:#d8f2f2 "><span style="color: #696984;">making</span></a>
-                    <a href="" class=" btn mr-2" style="width: 140px; height:40px ;border-radius:18px; background-color:#d8f2f2 "><span style="color: #696984;">madbrawns</span></a>
+                    <a href="" class="btn mr-3 btn-select"><span>Affordable</span></a>
+                    <a href="" class="btn mr-3 btn-select"><span>Stunning</span></a>
+                    <a href="" class="btn mr-3 btn-select"><span>Making</span></a>
+                    <a href="" class="btn mr-3 btn-select"><span>Madbrawns</span></a>
                 </div>
             </div>
-            <div style="margin-top: 35px;">
-                <hr style="border-top:1px solid">
+            <div class="margin-top">
+                <hr>
             </div>
             <div class="row">
                 <div class="col-6">
                     <div class="row pl-3 pt-2">
-                        <img src="/assets/images/Group243.png" alt="" style="width: 60px; height:60px;">
-                        <p style="margin-left: 10px;">Written by <br>Lina</p>
+                        <img src="/assets/images/Group243.png">
+                        <p>Written by <br>Lina</p>
                     </div>
                 </div>
                 <div class="col-6">
-                    <a href="" class="btn mt-3" style="width:200px; border-color:#49BBBD; background-color:#f9fbfd; color:#49BBBD; float:inline-end; border-radius:10px;">Follow</a>
+                    <a href="" class="btn mt-3">Follow</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section2" style="background-color: #ebf5ff; padding-top:3rem; padding-bottom:4rem;">
+    <div class="section-3-blogpage">
         <div class="container">
             <div class="row">
-                <div class="col-6" style="text-align: start;">
-                    <p style="font-weight: 500; font-size:20px; color:black">Related Blog </p>
+                <div class="col-6 left">
+                    <p class="p-title">Related Blog </p>
                 </div>
-                <div class="col-6 " style="text-align: end; ">
-                    <a href="" style="font-weight: 500; color:#49BBBD; padding-right:15px;">See all</a>
+                <div class="col-6 right">
+                    <button class="btn" type="button" id="see-all-blog">See all</button>
                 </div>
             </div>
-            <div class="row mt-3">
+            <div class="row mt-3 mid">
                 <div class="col-6">
-                    <div class="card" style="border-radius: 15px; height:613px; width:520px; margin-right:16px;">
-                        <div class="card-head" style="align-self: center;">
-                            <img src="/assets/images/Rectangle23.png" alt="" style="width: 460px; height:250px; margin-top: 35px;">
-                            <p style="font-weight: 500; padding-top:15px; color:black; font-size:20px">Class adds $30 million to its balance sheet for
+                    <div class="card card-left">
+                        <div class="card-head">
+                            <img src="/assets/images/Rectangle23.png">
+                            <p>Class adds $30 million to its balance sheet for
                                 <br>a Zoom-friendly edtech solution
                             </p>
                         </div>
                         <div class="card-body pt-1">
-                            <img src="/assets/images/Group237.png" alt="" style="width: 50px; height:50px; margin-left:15px">
-                            <span style="margin-left: 10px; color:black">Lina</span>
-                            <p style="padding-top: 20px;">Class, launched less than a year ago by Blackboard co-founder
+                            <img src="/assets/images/Group237.png">
+                            <span class="span-name">Lina</span>
+                            <p class="p-descript">Class, launched less than a year ago by Blackboard co-founder
                                 <br>Michael Chasen, integrates exclusively...
                             </p>
                             <div class="row pt-4">
-                                <div class="col-6" style="text-align: start;">
+                                <div class="col-6 left">
                                     <a href="">
-                                        <p style="text-decoration: underline; color:#696984; padding-top:10px">Read more</p>
+                                        <p>Read more</p>
                                     </a>
                                 </div>
-                                <div class="col-6" style="text-align: end;">
+                                <div class="col-6 pt-2 right">
                                     <i class="fas fa-eye" style="font-size: 15px; color:#49BBBD;"><span>251,232</span></i>
                                 </div>
                             </div>
@@ -111,32 +110,94 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="card" style="border-radius: 15px; height:613px; width:520px; margin-left:20px;">
-                        <div class="card-head" style="align-self: center;">
-                            <img src="/assets/images/Rectangle23.png" alt="" style="width: 460px; height:250px; margin-top: 35px;">
-                            <p style="font-weight: 500; padding-top:15px; color:black; font-size:20px">Class adds $30 million to its balance sheet for
+                    <div class="card card-right">
+                        <div class="card-head">
+                            <img src="/assets/images/Rectangle23.png">
+                            <p>Class adds $30 million to its balance sheet for
                                 <br>a Zoom-friendly edtech solution
                             </p>
                         </div>
                         <div class="card-body pt-1">
-                            <img src="/assets/images/Group237.png" alt="" style="width: 50px; height:50px; margin-left:15px">
-                            <span style="margin-left: 10px; color:black">Lina</span>
-                            <p style="padding-top: 20px;">Class, launched less than a year ago by Blackboard co-founder
+                            <img src="/assets/images/Group237.png">
+                            <span class="span-name">Lina</span>
+                            <p class="p-descript">Class, launched less than a year ago by Blackboard co-founder
                                 <br>Michael Chasen, integrates exclusively...
                             </p>
-                            <div class="row pt-4">
-                                <div class="col-6" style="text-align: start;">
+                            <div class="row pt-4 pb-3">
+                                <div class="col-6 left">
                                     <a href="">
-                                        <p style="text-decoration: underline; color:#696984; padding-top:10px">Read more</p>
+                                        <p>Read more</p>
                                     </a>
                                 </div>
-                                <div class="col-6" style="text-align: end;">
-                                    <i class="fas fa-eye" style="font-size: 15px; color:#49BBBD;"><span>251,232</span></i>
+                                <div class="col-6 pt-2 right">
+                                    <i class="fas fa-eye"><span style="padding-left: 20px;">251,232</span></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="hidden-blog" style="display: none;" id="hidden">
+                <div class="row mt-3 mid">
+                    <div class="col-6">
+                        <div class="card card-left">
+                            <div class="card-head">
+                                <img src="/assets/images/Rectangle23.png">
+                                <p>Class adds $30 million to its balance sheet for
+                                    <br>a Zoom-friendly edtech solution
+                                </p>
+                            </div>
+                            <div class="card-body pt-1">
+                                <img src="/assets/images/Group237.png">
+                                <span class="span-name">Lina</span>
+                                <p class="p-descript">Class, launched less than a year ago by Blackboard co-founder
+                                    <br>Michael Chasen, integrates exclusively...
+                                </p>
+                                <div class="row pt-4">
+                                    <div class="col-6 left">
+                                        <a href="">
+                                            <p>Read more</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-6 pt-2 right">
+                                        <i class="fas fa-eye" style="font-size: 15px; color:#49BBBD;"><span>251,232</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card card-right">
+                            <div class="card-head">
+                                <img src="/assets/images/Rectangle23.png">
+                                <p>Class adds $30 million to its balance sheet for
+                                    <br>a Zoom-friendly edtech solution
+                                </p>
+                            </div>
+                            <div class="card-body pt-1">
+                                <img src="/assets/images/Group237.png">
+                                <span class="span-name">Lina</span>
+                                <p class="p-descript">Class, launched less than a year ago by Blackboard co-founder
+                                    <br>Michael Chasen, integrates exclusively...
+                                </p>
+                                <div class="row pt-4 pb-3">
+                                    <div class="col-6 left">
+                                        <a href="">
+                                            <p>Read more</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-6 pt-2 right">
+                                        <i class="fas fa-eye"><span style="padding-left: 20px;">251,232</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pr-3" style="float: inline-end;">
+                <button class="btn" type="button" style="background-color: white; width: 100px; border-radius:8px; color:#49BBBD; border-color:#49BBBD;" id="hide-all-blog">Hide</button>
             </div>
         </div>
     </div>
