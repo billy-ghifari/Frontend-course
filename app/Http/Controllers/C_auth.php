@@ -2,12 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Constants\ApiEndPoint;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Validator;
 
 class C_auth extends Controller
 {
+    private $urlApi;
+    private $urlApp;
+
+    public function __construct()
+    {
+        $this->urlApi = env('APP_API'); // Fetch the API URL from the environment variable
+        $this->urlApp = env('APP_URL'); // Fetch the API URL from the environment variable
+    }
+
     public function index()
     {
         return view('auth');
@@ -23,15 +33,13 @@ class C_auth extends Controller
 
             $validated = $validator->validated();
 
-            $response = Http::post('http://127.0.0.1:1234/api/login', [
+            $response = Http::post($this->urlApi . ApiEndPoint::$login, [
                 'email' => $validated['email'],
                 'password' => $validated['password'],
             ]);
 
             $user = json_decode($response)->user->name;
-            // dd($user);
-            // die;
-            // $response->json('content');
+
             $token = $response->json('token');
 
             session(['name' => $user]);
@@ -41,7 +49,6 @@ class C_auth extends Controller
             return redirect('/blogpage');
         } catch (\Throwable $th) {
             $responseData = $response->json();
-
             return back()->with('error', 'Registration failed: ' . $responseData['message']);
         }
     }
@@ -61,48 +68,21 @@ class C_auth extends Controller
     public function register(Request $request)
     {
         try {
-            // $file               = request('file');
-            // $file_path          = $request->photo->path();
-            // $file_mime          = $file->getMimeType('image');
-            // $file_uploaded_name = $file->getClientOriginalName();
-
             $validate = Validator::make($request->all(), [
-                'name' => 'required',
-                'email' => 'required|email|unique:users',
+                'name'     => 'required',
+                'email'    => 'required|email|unique:users',
                 'password' => 'required',
             ]);
 
             $validated = $validate->validated();
+            $photo = fopen($request->file('photo'), 'r');
 
-            $response = Http::attach('images', $request->file('images'))
-                ->asForm()
-                ->post('http://127.0.0.1:1234/api/register', [
+            $response = Http::attach('photo', $photo)
+                ->post($this->urlApi . '/api/register', [
                     'name' => $validated['name'],
                     'email' => $validated['email'],
                     'password' => $validated['password']
                 ]);
-
-
-            // $response = Http::post('http://127.0.0.1:1234/api/register', [
-
-            //     'multipart' => [
-            //         'name' => 'images',
-            //         'contents' => fopen('photo.jpg', 'r')
-            //     ],
-            //     [
-            //         'name' => 'name',
-            //         'content' => $validated['name']
-            //     ],
-            //     [
-            //         'name' => 'email',
-            //         'content' => $validated['email'],
-            //     ],
-            //     [
-            //         'name' => 'password',
-            //         'password' => $validated['password'],
-            //     ]
-
-            // ]);
 
             if ($response->successful()) {
                 // Registration was successful
@@ -116,7 +96,6 @@ class C_auth extends Controller
             // Handle exceptions, log errors, or perform other actions as needed
             dd($th);
             // dd($request->all());
-            die;
             return back()->with('error', 'An error occurred during registration.');
         }
     }

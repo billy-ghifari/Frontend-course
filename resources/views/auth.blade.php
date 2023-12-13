@@ -78,9 +78,7 @@
                                 <p>Password</p>
                                 <input type="password" name="password" placeholder="Masukan Password Anda !" class="password ele">
                                 <p>Photo</p>
-                                <fieldset class="images">
-                                    <input type="file" name="images" id="images">
-                                </fieldset>
+                                <input type="file" name="photo">
                                 <div style="text-align: center; margin-top: 16px;">
                                     <button type=" submit" id="buttonauth" class="btn">Register</button>
                                 </div>

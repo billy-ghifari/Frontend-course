@@ -85,16 +85,14 @@
                 <div class="col-6">
                     <div class="card card-left">
                         <div class="card-head">
-                            <img src="/assets/images/Rectangle23.png">
-                            <p>Class adds $30 million to its balance sheet for
-                                <br>a Zoom-friendly edtech solution
+                            <img src="{{ $urlapi }}/blog/{{ $someblog[0]->foto_thumbnail }}">
+                            <p> {{$someblog[0]->judul}}
                             </p>
                         </div>
                         <div class="card-body pt-1">
                             <img src="/assets/images/Group237.png">
-                            <span class="span-name">Lina</span>
-                            <p class="p-descript">Class, launched less than a year ago by Blackboard co-founder
-                                <br>Michael Chasen, integrates exclusively...
+                            <span class="span-name">{{$someblog[0]->name}}</span>
+                            <p class="p-descript">{{ Str::limit($someblog[1]->content, 100)  }}
                             </p>
                             <div class="row pt-4">
                                 <div class="col-6 left">
@@ -112,16 +110,14 @@
                 <div class="col-6">
                     <div class="card card-right">
                         <div class="card-head">
-                            <img src="/assets/images/Rectangle23.png">
-                            <p>Class adds $30 million to its balance sheet for
-                                <br>a Zoom-friendly edtech solution
+                            <img src="{{ $urlapi }}/blog/{{ $someblog[1]->foto_thumbnail }}">
+                            <p>{{$someblog[1]->judul}}
                             </p>
                         </div>
                         <div class="card-body pt-1">
                             <img src="/assets/images/Group237.png">
-                            <span class="span-name">Lina</span>
-                            <p class="p-descript">Class, launched less than a year ago by Blackboard co-founder
-                                <br>Michael Chasen, integrates exclusively...
+                            <span class="span-name">{{$someblog[1]->name}}</span>
+                            <p class="p-descript">{{ Str::limit($someblog[1]->content, 100)  }}
                             </p>
                             <div class="row pt-4 pb-3">
                                 <div class="col-6 left">
@@ -140,19 +136,18 @@
 
             <div class="hidden-blog" style="display: none;" id="hidden">
                 <div class="row mt-3 mid">
+                    @foreach($someblogskip as $someblogskip)
                     <div class="col-6">
                         <div class="card card-left">
                             <div class="card-head">
-                                <img src="/assets/images/Rectangle23.png">
-                                <p>Class adds $30 million to its balance sheet for
-                                    <br>a Zoom-friendly edtech solution
+                                <img src="{{ $urlapi }}/blog/{{ $someblogskip->foto_thumbnail }}">
+                                <p>{{$someblogskip->judul}}
                                 </p>
                             </div>
                             <div class="card-body pt-1">
                                 <img src="/assets/images/Group237.png">
-                                <span class="span-name">Lina</span>
-                                <p class="p-descript">Class, launched less than a year ago by Blackboard co-founder
-                                    <br>Michael Chasen, integrates exclusively...
+                                <span class="span-name">{{$someblogskip->name}}</span>
+                                <p class="p-descript">{{ Str::limit($someblogskip->content, 100)  }}
                                 </p>
                                 <div class="row pt-4">
                                     <div class="col-6 left">
@@ -167,33 +162,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card card-right">
-                            <div class="card-head">
-                                <img src="/assets/images/Rectangle23.png">
-                                <p>Class adds $30 million to its balance sheet for
-                                    <br>a Zoom-friendly edtech solution
-                                </p>
-                            </div>
-                            <div class="card-body pt-1">
-                                <img src="/assets/images/Group237.png">
-                                <span class="span-name">Lina</span>
-                                <p class="p-descript">Class, launched less than a year ago by Blackboard co-founder
-                                    <br>Michael Chasen, integrates exclusively...
-                                </p>
-                                <div class="row pt-4 pb-3">
-                                    <div class="col-6 left">
-                                        <a href="">
-                                            <p>Read more</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-6 pt-2 right">
-                                        <i class="fas fa-eye"><span style="padding-left: 20px;">251,232</span></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <div class="row pr-3" style="float: inline-end;">
