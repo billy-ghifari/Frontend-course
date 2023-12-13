@@ -211,8 +211,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row pr-3" style="float: inline-end;">
-                <button class="btn" type="button" style="background-color: white; width: 100px; border-radius:8px; color:#49BBBD; border-color:#49BBBD;" id="hide-all-blog">Hide</button>
+            <div class="row hidden-button pr-2 mb-5 ">
+                <button class="btn" type="button" id="hide-all-articles">Hide</button>
             </div>
         </div>
     </div>
@@ -513,8 +513,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row pr-2 mb-5" style="float: inline-end;">
-                <button class="btn" type="button" style="background-color: white; width: 100px; border-radius:8px; color:#49BBBD; border-color:#49BBBD;" id="hide-all-articles">Hide</button>
+            <div class="row hidden-button pr-2 mb-5 ">
+                <button class="btn" type="button" id="hide-all-articles">Hide</button>
             </div>
         </div>
     </div>

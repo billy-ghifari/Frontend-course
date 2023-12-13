@@ -83,20 +83,20 @@
                     Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmod
                 </p>
             </div>
-            <div class="card mr-3" style="background-color:#fcddb4; height:180px; width:98%; margin-top:50px;">
-                <div class="row" style="padding-left: 35px; padding-top:20px; padding-bottom:20px;">
-                    <img src="/assets/images/Group238.png" alt="" style="width: 60px; height:60px; margin-right:15px;">
+            <div class="card mr-3">
+                <div class="row">
+                    <img src="/assets/images/Group238.png" alt="">
                     <p>Bulkin Simons</p>
                     <div class="row">
-                        <i class="fas fa-star" style="color: #FDB022;"></i>
-                        <i class="fas fa-star" style="color: #FDB022;"></i>
-                        <i class="fas fa-star" style="color: #FDB022;"></i>
-                        <i class="fas fa-star" style="color: #FDB022;"></i>
-                        <i class="fas fa-star" style="color: #FDB022;"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
 
                     </div>
                 </div>
-                <p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem</p>
+                <p class="ml-4">Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem</p>
             </div>
 
             <div class="section-course-view">

@@ -728,8 +728,8 @@
                     <p style="font-weight:600; font-size:23px;">Classes tought by real creators</p>
                 </div>
                 <div class="col-6 right" style="text-align: end;">
-                    <a href="" style="color: #49BBBD; font-weight:600;">
-                        <p>See all</p>
+                    <a href="">
+                        <p style="color: #49BBBD; font-weight:600;">See all</p>
                     </a>
                 </div>
             </div>
@@ -833,62 +833,62 @@
                 </div>
                 <div class="col-1">
                     <div class="row">
-                        <img src="/assets/images/image10.png" alt="" style="width:60px; border-radius:50%; ">
-                        <img src="/assets/images/image11.png" alt="" style="width:60px; border-radius:50%; margin-top:15px;">
-                        <img src="/assets/images/image12.png" alt="" style="width:60px; border-radius:50%; margin-top:15px;">
-                        <img src="/assets/images/image11.png" alt="" style="width:60px; border-radius:50%; margin-top:15px;">
+                        <img class="img-no-top" src="/assets/images/image10.png">
+                        <img class="img-mtop" src="/assets/images/image11.png">
+                        <img class="img-mtop" src="/assets/images/image12.png">
+                        <img class="img-mtop" src="/assets/images/image11.png">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="section-7-search" style="padding-bottom: 100px;">
+    <div class="section-7-search">
         <div class="container">
-            <div class="row" style="margin-bottom: 40px;">
+            <div class="row top">
                 <div class="col-6">
-                    <p style="font-weight:600; font-size:23px;">Top Education offers and deals are listed here</p>
+                    <p class="p-left">Top Education offers and deals are listed here</p>
                 </div>
-                <div class="col-6" style="text-align: end;">
-                    <a href="" style="color: #49BBBD; font-weight:600;">
-                        <p>See all</p>
+                <div class="col-6 right">
+                    <a href="">
+                        <p style="color: #49BBBD; font-weight:600;">See all</p>
                     </a>
                 </div>
             </div>
 
-            <div style="position: absolute; z-index:1; margin-left:25px; margin-top:30px;">
-                <button type="button " class="btn mb-3" style="width: 90px; height: 90px; background-color:#49BBBD; font-size:35px; font-weight:700; color:white;">50%</button>
-                <p style="color: white; font-weight:600; font-size:20px;">Lorem ipsum dolor</p>
-                <p style="color: white; font-size:14px;">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
+            <div class="group-float" id="floating-group-1">
+                <button type="button " class="btn mb-3">50%</button>
+                <p class="text-head">Lorem ipsum dolor</p>
+                <p class="text-bottom">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
                     <br>Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
                 </p>
             </div>
 
-            <div style="position: absolute; z-index:1; margin-left:423px; margin-top:40px;">
-                <button type="button " class="btn mb-3" style="width: 90px; height: 90px; background-color:#49BBBD; font-size:35px; font-weight:700; color:white;">50%</button>
-                <p style="color: white; font-weight:600; font-size:20px;">Lorem ipsum dolor</p>
-                <p style="color: white; font-size:14px;">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
+            <div class="group-float" id="floating-group-2">
+                <button type="button " class="btn mb-3">50%</button>
+                <p class="text-head">Lorem ipsum dolor</p>
+                <p class="text-bottom">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
                     <br>Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
                 </p>
             </div>
 
-            <div style="position: absolute; z-index:1; margin-left:820px; margin-top:40px;">
-                <button type="button " class="btn mb-3" style="width: 90px; height: 90px; background-color:#49BBBD; font-size:35px; font-weight:700; color:white;">50%</button>
-                <p style="color: white; font-weight:600; font-size:20px;">Lorem ipsum dolor</p>
-                <p style="color: white; font-size:14px;">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
+            <div class="group-float" id="floating-group-3">
+                <button type="button " class="btn mb-3">50%</button>
+                <p class="text-head">Lorem ipsum dolor</p>
+                <p class="text-bottom">Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
                     <br>Lorem ipsum dolor sit amet, <br>consectetur adipising elit, sed do <br>eiusmod tempor
                 </p>
             </div>
 
             <div class="row">
                 <div class="col-4">
-                    <img src="/assets/images/Rectangle187.png" alt="" style="background-size:cover; width:330px;">
+                    <img src="/assets/images/Rectangle187.png">
                 </div>
                 <div class="col-4" style="padding-left: 30px;">
-                    <img src="/assets/images/Rectangle188.png" alt="" style="background-size:cover; width:330px;">
+                    <img src="/assets/images/Rectangle188.png">
                 </div>
                 <div class="col-4 pl-5">
-                    <img src="/assets/images/Rectangle189.png" alt="" style="background-size:cover; width:330px; ">
+                    <img src="/assets/images/Rectangle189.png">
                 </div>
             </div>
         </div>

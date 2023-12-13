@@ -21,6 +21,66 @@
   color: #252641;
 }
 
+.logo-dtc span,
+.logo-dtc p{
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.dropdown-category button{
+  border-radius: 8px;
+}
+
+.card-kelas{
+  width: 320px;
+}
+
+.card-kelas .card-head{
+  align-self: center;
+}
+.card-kelas .card-head img{
+  padding-top: 15px;
+}
+.card-kelas p{
+  font-size: 15px;
+}
+.card-kelas .card-bottom{
+  text-align: start;
+  padding-left: 24px;
+}
+.card-kelas .card-bottom button{
+  border-radius: 5px;
+  width: 60px;
+}
+/*--------------------------------------------------------------
+# Sidebar Admin
+--------------------------------------------------------------*/
+.side-notop{
+  padding-top: 0%;
+}
+
+.container-fluid .table-responsive tbody,
+.container-fluid .table-responsive thead{
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Admin page
+--------------------------------------------------------------*/
+.page-wrapper .container-fluid .h2{
+  color: black;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.topbar-head{
+  background-color: white;
+    height: 95px;
+    position: fixed;
+    top: 0;
+}
 
 /*--------------------------------------------------------------
 # Blog Page
@@ -295,7 +355,9 @@ background: rgba(255, 255, 255, 0.7);
   font-size: 13px;
   color: #696984;
 }
-
+/*--------------------------------------------------------------
+# End Blog Page
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Blog Detail
@@ -353,6 +415,9 @@ background: rgba(255, 255, 255, 0.7);
   padding-top: 3rem;
   padding-bottom: 4rem;
 }
+/*--------------------------------------------------------------
+# End Blog Detail
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Course
@@ -522,7 +587,13 @@ background: rgba(255, 255, 255, 0.7);
     width: 200px;
     border-radius: 10px;
 }
+/*--------------------------------------------------------------
+# End Course
+--------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# Course Detail
+--------------------------------------------------------------*/
 .j-cdetail{
   background-image: url(/assets/images/Group236.png);
     background-position: center center;
@@ -704,6 +775,10 @@ background: rgba(255, 255, 255, 0.7);
 .section-3-coursedetail .container{
   height: 400px;
 }
+/*--------------------------------------------------------------
+# End Course Detail
+--------------------------------------------------------------*/
+
 .container-head{
   max-width: 2000px;
 }
@@ -928,6 +1003,99 @@ margin-top: 3rem;
 }
 .section-6-search .col-1{
   padding-top: 100px;
+}
+.section-6-search .col-1 .img-mtop{
+  width: 60px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+.section-6-search .col-1 .img-no-top {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.section-7-search{
+  padding-bottom: 100px;
+}
+
+.section-7-search img{
+  background-size: cover;
+    width: 330px;
+}
+.section-7-search .top{
+  margin-bottom: 40px;
+}
+.section-7-search .p-left{
+  font-weight: 600;
+    font-size: 23px;
+}
+.section-7-search .right{
+  text-align: end;
+}
+.section-7-search #floating-group-1{
+  position: absolute;
+    z-index: 1;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+.section-7-search #floating-group-2{
+  position: absolute;
+    z-index: 1;
+    margin-left: 423px;
+    margin-top: 40px;
+}
+.section-7-search #floating-group-3{
+  position: absolute;
+    z-index: 1;
+    margin-left: 820px;
+    margin-top: 40px;
+}
+.section-7-search .group-float button{
+  width: 90px;
+    height: 90px;
+    background-color: #49BBBD;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+}
+.section-7-search .group-float .text-head{
+  color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.section-7-search .group-float .text-bottom{
+  color: white;
+    font-size: 14px;
+}
+
+.section-courseview .mr-3{
+  background-color: #fcddb4;
+    height: 180px;
+    width: 98%;
+    margin-top: 50px;
+}
+.section-courseview .mr-3 .row{
+  padding-left: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.section-courseview .mr-3 .row .row{
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 17px;
+}
+.section-courseview .mr-3 .row img{
+  width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+.section-courseview .mr-3 .row p{
+  font-weight: 600;
+  font-size: 18px;
+}
+.section-courseview .mr-3 .fa-star{
+  color: #FDB022;
+  font-size: 17px;
 }
 .sub-menu-wrap {
   /* position: absolute; */
@@ -12604,6 +12772,8 @@ a.text-purple:focus {
   box-shadow: 0px 3px 9px 0px rgba(162, 176, 190, 0.15);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  margin-left: 380px;
+    padding-top: 150px;
   
 }
 
@@ -12968,7 +13138,7 @@ Preloader
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px;
+  margin-top: 40px;
   padding: 0 30px 0 30px;
   height: 80px;
 }
@@ -13136,7 +13306,6 @@ Main sidebar
   height: 100%;
   top: 0px;
   z-index: 10;
-  padding-top: 80px;
   background: transparent;
   transition: 0.2s ease-in;
   box-shadow: 0 3px 9px 0 rgba(169, 184, 200, 0.15);
@@ -13161,7 +13330,16 @@ sidebar navigation
 .sidebar-nav {
   padding-top: 30px;
 }
+.sidebar-nav .logo-dtc{
+  padding-left: 25px;
+}
 
+.sidebar-nav .logo-dtc .col-9 {
+  padding-left: 50px;
+}
+.sidebar-nav .logo-dtc .col-3 {
+  padding-left: 38px;
+}
 .sidebar-nav #sidebarnav {
   /*******************
          Small cap
