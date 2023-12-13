@@ -8,7 +8,7 @@ class C_Course extends Controller
 {
     public function courseview()
     {
-        return view('courseview');
+        return view('course\courseview');
     }
 
     public function index()

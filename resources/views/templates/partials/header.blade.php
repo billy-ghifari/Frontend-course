@@ -1,6 +1,6 @@
-<header class="topbar fixed-top d-flex " data-navbarbg="skin6" style="background-color:white; height:95px; position:fixed; top:0; ">
+<header class="topbar topbar-head fixed-top d-flex" data-navbarbg="skin6" style="background-color:white; height:95px; position:fixed; top:0; ">
     <div class="header justify-content-between container">
-        <div class="row" style="height: 450px;" >
+        <div class="row" style="height: 450px;">
             <div class="col-4" style="margin-top: 25px;">
                 <img src="/assets/images/dtc-blueicon.png" alt="" style="width: 50px; height: 50px">
             </div>

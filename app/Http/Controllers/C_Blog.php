@@ -13,7 +13,7 @@ class C_Blog extends Controller
 
     public function blogdetail()
     {
-        return view('blogdetail');
+        return view('blog\blogdetail');
     }
 
     public function searchview()
@@ -21,8 +21,13 @@ class C_Blog extends Controller
         return view('search');
     }
 
-    public function test()
+    public function r_blog()
     {
-        return view('test');
+        return view('r_blog');
+    }
+
+    public function c_blog()
+    {
+        return view('c_blog');
     }
 }
