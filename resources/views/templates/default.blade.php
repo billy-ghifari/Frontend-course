@@ -62,9 +62,23 @@
         });
 
         function toggleDropdown(dropdown) {
-                dropdown.classList.toggle("active");
+            dropdown.classList.toggle("active");
+        }
+
+        //<---- scroll Course ---->
+        const container = document.getElementById("scroll-course");
+        // where "container" is the id of the container
+        container.addEventListener("wheel", function(e) {
+            if (e.deltaY > 0) {
+                container.scrollLeft += 124;
+                e.preventDefault();
+                // prevenDefault() will help avoid worrisome 
+                // inclusion of vertical scroll 
+            } else {
+                container.scrollLeft -= 124;
+                e.preventDefault();
             }
-        
+        });
     </script>
 
 </body>

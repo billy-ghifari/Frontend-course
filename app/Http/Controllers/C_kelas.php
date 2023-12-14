@@ -4,19 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class C_kelas extends Controller
+class C_Kelas extends Controller
 {
     public function index()
     {
+        return view('r_kelas');
     }
 
-    public function kelasadd()
+    public function c_kelas()
     {
-        return view('kelas.kelas-add');
+        return view('c_kelas');
     }
 
-    public function kelasall()
+    public function u_update()
     {
-        return view('kelas.kelasall');
+        return view('u_kelas');
     }
 }

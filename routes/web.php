@@ -24,7 +24,13 @@ Route::get('/', function () {
     return view('landingpage');
 });
 
-Route::get('login', [C_auth::class, 'index']);
+
+Route::controller(C_auth::class)->group(function () {
+    Route::get('auth', 'index');
+    Route::post('register', 'register');
+    Route::post('login', 'login');
+    Route::get('logout', 'destroy');
+});
 
 
 Route::get('loginadmin', [C_auth::class, 'loginadmin']);

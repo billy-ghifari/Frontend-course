@@ -170,294 +170,32 @@
                         <button class="btn" type="button" id="see-all-articles">see all</button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-3">
+                <div class="d-flex flex-section-3-course" id="scroll-course">
+                    @foreach ($kelas as $kelas)
+                    <div class="col-3 ml-3">
                         <div class="card">
-                            <div class="card-head pt-3">
-                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                <div class="row pt-3">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group259.png" width="17" height="17">
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <i class="far fa-clock"><span>3 Month</span></i>
-                                    </div>
-                                    <p>AWS Certified solutions
-                                        <br>Architect
+                            <div class="card-head pt-3 CH-course-section-3">
+                                <img src="{{ $urlapi }}/kelas/{{ $kelas->foto_thumbnail }}" width="230" height="160">
+                                <div class="pt-3">
+                                    <p>
+                                        {{$kelas->nama}}
                                     </p>
                                 </div>
                             </div>
                             <div class="card-body pt-0 pl-3">
-                                <p class="p-descript">Lorem ipsum dolor sit amet,
-                                    <br>consectetur adipising elit, sed do
-                                    <br>eiusmod tempor
+                                <p class="p-descript">
+                                    {{$kelas->deskripsi}}
                                 </p>
                                 <div class="row pt-2">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group237.png" height="35" width="35">
-                                        <span>Lina</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <p>$100 <span>$80</span></p>
-
+                                    <div class="col-12 right">
+                                        <img src="{{ $urlapi }}/profile/{{ $kelas->photo }}" id="profilepict" height="35" width="35">
+                                        <span>{{$kelas->name}}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-head pt-3">
-                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                <div class="row pt-3">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group259.png" width="17" height="17">
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <i class="far fa-clock"><span>3 Month</span></i>
-                                    </div>
-                                    <p>AWS Certified solutions
-                                        <br>Architect
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0 pl-3">
-                                <p class="p-descript">Lorem ipsum dolor sit amet,
-                                    <br>consectetur adipising elit, sed do
-                                    <br>eiusmod tempor
-                                </p>
-                                <div class="row pt-2">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group237.png" height="35" width="35">
-                                        <span>Lina</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <p>$100 <span>$80</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-head pt-3">
-                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                <div class="row pt-3">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group259.png" width="17" height="17">
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <i class="far fa-clock"><span>3 Month</span></i>
-                                    </div>
-                                    <p>AWS Certified solutions
-                                        <br>Architect
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0 pl-3">
-                                <p class="p-descript">Lorem ipsum dolor sit amet,
-                                    <br>consectetur adipising elit, sed do
-                                    <br>eiusmod tempor
-                                </p>
-                                <div class="row pt-2">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group237.png" height="35" width="35">
-                                        <span>Lina</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <p>$100 <span>$80</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-head pt-3">
-                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                <div class="row pt-3">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group259.png" width="17" height="17">
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <i class="far fa-clock"><span>3 Month</span></i>
-                                    </div>
-                                    <p>AWS Certified solutions
-                                        <br>Architect
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0 pl-3">
-                                <p class="p-descript">Lorem ipsum dolor sit amet,
-                                    <br>consectetur adipising elit, sed do
-                                    <br>eiusmod tempor
-                                </p>
-                                <div class="row pt-2">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group237.png" height="35" width="35">
-                                        <span>Lina</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <p>$100 <span>$80</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden-articles" style="display: none;">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-head pt-3">
-                                    <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                    <div class="row pt-3">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group259.png" width="17" height="17">
-                                            <span>Design</span>
-                                        </div>
-                                        <div class="col-6 left">
-                                            <i class="far fa-clock"><span>3 Month</span></i>
-                                        </div>
-                                        <p>AWS Certified solutions
-                                            <br>Architect
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card-body pt-0 pl-3">
-                                    <p class="p-descript">Lorem ipsum dolor sit amet,
-                                        <br>consectetur adipising elit, sed do
-                                        <br>eiusmod tempor
-                                    </p>
-                                    <div class="row pt-2">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group237.png" height="35" width="35">
-                                            <span>Lina</span>
-                                        </div>
-                                        <div class="col-6 left">
-                                            <p>$100 <span>$80</span></p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-head pt-3">
-                                    <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                    <div class="row pt-3">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group259.png" width="17" height="17">
-                                            <span>Design</span>
-                                        </div>
-                                        <div class="col-6 left">
-                                            <i class="far fa-clock"><span>3 Month</span></i>
-                                        </div>
-                                        <p>AWS Certified solutions
-                                            <br>Architect
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card-body pt-0 pl-3">
-                                    <p class="p-descript">Lorem ipsum dolor sit amet,
-                                        <br>consectetur adipising elit, sed do
-                                        <br>eiusmod tempor
-                                    </p>
-                                    <div class="row pt-2">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group237.png" height="35" width="35">
-                                            <span>Lina</span>
-                                        </div>
-                                        <div class="col-6 left">
-                                            <p>$100 <span>$80</span></p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-head pt-3">
-                                    <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                    <div class="row pt-3">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group259.png" width="17" height="17">
-                                            <span>Design</span>
-                                        </div>
-                                        <div class="col-6 left">
-                                            <i class="far fa-clock"><span>3 Month</span></i>
-                                        </div>
-                                        <p>AWS Certified solutions
-                                            <br>Architect
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card-body pt-0 pl-3">
-                                    <p class="p-descript">Lorem ipsum dolor sit amet,
-                                        <br>consectetur adipising elit, sed do
-                                        <br>eiusmod tempor
-                                    </p>
-                                    <div class="row pt-2">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group237.png" height="35" width="35">
-                                            <span>Lina</span>
-                                        </div>
-                                        <div class="col-6 left">
-                                            <p>$100 <span>$80</span></p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-head pt-3">
-                                    <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                    <div class="row pt-3">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group259.png" width="17" height="17">
-                                            <span>Design</span>
-                                        </div>
-                                        <div class="col-6 left">
-                                            <i class="far fa-clock"><span>3 Month</span></i>
-                                        </div>
-                                        <p>AWS Certified solutions
-                                            <br>Architect
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card-body pt-0 pl-3">
-                                    <p class="p-descript">Lorem ipsum dolor sit amet,
-                                        <br>consectetur adipising elit, sed do
-                                        <br>eiusmod tempor
-                                    </p>
-                                    <div class="row pt-2">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group237.png" height="35" width="35">
-                                            <span>Lina</span>
-                                        </div>
-                                        <div class="col-6 left">
-                                            <p>$100 <span>$80</span></p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row hidden-button pr-2 mb-5 ">
-                    <button class="btn" type="button" id="hide-all-articles">Hide</button>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -475,148 +213,55 @@
                     </div>
                 </div>
                 <div class="row">
+                    @foreach($somekelas as $somekelas)
                     <div class="col-3">
                         <div class="card">
                             <div class="card-head pt-3">
-                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                <img src="{{ $urlapi }}/kelas/{{ $somekelas->foto_thumbnail }}" width="230" height="160">
                                 <div class="row pt-3">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group259.png" width="17" height="17">
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <i class="far fa-clock"><span>3 Month</span></i>
-                                    </div>
-                                    <p>AWS Certified solutions
-                                        <br>Architect
+                                    <p>
+                                        {{$somekelas->nama}}
                                     </p>
                                 </div>
                             </div>
                             <div class="card-body pt-0 pl-3">
-                                <p class="p-descript">Lorem ipsum dolor sit amet,
-                                    <br>consectetur adipising elit, sed do
-                                    <br>eiusmod tempor
+                                <p class="p-descript">
+                                    {{$somekelas->deskripsi}}
                                 </p>
                                 <div class="row pt-2">
-                                    <div class="col-6 right">
+                                    <div class="col-12 right">
                                         <img src="/assets/images/Group237.png" height="35" width="35">
-                                        <span>Lina</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <p>$100 <span>$80</span></p>
-
+                                        <span>
+                                            {{$somekelas->name}}
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-head pt-3">
-                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                <div class="row pt-3">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group259.png" width="17" height="17">
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <i class="far fa-clock"><span>3 Month</span></i>
-                                    </div>
-                                    <p>AWS Certified solutions
-                                        <br>Architect
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0 pl-3">
-                                <p class="p-descript">Lorem ipsum dolor sit amet,
-                                    <br>consectetur adipising elit, sed do
-                                    <br>eiusmod tempor
-                                </p>
-                                <div class="row pt-2">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group237.png" height="35" width="35">
-                                        <span>Lina</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <p>$100 <span>$80</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-head pt-3">
-                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                <div class="row pt-3">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group259.png" width="17" height="17">
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <i class="far fa-clock"><span>3 Month</span></i>
-                                    </div>
-                                    <p>AWS Certified solutions
-                                        <br>Architect
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0 pl-3">
-                                <p class="p-descript">Lorem ipsum dolor sit amet,
-                                    <br>consectetur adipising elit, sed do
-                                    <br>eiusmod tempor
-                                </p>
-                                <div class="row pt-2">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group237.png" height="35" width="35">
-                                        <span>Lina</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <p>$100 <span>$80</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-head pt-3">
-                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                <div class="row pt-3">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group259.png" width="17" height="17">
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <i class="far fa-clock"><span>3 Month</span></i>
-                                    </div>
-                                    <p>AWS Certified solutions
-                                        <br>Architect
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0 pl-3">
-                                <p class="p-descript">Lorem ipsum dolor sit amet,
-                                    <br>consectetur adipising elit, sed do
-                                    <br>eiusmod tempor
-                                </p>
-                                <div class="row pt-2">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group237.png" height="35" width="35">
-                                        <span>Lina</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <p>$100 <span>$80</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
-                <div class="hidden-articles" style="display: none;">
+            </div>
+
+            <div class="container cont-2">
+                <p class="p-head">Online coaching lessons for remote learning.</p>
+                <p class="p-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor <br>sitamet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <button class="btn" type="button">
+                    Start learning now
+                </button>
+            </div>
+        </div>
+        <div class="section-5-course mb-1 mt-4">
+            <div class="section-4-blogpage pt-2">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-6 left">
+                            <p class="p-title">The course in personal development</p>
+                        </div>
+                        <div class="col-6 right">
+                            <button class="btn" type="button" id="see-all-articles">see all</button>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-3">
                             <div class="card">
@@ -759,325 +404,157 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row hidden-button pr-2 mb-5 ">
-                    <button class="btn" type="button" id="hide-all-articles">Hide</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container cont-2">
-            <p class="p-head">Online coaching lessons for remote learning.</p>
-            <p class="p-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor <br>sitamet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            <button class="btn" type="button">
-                Start learning now
-            </button>
-        </div>
-    </div>
-    <div class="section-5-course mb-1">
-        <div class="section-4-blogpage pt-2">
-            <div class="container">
-                <div class="row mb-4">
-                    <div class="col-6 left">
-                        <p class="p-title">The course in personal development</p>
-                    </div>
-                    <div class="col-6 right">
-                        <button class="btn" type="button" id="see-all-articles">see all</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-head pt-3">
-                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                <div class="row pt-3">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group259.png" width="17" height="17">
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <i class="far fa-clock"><span>3 Month</span></i>
-                                    </div>
-                                    <p>AWS Certified solutions
-                                        <br>Architect
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0 pl-3">
-                                <p class="p-descript">Lorem ipsum dolor sit amet,
-                                    <br>consectetur adipising elit, sed do
-                                    <br>eiusmod tempor
-                                </p>
-                                <div class="row pt-2">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group237.png" height="35" width="35">
-                                        <span>Lina</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <p>$100 <span>$80</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-head pt-3">
-                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                <div class="row pt-3">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group259.png" width="17" height="17">
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <i class="far fa-clock"><span>3 Month</span></i>
-                                    </div>
-                                    <p>AWS Certified solutions
-                                        <br>Architect
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0 pl-3">
-                                <p class="p-descript">Lorem ipsum dolor sit amet,
-                                    <br>consectetur adipising elit, sed do
-                                    <br>eiusmod tempor
-                                </p>
-                                <div class="row pt-2">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group237.png" height="35" width="35">
-                                        <span>Lina</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <p>$100 <span>$80</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-head pt-3">
-                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                <div class="row pt-3">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group259.png" width="17" height="17">
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <i class="far fa-clock"><span>3 Month</span></i>
-                                    </div>
-                                    <p>AWS Certified solutions
-                                        <br>Architect
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0 pl-3">
-                                <p class="p-descript">Lorem ipsum dolor sit amet,
-                                    <br>consectetur adipising elit, sed do
-                                    <br>eiusmod tempor
-                                </p>
-                                <div class="row pt-2">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group237.png" height="35" width="35">
-                                        <span>Lina</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <p>$100 <span>$80</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-head pt-3">
-                                <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                <div class="row pt-3">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group259.png" width="17" height="17">
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <i class="far fa-clock"><span>3 Month</span></i>
-                                    </div>
-                                    <p>AWS Certified solutions
-                                        <br>Architect
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0 pl-3">
-                                <p class="p-descript">Lorem ipsum dolor sit amet,
-                                    <br>consectetur adipising elit, sed do
-                                    <br>eiusmod tempor
-                                </p>
-                                <div class="row pt-2">
-                                    <div class="col-6 right">
-                                        <img src="/assets/images/Group237.png" height="35" width="35">
-                                        <span>Lina</span>
-                                    </div>
-                                    <div class="col-6 left">
-                                        <p>$100 <span>$80</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden-articles" style="display: none;">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-head pt-3">
-                                    <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                    <div class="row pt-3">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group259.png" width="17" height="17">
-                                            <span>Design</span>
+                    <div class="hidden-articles" style="display: none;">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-head pt-3">
+                                        <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                        <div class="row pt-3">
+                                            <div class="col-6 right">
+                                                <img src="/assets/images/Group259.png" width="17" height="17">
+                                                <span>Design</span>
+                                            </div>
+                                            <div class="col-6 left">
+                                                <i class="far fa-clock"><span>3 Month</span></i>
+                                            </div>
+                                            <p>AWS Certified solutions
+                                                <br>Architect
+                                            </p>
                                         </div>
-                                        <div class="col-6 left">
-                                            <i class="far fa-clock"><span>3 Month</span></i>
-                                        </div>
-                                        <p>AWS Certified solutions
-                                            <br>Architect
+                                    </div>
+                                    <div class="card-body pt-0 pl-3">
+                                        <p class="p-descript">Lorem ipsum dolor sit amet,
+                                            <br>consectetur adipising elit, sed do
+                                            <br>eiusmod tempor
                                         </p>
-                                    </div>
-                                </div>
-                                <div class="card-body pt-0 pl-3">
-                                    <p class="p-descript">Lorem ipsum dolor sit amet,
-                                        <br>consectetur adipising elit, sed do
-                                        <br>eiusmod tempor
-                                    </p>
-                                    <div class="row pt-2">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group237.png" height="35" width="35">
-                                            <span>Lina</span>
-                                        </div>
-                                        <div class="col-6 left">
-                                            <p>$100 <span>$80</span></p>
+                                        <div class="row pt-2">
+                                            <div class="col-6 right">
+                                                <img src="/assets/images/Group237.png" height="35" width="35">
+                                                <span>Lina</span>
+                                            </div>
+                                            <div class="col-6 left">
+                                                <p>$100 <span>$80</span></p>
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-head pt-3">
-                                    <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                    <div class="row pt-3">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group259.png" width="17" height="17">
-                                            <span>Design</span>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-head pt-3">
+                                        <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                        <div class="row pt-3">
+                                            <div class="col-6 right">
+                                                <img src="/assets/images/Group259.png" width="17" height="17">
+                                                <span>Design</span>
+                                            </div>
+                                            <div class="col-6 left">
+                                                <i class="far fa-clock"><span>3 Month</span></i>
+                                            </div>
+                                            <p>AWS Certified solutions
+                                                <br>Architect
+                                            </p>
                                         </div>
-                                        <div class="col-6 left">
-                                            <i class="far fa-clock"><span>3 Month</span></i>
-                                        </div>
-                                        <p>AWS Certified solutions
-                                            <br>Architect
-                                        </p>
                                     </div>
-                                </div>
-                                <div class="card-body pt-0 pl-3">
-                                    <p class="p-descript">Lorem ipsum dolor sit amet,
-                                        <br>consectetur adipising elit, sed do
-                                        <br>eiusmod tempor
-                                    </p>
-                                    <div class="row pt-2">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group237.png" height="35" width="35">
-                                            <span>Lina</span>
-                                        </div>
-                                        <div class="col-6 left">
-                                            <p>$100 <span>$80</span></p>
+                                    <div class="card-body pt-0 pl-3">
+                                        <p class="p-descript">Lorem ipsum dolor sit amet,
+                                            <br>consectetur adipising elit, sed do
+                                            <br>eiusmod tempor
+                                        </p>
+                                        <div class="row pt-2">
+                                            <div class="col-6 right">
+                                                <img src="/assets/images/Group237.png" height="35" width="35">
+                                                <span>Lina</span>
+                                            </div>
+                                            <div class="col-6 left">
+                                                <p>$100 <span>$80</span></p>
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-head pt-3">
-                                    <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                    <div class="row pt-3">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group259.png" width="17" height="17">
-                                            <span>Design</span>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-head pt-3">
+                                        <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                        <div class="row pt-3">
+                                            <div class="col-6 right">
+                                                <img src="/assets/images/Group259.png" width="17" height="17">
+                                                <span>Design</span>
+                                            </div>
+                                            <div class="col-6 left">
+                                                <i class="far fa-clock"><span>3 Month</span></i>
+                                            </div>
+                                            <p>AWS Certified solutions
+                                                <br>Architect
+                                            </p>
                                         </div>
-                                        <div class="col-6 left">
-                                            <i class="far fa-clock"><span>3 Month</span></i>
-                                        </div>
-                                        <p>AWS Certified solutions
-                                            <br>Architect
-                                        </p>
                                     </div>
-                                </div>
-                                <div class="card-body pt-0 pl-3">
-                                    <p class="p-descript">Lorem ipsum dolor sit amet,
-                                        <br>consectetur adipising elit, sed do
-                                        <br>eiusmod tempor
-                                    </p>
-                                    <div class="row pt-2">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group237.png" height="35" width="35">
-                                            <span>Lina</span>
-                                        </div>
-                                        <div class="col-6 left">
-                                            <p>$100 <span>$80</span></p>
+                                    <div class="card-body pt-0 pl-3">
+                                        <p class="p-descript">Lorem ipsum dolor sit amet,
+                                            <br>consectetur adipising elit, sed do
+                                            <br>eiusmod tempor
+                                        </p>
+                                        <div class="row pt-2">
+                                            <div class="col-6 right">
+                                                <img src="/assets/images/Group237.png" height="35" width="35">
+                                                <span>Lina</span>
+                                            </div>
+                                            <div class="col-6 left">
+                                                <p>$100 <span>$80</span></p>
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-head pt-3">
-                                    <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                                    <div class="row pt-3">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group259.png" width="17" height="17">
-                                            <span>Design</span>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-head pt-3">
+                                        <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                                        <div class="row pt-3">
+                                            <div class="col-6 right">
+                                                <img src="/assets/images/Group259.png" width="17" height="17">
+                                                <span>Design</span>
+                                            </div>
+                                            <div class="col-6 left">
+                                                <i class="far fa-clock"><span>3 Month</span></i>
+                                            </div>
+                                            <p>AWS Certified solutions
+                                                <br>Architect
+                                            </p>
                                         </div>
-                                        <div class="col-6 left">
-                                            <i class="far fa-clock"><span>3 Month</span></i>
-                                        </div>
-                                        <p>AWS Certified solutions
-                                            <br>Architect
-                                        </p>
                                     </div>
-                                </div>
-                                <div class="card-body pt-0 pl-3">
-                                    <p class="p-descript">Lorem ipsum dolor sit amet,
-                                        <br>consectetur adipising elit, sed do
-                                        <br>eiusmod tempor
-                                    </p>
-                                    <div class="row pt-2">
-                                        <div class="col-6 right">
-                                            <img src="/assets/images/Group237.png" height="35" width="35">
-                                            <span>Lina</span>
-                                        </div>
-                                        <div class="col-6 left">
-                                            <p>$100 <span>$80</span></p>
+                                    <div class="card-body pt-0 pl-3">
+                                        <p class="p-descript">Lorem ipsum dolor sit amet,
+                                            <br>consectetur adipising elit, sed do
+                                            <br>eiusmod tempor
+                                        </p>
+                                        <div class="row pt-2">
+                                            <div class="col-6 right">
+                                                <img src="/assets/images/Group237.png" height="35" width="35">
+                                                <span>Lina</span>
+                                            </div>
+                                            <div class="col-6 left">
+                                                <p>$100 <span>$80</span></p>
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row hidden-button pr-2 mb-5 ">
-                    <button class="btn" type="button" id="hide-all-articles">Hide</button>
+                    <div class="row hidden-button pr-2 mb-5 ">
+                        <button class="btn" type="button" id="hide-all-articles">Hide</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 
 @endsection
