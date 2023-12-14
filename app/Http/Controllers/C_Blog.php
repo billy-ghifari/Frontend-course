@@ -8,7 +8,7 @@ class C_Blog extends Controller
 {
     public function index()
     {
-        return view('blogpage');
+        return view('blog/blogpage');
     }
 
     public function blogdetail()
@@ -23,11 +23,11 @@ class C_Blog extends Controller
 
     public function r_blog()
     {
-        return view('r_blog');
+        return view('crudblog/r_blog');
     }
 
     public function c_blog()
     {
-        return view('c_blog');
+        return view('crudblog/c_blog');
     }
 }

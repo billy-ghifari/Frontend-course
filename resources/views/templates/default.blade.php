@@ -62,9 +62,8 @@
         });
 
         function toggleDropdown(dropdown) {
-                dropdown.classList.toggle("active");
-            }
-        
+            dropdown.classList.toggle("active");
+        }
     </script>
 
 </body>
