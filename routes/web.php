@@ -27,13 +27,14 @@ Route::get('/', function () {
 
 Route::controller(C_auth::class)->group(function () {
     Route::get('auth', 'index');
+    Route::get('authadmin', 'authadmin');
     Route::post('register', 'register');
     Route::post('login', 'login');
+    Route::post('loginadmin', 'loginadmin');
     Route::get('logout', 'destroy');
 });
 
 
-Route::get('loginadmin', [C_auth::class, 'loginadmin']);
 Route::get('admin', [C_admin::class, 'index']);
 
 

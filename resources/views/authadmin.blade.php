@@ -26,18 +26,19 @@
                     </div>
                     <h2 class="mt-3 text-center">Welcome to the back stage</h2>
                     <p class="text-center">Enter your email address and password to access admin panel.</p>
-                    <form class="mt-4">
+                    <form class="mt-4" action="/loginadmin" method="post">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label class="text-dark" for="uname">Username</label>
-                                    <input class="form-control" id="uname" type="text" placeholder="enter your username">
+                                    <input class="form-control" name="email" id="uname" type="text" placeholder="enter your username">
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label class="text-dark" for="pwd">Password</label>
-                                    <input class="form-control" id="pwd" type="password" placeholder="enter your password">
+                                    <input class="form-control" name="password" id="pwd" type="password" placeholder="enter your password">
                                 </div>
                             </div>
                             <div class="col-lg-12 text-center">

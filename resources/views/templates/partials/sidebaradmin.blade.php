@@ -13,7 +13,7 @@
                             </div>
                             <div class="col-9">
                                 <p class="mb-0">DTC</p>
-                                <span>online course</span>
+                                <span id="D_admin">online <span>course</span></span>
                             </div>
                         </div>
                     </a>
@@ -94,7 +94,7 @@
                         </li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Extra</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="authentication-login1.html" aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span class="hide-menu">Logout</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/logout" aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span class="hide-menu">Logout</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

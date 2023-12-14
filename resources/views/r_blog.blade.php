@@ -31,15 +31,24 @@
 <div class="page-wrapper">
     <div class="container-fluid">
         <div class="row">
+            @foreach($blogs as $blog)
             <div class="col-4">
                 <div class="card card-kelas">
                     <div class="card-head">
-                        <img src="/assets/images/Group40.png" alt="" width="290px">
+                        <img id="blogadmin" src="{{$urlapi}}/blog/{{$blog->foto_thumbnail}}" alt="" width="290px">
                     </div>
                     <div class="card-body">
-                        <h3>PHP Laravel</h3>
-                        <p>Kategori</p>
-                        <p>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+                        <h3>{{$blog->judul}}</h3>
+                        <p>{{$blog->nama}}</p>
+                        <p>{{ Str::limit($blog->content, 50)  }}</p>
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="{{$urlapi}}/profile/{{$blog->photo}}" id="profilepict" alt="" height="35" width="35">
+                            </div>
+                            <div class="col-8">
+                                <span>{{$blog->name}}</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-bottom pb-4">
                         <button type="button" class="btn btn-danger btn-sm mr-2">Delete</button>
@@ -47,39 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card card-kelas">
-                    <div class="card-head">
-                        <img src="/assets/images/Group40.png" alt="" width="290px">
-                    </div>
-                    <div class="card-body">
-                        <h3>PHP Laravel</h3>
-                        <p>Kategori</p>
-                        <p>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
-                    </div>
-                    <div class="card-bottom pb-4">
-                        <button type="button" class="btn btn-danger btn-sm mr-2">Delete</button>
-                        <button type="button" class="btn btn-secondary btn-sm">Edit</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card card-kelas">
-                    <div class="card-head">
-                        <img src="/assets/images/Group40.png" alt="" width="290px">
-                    </div>
-                    <div class="card-body">
-                        <h3>PHP Laravel</h3>
-                        <p>Kategori</p>
-                        <p>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
-                    </div>
-                    <div class="card-bottom pb-4">
-                        <button type="button" class="btn btn-danger btn-sm mr-2">Delete</button>
-                        <button type="button" class="btn btn-secondary btn-sm">Edit</button>
-                    </div>
-                </div>
-            </div>
-
+            @endforeach
         </div>
     </div>
 </div>

@@ -4,6 +4,20 @@
 @import url(icons/simple-line-icons/css/simple-line-icons.css);
 @import url(icons/themify-icons/themify-icons.css);
 
+/* /////////admin blog///////// */
+
+#blogadmin {
+  border-radius: 3rem;
+}
+
+#D_admin {
+  color: #00CBB8;
+}
+
+/* /////////admin blog///////// */
+
+
+
 /* /////////landing///////// */
 
 /* section 1 */
@@ -11152,12 +11166,9 @@ button.bg-purple:focus {
   margin-top: 0.25rem !important;
 }
 
-<<<<<<< Updated upstream
-=======>>>>>>>e6cec7522aa2611610b5554888433ceb189e5fdd .mr-1,
-=======
-.mr-1,
->>>>>>> Stashed changes
-.mx-1 {
+<<<<<<< Updated upstream=======>>>>>>>e6cec7522aa2611610b5554888433ceb189e5fdd .mr-1,
+=======.mr-1,
+>>>>>>>Stashed changes .mx-1 {
   margin-right: 0.25rem !important;
 }
 
@@ -11175,17 +11186,14 @@ button.bg-purple:focus {
   margin: 0.5rem !important;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD .mt-2,
+<<<<<<< Updated upstream <<<<<<< HEAD .mt-2,
 .my-2 {
   margin-top: 0.5rem !important;
 }
 
 =======>>>>>>>e6cec7522aa2611610b5554888433ceb189e5fdd .mr-2,
-=======
-.mr-2,
->>>>>>> Stashed changes
-.mx-2 {
+=======.mr-2,
+>>>>>>>Stashed changes .mx-2 {
   margin-right: 0.5rem !important;
 }
 

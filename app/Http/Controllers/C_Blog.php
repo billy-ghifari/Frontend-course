@@ -70,7 +70,18 @@ class C_Blog extends Controller
 
     public function r_blog()
     {
-        return view('r_blog');
+        $token = session('token');
+
+        $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$allblog);
+        $blog = json_decode($response)->data->data;
+
+        // dd($blog);
+        // die;
+
+        return view('r_blog', [
+            'blogs' => $blog,
+            'urlapi' => $this->urlApi
+        ]);
     }
 
     public function c_blog()
