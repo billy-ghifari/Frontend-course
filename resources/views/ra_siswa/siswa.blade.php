@@ -41,18 +41,25 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Name</th>
+                                        <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach($siswa as $siswa)
                                     <tr>
-                                        <td>1</td>
-                                        <td>Sugiono marcopolo</td>
+                                        <td>{{$loop->iteration}}</td>
+                                        <td>{{$siswa->name}}</td>
+                                        <td>{{$siswa->status}}</td>
                                         <td>
+                                            @if($siswa->status == 'non')
                                             <button type="button" class="btn waves-effect waves-light btn-success">Activation</button>
+                                            @else
                                             <button type="button" class="btn waves-effect waves-light btn-danger">Non-Activation</button>
+                                            @endif
                                         </td>
                                     </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

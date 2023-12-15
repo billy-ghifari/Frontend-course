@@ -45,11 +45,13 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach($admin as $admin)
                                     <tr>
-                                        <td>1</td>
-                                        <td>Sugiono marcopolo</td>
-                                        <td>Active</td>
+                                        <td>{{$loop->iteration}}</td>
+                                        <td>{{$admin->name}}</td>
+                                        <td>{{$admin->status}}</td>
                                     </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

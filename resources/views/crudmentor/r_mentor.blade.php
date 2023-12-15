@@ -46,24 +46,20 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach($mentor as $mentor)
                                     <tr>
-                                        <td>1</td>
-                                        <td>Sugiono marcopolo</td>
-                                        <td>Non-Active</td>
+                                        <td>{{$loop->iteration}}</td>
+                                        <td>{{$mentor->name}}</td>
+                                        <td>{{$mentor->status}}</td>
                                         <td>
+                                            @if($mentor->status == 'non')
                                             <button type="button" class="btn waves-effect waves-light btn-success">Activation</button>
-                                            <button type="button" class="btn waves-effect waves-light btn-danger" disabled>Non-Activation</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Sugiono marcopolo</td>
-                                        <td>Active</td>
-                                        <td>
-                                            <button type="button" class="btn waves-effect waves-light btn-success" disabled>Activation</button>
+                                            @else
                                             <button type="button" class="btn waves-effect waves-light btn-danger">Non-Activation</button>
+                                            @endif
                                         </td>
                                     </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

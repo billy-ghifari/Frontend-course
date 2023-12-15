@@ -10,17 +10,20 @@ use Illuminate\Support\Facades\Validator;
 class C_auth extends Controller
 {
     private $urlApi;
-    private $urlApp;
 
     public function __construct()
     {
         $this->urlApi = env('APP_API'); // Fetch the API URL from the environment variable
-        $this->urlApp = env('APP_URL'); // Fetch the API URL from the environment variable
     }
 
     public function index()
     {
         return view('auth');
+    }
+
+    public function authadmin()
+    {
+        return view('authadmin');
     }
 
     public function login(Request $request)
@@ -65,6 +68,40 @@ class C_auth extends Controller
         }
     }
 
+    public function loginadmin(Request $request)
+    {
+        try {
+            $validator = Validator::make($request->all(), [
+                'email' => 'required|email',
+                'password' => 'required',
+            ]);
+
+            $validated = $validator->validated();
+
+            $response = Http::post($this->urlApi . ApiEndPoint::$loginadmin, [
+                'email' => $validated['email'],
+                'password' => $validated['password'],
+            ]);
+
+
+
+            $role = json_decode($response)->data->role;
+
+
+            $token = json_decode($response)->data->token;
+
+            session(['role' => $role]);
+            session(['token' => $token]);
+            session()->save();
+
+
+            return redirect('/admin');
+        } catch (\Throwable $th) {
+            $responseData = $response->json();
+            return back()->with('error', 'Registration failed: ' . $responseData['message']);
+        }
+    }
+
     public function register(Request $request)
     {
         try {
@@ -98,10 +135,5 @@ class C_auth extends Controller
             // dd($request->all());
             return back()->with('error', 'An error occurred during registration.');
         }
-    }
-
-    public function loginadmin()
-    {
-        return view('authadmin');
     }
 }

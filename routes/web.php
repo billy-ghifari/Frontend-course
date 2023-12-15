@@ -27,13 +27,14 @@ Route::get('/', function () {
 
 Route::controller(C_auth::class)->group(function () {
     Route::get('auth', 'index');
+    Route::get('authadmin', 'authadmin');
     Route::post('register', 'register');
     Route::post('login', 'login');
+    Route::post('loginadmin', 'loginadmin');
     Route::get('logout', 'destroy');
 });
 
 
-Route::get('loginadmin', [C_auth::class, 'loginadmin']);
 Route::get('admin', [C_admin::class, 'index']);
 
 
@@ -70,10 +71,12 @@ Route::get('view_createkelas', [C_Kelas::class, 'c_kelas']);
 Route::get('view_updatekelas', [C_Kelas::class, 'u_kelas']);
 Route::get('viewkelas', [C_Kelas::class, 'index']);
 
+Route::get('detailkelas', [C_Kelas::class, 'detailkelas']);
+Route::get('createkelas', [C_Kelas::class, 'createkelas']);
+
 /*
 <!-- ======= CRUD Blog ======= --> */
 Route::get('view_createblog', [C_Blog::class, 'c_blog']);
 Route::get('viewblog', [C_Blog::class, 'r_blog']);
 
-Route::get('detailkelas', [C_Kelas::class, 'detailkelas']);
-Route::get('createkelas', [C_Kelas::class, 'createkelas']);
+Route::get('detailblog', [C_Blog::class, 'detailblog']);
