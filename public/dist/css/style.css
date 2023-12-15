@@ -865,6 +865,20 @@
   color: #252641;
 }
 
+.text-kategori{
+  color: #49BBBD;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.main-detailkelas .jumbotron{
+    background-image: url(/assets/images/Group236.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 250px;
+}
+
 .logo-dtc span,
 .logo-dtc p {
   font-size: 20px;

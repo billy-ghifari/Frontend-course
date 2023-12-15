@@ -50,16 +50,16 @@ class C_admin extends Controller
 
     public function c_admin()
     {
-        return view('c_admin');
+        return view('crudadmin/c_admin');
     }
 
     public function u_admin()
     {
-        return view('u_admin');
+        return view('crudadmin/u_admin');
     }
 
     public function d_admin()
     {
-        return view('d_admin');
+        return view('crudadmin/d_admin');
     }
 }

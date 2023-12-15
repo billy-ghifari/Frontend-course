@@ -51,6 +51,8 @@
                                 <li class="sidebar-item"><a href="view_createkelas" class="sidebar-link"><span class="hide-menu"> Create Kelas
                                         </span></a>
                                 </li>
+                                <li class="sidebar-item"><a href="createkelas" class="sidebar-link"><span class="hide-menu"> Create Materi
+                                        </span></a>
                             </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span class="hide-menu">Admin </span></a>

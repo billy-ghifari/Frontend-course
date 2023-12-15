@@ -37,7 +37,7 @@ class C_Blog extends Controller
         // die;
 
 
-        return view('blogpage', [
+        return view('blog/blogpage', [
             'blog' => $blog,
             'catblog' => $catblog,
             'someblog' => $someblog,
@@ -56,7 +56,7 @@ class C_Blog extends Controller
 
         $someblogskip = array_slice($someblog, 2);
 
-        return view('blogdetail', [
+        return view('blog/blogdetail', [
             'someblog' => $someblog,
             'someblogskip' => $someblogskip,
             'urlapi' => $this->urlApi, // Assuming the data key holds the actual blog data // Assuming the pagination data is separate
@@ -78,7 +78,7 @@ class C_Blog extends Controller
         // dd($blog);
         // die;
 
-        return view('r_blog', [
+        return view('crudblog/r_blog', [
             'blogs' => $blog,
             'urlapi' => $this->urlApi
         ]);
@@ -86,6 +86,11 @@ class C_Blog extends Controller
 
     public function c_blog()
     {
-        return view('c_blog');
+        return view('crudblog/c_blog');
+    }
+
+    public function detailblog()
+    {
+        return view('crudblog/detailblog');
     }
 }

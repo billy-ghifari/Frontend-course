@@ -34,24 +34,12 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title">Create Kelas</h2>
+                        <h2 class="card-title">Create Materi</h2>
                         <p>Please enter data into the form below</p>
                         <form action="#">
                             <div class="form-body">
 
-                                <label>Name</label>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Enter the name of the uploader ">
-                                        </div>
-                                    </div>
-                                </div>
-                                <label>Deskipsi</label>
-                                <div class="mb-3">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                                <label>List Materi</label>
+                                <label>Judul</label>
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="form-group">
@@ -59,22 +47,19 @@
                                         </div>
                                     </div>
                                 </div>
+                                <label>Link</label>
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Input Link Video">
+                                            <input type="text" class="form-control" placeholder="Input Link">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mb-3">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Deskripsi"></textarea>
-                                </div>
-                                <label>Thumbnail Materi</label>
-
+                                <label>Deskipsi</label>
                                 <div class="row">
-                                    <div class="col-5">
+                                    <div class="col-md-7">
                                         <div class="mb-3">
-                                            <input class="form-control" type="file" id="formFile">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                         </div>
                                     </div>
                                 </div>
