@@ -32,6 +32,21 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-4">
+                <a href="detailkelas">
+                    <div class="card card-kelas">
+                        <div class="card-head">
+                            <img src="/assets/images/Group40.png" alt="" width="290px">
+                        </div>
+                        <div class="card-body">
+                            <h3>PHP Laravel</h3>
+                            <p>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+                        </div>
+                        <div class="card-bottom pb-4">
+                            <button type="button" class="btn btn-danger btn-sm mr-2">Delete</button>
+                            <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                        </div>
+                    </div>
+                </a>
                 <div class="card card-kelas">
                     <div class="card-head">
                         <img src="/assets/images/Group40.png" alt="" width="290px">

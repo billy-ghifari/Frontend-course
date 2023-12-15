@@ -35,18 +35,14 @@
                 <div class="row">
                     <div class="col-6 pt-3">
                         <p>Course by <span>Dinta Indonesia</span></p>
-                        <h2>Why Swift UI Should Be on the
-                            <br>Radar of Every Mobile
-                            <br>Developer
+                        <h2>{{$kelas->nama}}
                         </h2>
-                        <p style="padding-bottom:5px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            <br> sed do eiusmod tempos Lorem ipsum dolor sitamet,
-                            <br>consectetur adipiscing elit, sed do eiusmod tempor
+                        <p style="padding-bottom:5px;">{{$kelas->deskripsi}}
                         </p>
                         <a href="" class="btn">Start Learning Now</a>
                     </div>
                     <div class="col-6">
-                        <img src="/assets/images/Group401.png">
+                        <img src="{{ $urlapi }}/kelas/{{ $kelas->foto_thumbnail }}">
                     </div>
                 </div>
             </div>
@@ -58,30 +54,23 @@
             <div class="row">
 
                 <div class="card-floating-1 pt-2">
-                    <span>UI/UX</span>
+                    <span>{{$catblog[0]->nama}}</span>
                 </div>
                 <div class="card-floating-2 pt-2">
-                    <span>React</span>
+                    <span>{{$catblog[1]->nama}}</span>
                 </div>
                 <div class="card-floating-3 pt-2">
-                    <span>PHP</span>
+                    <span>{{$catblog[2]->nama}}</span>
                 </div>
                 <div class="card-floating-4 pt-2">
-                    <span>JavaScript</span>
+                    <span>{{$catblog[3]->nama}}</span>
                 </div>
 
+                @foreach($catblog as $cat)
                 <div class="col">
-                    <img src="/assets/images/Group42.png">
+                    <img src="{{ $urlapi }}/categoryblog/{{ $cat->photo }}">
                 </div>
-                <div class="col">
-                    <img src="/assets/images/Group44.png">
-                </div>
-                <div class="col">
-                    <img src="/assets/images/Group45.png">
-                </div>
-                <div class="col">
-                    <img src="/assets/images/Rectangle341.png">
-                </div>
+                @endforeach
             </div>
         </div>
 
@@ -100,16 +89,14 @@
                 <div class="col-6">
                     <div class="card card-left">
                         <div class="card-head">
-                            <img src="/assets/images/Rectangle23.png">
-                            <p>Class adds $30 million to its balance sheet for
-                                <br>a Zoom-friendly edtech solution
+                            <img src="{{ $urlapi }}/blog/{{ $someblog[0]->foto_thumbnail }}">
+                            <p> {{$someblog[0]->judul}}
                             </p>
                         </div>
                         <div class="card-body pt-1">
-                            <img src="/assets/images/Group237.png">
-                            <span class="span-name">Lina</span>
-                            <p class="p-descript">Class, launched less than a year ago by Blackboard co-founder
-                                <br>Michael Chasen, integrates exclusively...
+                            <img src="{{ $urlapi }}/profile/{{ $someblog[0]->photo }}" id="profilepict">
+                            <span class="span-name">{{$someblog[0]->name}}</span>
+                            <p class="p-descript">{{ Str::limit($someblog[1]->content, 100)  }}
                             </p>
                             <div class="row pt-4">
                                 <div class="col-6 left">
@@ -127,16 +114,14 @@
                 <div class="col-6">
                     <div class="card card-right">
                         <div class="card-head">
-                            <img src="/assets/images/Rectangle23.png">
-                            <p>Class adds $30 million to its balance sheet for
-                                <br>a Zoom-friendly edtech solution
+                            <img src="{{ $urlapi }}/blog/{{ $someblog[1]->foto_thumbnail }}">
+                            <p>{{$someblog[1]->judul}}
                             </p>
                         </div>
                         <div class="card-body pt-1">
-                            <img src="/assets/images/Group237.png">
-                            <span class="span-name">Lina</span>
-                            <p class="p-descript">Class, launched less than a year ago by Blackboard co-founder
-                                <br>Michael Chasen, integrates exclusively...
+                            <img src="{{ $urlapi }}/profile/{{ $someblog[1]->photo }}" id="profilepict">
+                            <span class="span-name">{{$someblog[1]->name}}</span>
+                            <p class="p-descript">{{ Str::limit($someblog[1]->content, 100)  }}
                             </p>
                             <div class="row pt-4 pb-3">
                                 <div class="col-6 left">
@@ -155,19 +140,18 @@
 
             <div class="hidden-blog" style="display: none;" id="hidden">
                 <div class="row mt-3 mid">
+                    @foreach($someblogskip as $someblogskip)
                     <div class="col-6">
                         <div class="card card-left">
                             <div class="card-head">
-                                <img src="/assets/images/Rectangle23.png">
-                                <p>Class adds $30 million to its balance sheet for
-                                    <br>a Zoom-friendly edtech solution
+                                <img src="{{ $urlapi }}/blog/{{ $someblogskip->foto_thumbnail }}">
+                                <p>{{$someblogskip->judul}}
                                 </p>
                             </div>
                             <div class="card-body pt-1">
-                                <img src="/assets/images/Group237.png">
-                                <span class="span-name">Lina</span>
-                                <p class="p-descript">Class, launched less than a year ago by Blackboard co-founder
-                                    <br>Michael Chasen, integrates exclusively...
+                                <img src="{{ $urlapi }}/profile/{{ $someblogskip->photo }}" id="profilepict">
+                                <span class="span-name">{{$someblogskip->name}}</span>
+                                <p class="p-descript">{{ Str::limit($someblogskip->content, 100)  }}
                                 </p>
                                 <div class="row pt-4">
                                     <div class="col-6 left">
@@ -182,33 +166,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card card-right">
-                            <div class="card-head">
-                                <img src="/assets/images/Rectangle23.png">
-                                <p>Class adds $30 million to its balance sheet for
-                                    <br>a Zoom-friendly edtech solution
-                                </p>
-                            </div>
-                            <div class="card-body pt-1">
-                                <img src="/assets/images/Group237.png">
-                                <span class="span-name">Lina</span>
-                                <p class="p-descript">Class, launched less than a year ago by Blackboard co-founder
-                                    <br>Michael Chasen, integrates exclusively...
-                                </p>
-                                <div class="row pt-4 pb-3">
-                                    <div class="col-6 left">
-                                        <a href="">
-                                            <p>Read more</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-6 pt-2 right">
-                                        <i class="fas fa-eye"><span style="padding-left: 20px;">251,232</span></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <div class="row hidden-button pr-2 mb-5 ">
@@ -228,146 +186,33 @@
                 </div>
             </div>
             <div class="row">
+                @foreach($blog as $blog)
                 <div class="col-3">
                     <div class="card">
                         <div class="card-head pt-3">
-                            <img src="/assets/images/Rectangle36.png" width="230" height="160">
+                            <img src="{{ $urlapi }}/blog/{{ $blog->foto_thumbnail }}" width="230" height="160">
                             <div class="row pt-3">
-                                <div class="col-6 right">
+                                <div class="col-12 right">
                                     <img src="/assets/images/Group259.png" width="17" height="17">
-                                    <span>Design</span>
+                                    <span>{{$blog->nama}}</span>
                                 </div>
-                                <div class="col-6 left">
-                                    <i class="far fa-clock"><span>3 Month</span></i>
-                                </div>
-                                <p>AWS Certified solutions
-                                    <br>Architect
+                                <p>{{$blog->judul}}
                                 </p>
                             </div>
                         </div>
                         <div class="card-body pt-0 pl-3">
-                            <p class="p-descript">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
+                            <p class="p-descript">{{$blog->content}}
                             </p>
                             <div class="row pt-2">
-                                <div class="col-6 right">
-                                    <img src="/assets/images/Group237.png" height="35" width="35">
-                                    <span>Lina</span>
-                                </div>
-                                <div class="col-6 left">
-                                    <p>$100 <span>$80</span></p>
-
+                                <div class="col-12 right">
+                                    <img src="{{ $urlapi }}/profile/{{ $someblogskip->photo }}" id="profilepict" height="35" width="35">
+                                    <span>{{$blog->name}}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-head pt-3">
-                            <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                            <div class="row pt-3">
-                                <div class="col-6 right">
-                                    <img src="/assets/images/Group259.png" width="17" height="17">
-                                    <span>Design</span>
-                                </div>
-                                <div class="col-6 left">
-                                    <i class="far fa-clock"><span>3 Month</span></i>
-                                </div>
-                                <p>AWS Certified solutions
-                                    <br>Architect
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p class="p-descript">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row pt-2">
-                                <div class="col-6 right">
-                                    <img src="/assets/images/Group237.png" height="35" width="35">
-                                    <span>Lina</span>
-                                </div>
-                                <div class="col-6 left">
-                                    <p>$100 <span>$80</span></p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-head pt-3">
-                            <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                            <div class="row pt-3">
-                                <div class="col-6 right">
-                                    <img src="/assets/images/Group259.png" width="17" height="17">
-                                    <span>Design</span>
-                                </div>
-                                <div class="col-6 left">
-                                    <i class="far fa-clock"><span>3 Month</span></i>
-                                </div>
-                                <p>AWS Certified solutions
-                                    <br>Architect
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p class="p-descript">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row pt-2">
-                                <div class="col-6 right">
-                                    <img src="/assets/images/Group237.png" height="35" width="35">
-                                    <span>Lina</span>
-                                </div>
-                                <div class="col-6 left">
-                                    <p>$100 <span>$80</span></p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-head pt-3">
-                            <img src="/assets/images/Rectangle36.png" width="230" height="160">
-                            <div class="row pt-3">
-                                <div class="col-6 right">
-                                    <img src="/assets/images/Group259.png" width="17" height="17">
-                                    <span>Design</span>
-                                </div>
-                                <div class="col-6 left">
-                                    <i class="far fa-clock"><span>3 Month</span></i>
-                                </div>
-                                <p>AWS Certified solutions
-                                    <br>Architect
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-body pt-0 pl-3">
-                            <p class="p-descript">Lorem ipsum dolor sit amet,
-                                <br>consectetur adipising elit, sed do
-                                <br>eiusmod tempor
-                            </p>
-                            <div class="row pt-2">
-                                <div class="col-6 right">
-                                    <img src="/assets/images/Group237.png" height="35" width="35">
-                                    <span>Lina</span>
-                                </div>
-                                <div class="col-6 left">
-                                    <p>$100 <span>$80</span></p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="hidden-articles" style="display: none;">
                 <div class="row">
