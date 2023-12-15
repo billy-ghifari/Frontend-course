@@ -23,6 +23,7 @@ class C_Kelas extends Controller
         $kelas = json_decode($response)->data->data;
 
         // dd($kelas);
+        // dd($kelas);
 
         return view('crudkelas/r_kelas', [
             'kelas' => $kelas,
