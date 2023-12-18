@@ -1,7 +1,7 @@
 @extends('templates.defaultadmin')
 
 @section('content')
-<div class="page-wrapper pt-0">
+<div class="page-wrapper pt-4">
     <!-- ============================================================== -->
     <!-- Bread crumb and right sidebar toggle -->
     <!-- ============================================================== -->
@@ -26,9 +26,28 @@
     <!-- End Bread crumb and right sidebar toggle -->
     <!-- ============================================================== -->
     <div class="container-fluid mt-3">
-        <h2>
-            Siswa aktif saat ini : {{$siswa}}
-        </h2>
+        <div class="table-responsive">
+            <table id="multi_col_order" class="table table-striped table-bordered display no-wrap" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Siswa aktif </th>
+                        <th>Mentor aktif</th>
+                        <th>jumlah kelas</th>
+                        <th>jumlah blog</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 @endsection
