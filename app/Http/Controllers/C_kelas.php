@@ -17,7 +17,6 @@ class C_Kelas extends Controller
 
     public function index()
     {
-
         $token = session('token');
 
         $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$allkelas);
