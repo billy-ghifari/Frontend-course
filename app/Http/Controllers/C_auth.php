@@ -45,6 +45,7 @@ class C_auth extends Controller
 
             $token = $response->json('token');
 
+
             session(['name' => $user]);
             session(['token' => $token]);
             session()->save();
@@ -84,16 +85,28 @@ class C_auth extends Controller
             ]);
 
 
-
             $role = json_decode($response)->data->role;
+
+
+            $user = json_decode($response)->data->user->name;
 
 
             $token = json_decode($response)->data->token;
 
+            $uuid = json_decode($response)->data->user->uuid;
+
+            // dd($token);
+            // die;
+
+
+            session(['name' => $user]);
             session(['role' => $role]);
             session(['token' => $token]);
+            session(['uuid' => $uuid]);
             session()->save();
 
+            // dd(session()->all());
+            // die;
 
             return redirect('/admin');
         } catch (\Throwable $th) {
@@ -113,6 +126,9 @@ class C_auth extends Controller
 
             $validated = $validate->validated();
             $photo = fopen($request->file('photo'), 'r');
+
+            // dd($photo);
+            // die;
 
             $response = Http::attach('photo', $photo)
                 ->post($this->urlApi . '/api/register', [

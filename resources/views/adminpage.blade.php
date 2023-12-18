@@ -26,6 +26,7 @@
     <!-- End Bread crumb and right sidebar toggle -->
     <!-- ============================================================== -->
     <div class="container-fluid mt-3">
+<<<<<<< HEAD
         <div class="table-responsive">
             <table id="multi_col_order" class="table table-striped table-bordered display no-wrap" style="width:100%">
                 <thead>
@@ -48,6 +49,20 @@
                 </tbody>
             </table>
         </div>
+=======
+        <h2>
+            Siswa aktif saat ini : {{$siswa}}
+        </h2>
+        <h2>
+            Total Kelas pada DTC : {{$kelas}}
+        </h2>
+        <h2>
+            Total materi pada DTC : {{$materi}}
+        </h2>
+        <h2>
+            Total Blog pada DTC : {{$blog}}
+        </h2>
+>>>>>>> origin/rafha
     </div>
 </div>
 @endsection

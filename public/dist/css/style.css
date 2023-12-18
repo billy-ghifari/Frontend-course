@@ -14,6 +14,14 @@
   color: #00CBB8;
 }
 
+.center-text {
+  text-align: center;
+}
+
+.preline {
+  white-space: pre-line;
+}
+
 /* /////////admin blog///////// */
 
 
@@ -525,7 +533,6 @@
 
 /* section 5 */
 
-.section5 {}
 
 .landing-5-div-1 {
   text-align: center;
@@ -865,19 +872,17 @@
   color: #252641;
 }
 
-.text-kategori{
+.text-kategori {
   color: #49BBBD;
   font-weight: 600;
   font-size: 20px;
 }
 
-
-
-/*--------------------------------------------------------------
-# Sidebar Admin
---------------------------------------------------------------*/
-.side-notop {
-  padding-top: 0%;
+.main-detailkelas .jumbotron {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
 }
 
 .logo-dtc span,
@@ -1841,6 +1846,65 @@
 .section-3-coursedetail .container {
   height: 400px;
 }
+
+.container-head {
+  max-width: 2000px;
+}
+
+.page-wrapper .mt-4 .pt-5 h2 {
+  font-weight: 600;
+  color: black;
+  padding-left: 14px;
+}
+
+.page-wrapper .mt-4 .pr-5 a {
+  background-color: #49BBBD;
+  height: 60px;
+  color: white;
+  border-radius: 10px;
+  padding-top: 16px
+}
+
+.page-wrapper .mt-4 .pr-5 {
+  text-align: end
+}
+
+/*--------------------------------------------------------------
+# Course View
+--------------------------------------------------------------*/
+.main-wrapper .main-courseview .section-courseview {
+  margin-left: 380px !important;
+  padding-top: 150px !important;
+}
+
+.section-courseview .container-fluid .container-fluid {
+  flex-wrap: wrap;
+}
+
+.main-wrapper .section-courseview .container-fluid .tect-head {
+  font-weight: 600;
+  color: black;
+  margin-top: 4rem;
+  margin-bottom: 30px;
+}
+
+.topbar-courseview .top-navbar .navbar-header {
+  height: 130px !important;
+  width: 380px !important;
+}
+
+.topbar-courseview .top-navbar .navbar-header span a {
+  width: 40px;
+  height: 40px;
+  background-color: #49bbbd;
+  margin-left: 10px;
+  color: white
+}
+
+
+/*--------------------------------------------------------------
+# End Course View
+--------------------------------------------------------------*/
 
 .section-3-coursedetail .row .left {
   text-align: start;
@@ -11370,9 +11434,7 @@ button.bg-purple:focus {
   margin-top: 0.25rem !important;
 }
 
-<<<<<<< Updated upstream=======>>>>>>>e6cec7522aa2611610b5554888433ceb189e5fdd .mr-1,
-=======.mr-1,
->>>>>>>Stashed changes .mx-1 {
+.mx-1 {
   margin-right: 0.25rem !important;
 }
 
@@ -11390,14 +11452,12 @@ button.bg-purple:focus {
   margin: 0.5rem !important;
 }
 
-<<<<<<< Updated upstream <<<<<<< HEAD .mt-2,
+
 .my-2 {
   margin-top: 0.5rem !important;
 }
 
-=======>>>>>>>e6cec7522aa2611610b5554888433ceb189e5fdd .mr-2,
-=======.mr-2,
->>>>>>>Stashed changes .mx-2 {
+.mx-2 {
   margin-right: 0.5rem !important;
 }
 
@@ -13962,13 +14022,7 @@ a.text-purple:focus {
 /*******************
  Vertical layout
 *******************/
-#main-wrapper[data-layout="vertical"] {
-  /*Vertical*/
-  /*sidebar type*/
-  /*Sidebar position*/
-  /*Header position*/
-  /*Boxed Layout*/
-}
+
 
 #main-wrapper[data-layout="vertical"] .topbar .top-navbar .navbar-header {
   transition: 0.2s ease-in;
@@ -14466,11 +14520,6 @@ sidebar navigation
   padding-left: 38px;
 }
 
-.sidebar-nav #sidebarnav {
-  /*******************
-         Small cap
-         ******************/
-}
 
 .sidebar-nav #sidebarnav .list-divider {
   height: 1px;

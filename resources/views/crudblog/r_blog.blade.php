@@ -6,7 +6,7 @@
         <div class="row">
             @foreach($blogs as $blog)
             <div class="col-4">
-                <a href="detailblog">
+                <a href="detailblog/{{$blog->id}}">
                     <div class="card card-kelas">
                         <div class="card-head">
                             <img id="blogadmin" src="{{$urlapi}}/blog/{{$blog->foto_thumbnail}}" alt="" width="290px">
