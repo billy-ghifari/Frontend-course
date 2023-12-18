@@ -28,37 +28,29 @@
 @endsection
 
 @section('content')
-<div class="page-wrapper">
-    <div class="container-fluid">
-        <div class="row">
-            @foreach($blogs as $blog)
-            <div class="col-4">
-                <div class="card card-kelas">
-                    <div class="card-head">
-                        <img id="blogadmin" src="{{$urlapi}}/blog/{{$blog->foto_thumbnail}}" alt="" width="290px">
-                    </div>
-                    <div class="card-body">
-                        <h3>{{$blog->judul}}</h3>
-                        <p>{{$blog->nama}}</p>
-                        <p>{{ Str::limit($blog->content, 50)  }}</p>
-                        <div class="row">
-                            <div class="col-2">
-                                <img src="{{$urlapi}}/profile/{{$blog->photo}}" id="profilepict" alt="" height="35" width="35">
-                            </div>
-                            <div class="col-8">
-                                <span>{{$blog->name}}</span>
-                            </div>
+<div class="page-wrapper pt-5">
+    <div class="main-detailkelas">
+        <div class="container-fluid">
+            <div class="jumbotron justify-between">
+                <img src="{{$urlapi}}/blog/{{$blog->foto_thumbnail}}" alt="">
+            </div>
+            <div class=" row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Class is created by: {{$blog->name}}</p>
+                            <h2 class="card-title">{{$blog->judul}}</h2>
+                            <p class="text-kategori">
+                                {{$blog->nama}}
+                            </p>
+                            <p class="mb-4 preline">{{$blog->content}}</p>
                         </div>
-                    </div>
-                    <div class="card-bottom pb-4">
-                        <button type="button" class="btn btn-danger btn-sm mr-2">Delete</button>
-                        <button type="button" class="btn btn-secondary btn-sm">Edit</button>
                     </div>
                 </div>
             </div>
-            @endforeach
         </div>
     </div>
-</div>
 
+
+</div>
 @endsection

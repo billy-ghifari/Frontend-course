@@ -56,6 +56,15 @@
         <h2>
             Siswa aktif saat ini : {{$siswa}}
         </h2>
+        <h2>
+            Total Kelas pada DTC : {{$kelas}}
+        </h2>
+        <h2>
+            Total materi pada DTC : {{$materi}}
+        </h2>
+        <h2>
+            Total Blog pada DTC : {{$blog}}
+        </h2>
     </div>
 </div>
 @endsection

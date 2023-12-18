@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <!-- Favicon icon -->
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="photo/dtc.png">
 <title>DTC E-Learning</title>
 <!-- Custom CSS -->
 <link href="/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
@@ -194,7 +194,7 @@
                             <div class="row pt-3">
                                 <div class="col-12 right">
                                     <img src="/assets/images/Group259.png" width="17" height="17">
-                                    <span>{{$blog->nama}}</span>
+                                    <span>{{$blog->nama_category}}</span>
                                 </div>
                                 <p>{{$blog->judul}}
                                 </p>

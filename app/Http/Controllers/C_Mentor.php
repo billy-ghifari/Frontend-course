@@ -25,23 +25,23 @@ class C_Mentor extends Controller
         // dd($mentor);
         // die;
 
-        return view('r_mentor', [
+        return view('crudmentor/r_mentor', [
             'mentor' => $mentor
         ]);
     }
 
     public function c_mentor()
     {
-        return view('c_mentor');
+        return view('crudmentor/c_mentor');
     }
 
     public function u_mentor()
     {
-        return view('u_mentor');
+        return view('crudmentor/u_mentor');
     }
 
     public function d_mentor()
     {
-        return view('d_mentor');
+        return view('crudmentor/d_mentor');
     }
 }
