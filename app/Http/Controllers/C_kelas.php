@@ -53,7 +53,7 @@ class C_Kelas extends Controller
         $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$detailmateri . $id);
         $materi = json_decode($response)->materi;
 
-        // dd($materi);
+        // dd($kelas);
         // die;
 
         return view(
