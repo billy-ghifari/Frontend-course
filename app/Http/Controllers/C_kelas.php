@@ -20,9 +20,4 @@ class C_Kelas extends Controller
     {
         return view('crudkelas/r_kelas');
     }
-
-    public function createmateri()
-    {
-        return view('crudkelas/createmateri');
-    }
 }
