@@ -69,10 +69,10 @@ Route::get('view_deletementor', [C_Mentor::class, 'd_mentor']);
 <!-- ======= CRUD Kelas ======= --> */
 Route::get('view_createkelas', [C_Kelas::class, 'c_kelas']);
 Route::get('view_updatekelas', [C_Kelas::class, 'u_kelas']);
-Route::get('viewkelas', [C_Kelas::class, 'index']);
+Route::get('viewkelas', [C_Kelas::class, 'r_kelas']);
 
 Route::get('detailkelas', [C_Kelas::class, 'detailkelas']);
-Route::get('createkelas', [C_Kelas::class, 'createkelas']);
+Route::get('createmateri', [C_Kelas::class, 'createmateri']);
 
 /*
 <!-- ======= CRUD Blog ======= --> */

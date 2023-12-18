@@ -8,7 +8,7 @@
                             <div class="col-3">
                                 <b class="logo-icon">
                                     <!-- Dark Logo icon -->
-                                    <img src="assets/images/dtc-blueicon.png" alt="homepage" class="dark-logo" />
+                                    <img src="/assets/images/dtc-blueicon.png" alt="homepage" class="dark-logo" />
                                 </b>
                             </div>
                             <div class="col-9">
@@ -51,7 +51,7 @@
                                 <li class="sidebar-item"><a href="view_createkelas" class="sidebar-link"><span class="hide-menu"> Create Kelas
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="createkelas" class="sidebar-link"><span class="hide-menu"> Create Materi
+                                <li class="sidebar-item"><a href="createmateri" class="sidebar-link"><span class="hide-menu"> Create Materi
                                         </span></a>
                             </ul>
                         </li>

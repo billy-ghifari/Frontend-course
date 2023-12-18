@@ -52,6 +52,6 @@ class C_Course extends Controller
 
     public function coursedetail()
     {
-        return view('coursedetail');
+        return view('course/coursedetail');
     }
 }

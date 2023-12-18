@@ -43,7 +43,7 @@ class C_admin extends Controller
         // dd($admin);
         // die;
 
-        return view('r_admin', [
+        return view('crudadmin/r_admin', [
             'admin' => $admin
         ]);
     }
