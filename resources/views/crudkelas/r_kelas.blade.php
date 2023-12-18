@@ -28,12 +28,19 @@
 @endsection
 
 @section('content')
+@if(!$kelas)
+<div class="page-wrapper">
+    <div class="container-fluid">
+        <h1 class="center-text">Data Kelas Tidak Ditemukan</h1>
+    </div>
+</div>
+@else
 <div class="page-wrapper">
     <div class="container-fluid">
         <div class="row">
             @foreach($kelas as $kelas)
             <div class="col-4">
-                <a href="detailkelas">
+                <a href="/detailkelas/{{$kelas->id}}">
                     <div class="card card-kelas">
                         <div class="card-head">
                             <img src="{{$urlapi}}/kelas/{{$kelas->foto_thumbnail}}" alt="" width="290px">
@@ -62,5 +69,5 @@
         </div>
     </div>
 </div>
-
+@endif
 @endsection

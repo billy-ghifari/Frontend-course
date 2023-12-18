@@ -23,7 +23,7 @@ class C_Kelas extends Controller
         $kelas = json_decode($response)->data->data;
 
         // dd($kelas);
-        // dd($kelas);
+        // die;
 
         return view('crudkelas/r_kelas', [
             'kelas' => $kelas,
@@ -42,9 +42,29 @@ class C_Kelas extends Controller
         return view('crudkelas/u_kelas');
     }
 
-    public function detailkelas()
+    public function detailkelas($id)
     {
-        return view('crudkelas/detailkelas');
+
+        $token = session('token');
+
+        $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$detailkelas . $id);
+        $kelas = json_decode($response)->classData;
+
+        $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$detailmateri . $id);
+        $materi = json_decode($response)->materi;
+
+        // dd($materi);
+        // die;
+
+        return view(
+            'crudkelas/detailkelas',
+            [
+                'materi' => $materi,
+                'kelas' => $kelas,
+                'urlapi' => $this->urlApi,
+
+            ]
+        );
     }
 
     public function createkelas()

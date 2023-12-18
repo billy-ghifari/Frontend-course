@@ -33,14 +33,14 @@
         <div class="row">
             @foreach($blogs as $blog)
             <div class="col-4">
-                <a href="detailblog">
+                <a href="detailblog/{{$blog->id}}">
                     <div class="card card-kelas">
                         <div class="card-head">
                             <img id="blogadmin" src="{{$urlapi}}/blog/{{$blog->foto_thumbnail}}" alt="" width="290px">
                         </div>
                         <div class="card-body">
                             <h3>{{$blog->judul}}</h3>
-                            <p>{{$blog->nama}}</p>
+                            <p>{{$blog->nama_category}}</p>
                             <p>{{ Str::limit($blog->content, 50)  }}</p>
                             <div class="row">
                                 <div class="col-2">

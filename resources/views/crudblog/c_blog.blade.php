@@ -36,22 +36,14 @@
                     <div class="card-body">
                         <h2 class="card-title">Create Blog</h2>
                         <p>Please enter data into the form below</p>
-                        <form action="#">
+                        <form action="createblog" method="post" enctype="multipart/form-data">
+                            @csrf
                             <div class="form-body">
-
-                                <label>The uploader's name will be automatically filled in as (your name)</label>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Sugiono marcopolo" disabled>
-                                        </div>
-                                    </div>
-                                </div>
                                 <label>Judul</label>
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Input Judul">
+                                            <input type="text" name="judul" class="form-control" placeholder="Input Judul">
                                         </div>
                                     </div>
                                 </div>
@@ -60,27 +52,30 @@
                                     <div class="col-12">
                                         <div class="dropdown dropdown-category">
                                             <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Pilih Kategori <span><i class="fas fa-angle-down"></i></span>
+                                                Pilih Kategori
+                                                <select name="r_id_category" id="">
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        @foreach ($category as $cat)
+                                                        <option value="{{$cat->id}}" class="dropdown-item">{{$cat->nama}}</option>
+                                                        @endforeach
+
+                                                    </div>
+                                                </select>
                                             </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                            </div>
                                         </div>
                                     </div>
 
                                 </div>
                                 <label for="Content">Content</label>
                                 <div class="mb-3">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Content"></textarea>
+                                    <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Content"></textarea>
                                 </div>
                                 <label>Thumbnail Blog</label>
 
                                 <div class="row">
                                     <div class="col-5">
                                         <div class="mb-3">
-                                            <input class="form-control" type="file" id="formFile">
+                                            <input class="form-control" name="foto_thumbnail" type="file" id="formFile">
                                         </div>
                                     </div>
                                 </div>

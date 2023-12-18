@@ -23,12 +23,24 @@ class C_admin extends Controller
         $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$getallonsiswa);
         $siswaon = json_decode($response);
 
-        // dd($siswaon);
-        // die;
+        $response2 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$countkelas);
+        $countkelas = json_decode($response2);
+
+        $response3 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$countmateri);
+        $countmateri = json_decode($response3);
+
+        $response4 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$countblog);
+        $countblog = json_decode($response4);
+
+        // dd($countmateri);
+        // die; 
 
         return view('adminpage', [
             'role' => $role,
             'siswa' => $siswaon,
+            'kelas' => $countkelas,
+            'materi' => $countmateri,
+            'blog' => $countblog,
             'urlapi' => $this->urlApi, // Assuming the data key holds the actual blog data // Assuming the pagination data is separate
         ]);
     }

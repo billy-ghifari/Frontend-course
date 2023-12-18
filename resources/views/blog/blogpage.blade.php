@@ -194,7 +194,7 @@
                             <div class="row pt-3">
                                 <div class="col-12 right">
                                     <img src="/assets/images/Group259.png" width="17" height="17">
-                                    <span>{{$blog->nama}}</span>
+                                    <span>{{$blog->nama_category}}</span>
                                 </div>
                                 <p>{{$blog->judul}}
                                 </p>

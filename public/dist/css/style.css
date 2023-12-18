@@ -14,6 +14,14 @@
   color: #00CBB8;
 }
 
+.center-text {
+  text-align: center;
+}
+
+.preline {
+  white-space: pre-line;
+}
+
 /* /////////admin blog///////// */
 
 
@@ -865,18 +873,17 @@
   color: #252641;
 }
 
-.text-kategori{
+.text-kategori {
   color: #49BBBD;
   font-weight: 600;
   font-size: 20px;
 }
 
-.main-detailkelas .jumbotron{
-    background-image: url(/assets/images/Group236.png);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 250px;
+.main-detailkelas .jumbotron {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
 }
 
 .logo-dtc span,
@@ -1765,6 +1772,14 @@
   text-align: end
 }
 
+/*--------------------------------------------------------------
+# Course View
+--------------------------------------------------------------*/
+.main-wrapper .main-courseview .section-courseview {
+  margin-left: 380px !important;
+  padding-top: 150px !important;
+}
+
 .section-courseview .container-fluid .container-fluid {
   flex-wrap: wrap;
 }
@@ -1775,6 +1790,25 @@
   margin-top: 4rem;
   margin-bottom: 30px;
 }
+
+.topbar-courseview .top-navbar .navbar-header {
+  height: 130px !important;
+  width: 380px !important;
+}
+
+.topbar-courseview .top-navbar .navbar-header span a {
+  width: 40px;
+  height: 40px;
+  background-color: #49bbbd;
+  margin-left: 10px;
+  color: white
+}
+
+.topbar-courseview .top-navbar .navbar-header h3 {}
+
+/*--------------------------------------------------------------
+# End Course View
+--------------------------------------------------------------*/
 
 .section-3-coursedetail .row .left {
   text-align: start;

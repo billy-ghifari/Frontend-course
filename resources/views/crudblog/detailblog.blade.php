@@ -32,23 +32,18 @@
     <div class="main-detailkelas">
         <div class="container-fluid">
             <div class="jumbotron justify-between">
+                <img src="{{$urlapi}}/blog/{{$blog->foto_thumbnail}}" alt="">
             </div>
             <div class=" row">
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <p>Class is created by: (name)</p>
-                            <h2 class="card-title">Why Swift UI Should Be on the Radar of Every Mobile Developer</h2>
+                            <p>Class is created by: {{$blog->name}}</p>
+                            <h2 class="card-title">{{$blog->judul}}</h2>
                             <p class="text-kategori">
-                                Kategori
+                                {{$blog->nama_category}}
                             </p>
-                            <p class="mb-4">TOTC is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.</p>
-                            <p>TOTC is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.
-                                TOTC is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.
-                                TOTC is a platform
-                            </p>
-                            <p>TOTC is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.
-                                TOTC is a platform that allows educators to create online classes whereby they can store the course materials online; manage </p>
+                            <p class="mb-4 preline">{{$blog->content}}</p>
                         </div>
                     </div>
                 </div>

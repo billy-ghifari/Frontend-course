@@ -8,7 +8,7 @@
                             <div class="col-3">
                                 <b class="logo-icon">
                                     <!-- Dark Logo icon -->
-                                    <img src="assets/images/dtc-blueicon.png" alt="homepage" class="dark-logo" />
+                                    <img src="/assets/images/dtc-blueicon.png" alt="homepage" class="dark-logo" />
                                 </b>
                             </div>
                             <div class="col-9">
