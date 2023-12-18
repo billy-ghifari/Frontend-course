@@ -4,9 +4,12 @@ use App\Http\Controllers\C_admin;
 use App\Http\Controllers\C_auth;
 use App\Http\Controllers\C_Blog;
 use App\Http\Controllers\C_Course;
+<<<<<<< Updated upstream
 use App\Http\Controllers\C_Kelas;
 use App\Http\Controllers\C_Mentor;
 use App\Http\Controllers\C_Siswa;
+=======
+>>>>>>> Stashed changes
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,6 +43,7 @@ Route::get('admin', [C_admin::class, 'index']);
 
 Route::get('/blogdetail', [C_Blog::class, 'blogdetail']);
 Route::get('/blogpage', [C_Blog::class, 'index']);
+<<<<<<< Updated upstream
 
 Route::get('/searchview', [C_Blog::class, 'searchview']);
 
@@ -80,3 +84,8 @@ Route::get('view_createblog', [C_Blog::class, 'c_blog']);
 Route::get('viewblog', [C_Blog::class, 'r_blog']);
 
 Route::get('detailblog', [C_Blog::class, 'detailblog']);
+=======
+Route::get('/blogdetail', [C_Blog::class, 'blogdetail']);
+
+Route::get('/courseview', [C_Course::class, 'courseview']);
+>>>>>>> Stashed changes

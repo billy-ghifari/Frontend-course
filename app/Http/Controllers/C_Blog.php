@@ -93,4 +93,9 @@ class C_Blog extends Controller
     {
         return view('crudblog/detailblog');
     }
+
+    public function blogdetail()
+    {
+        return view('blogdetail');
+    }
 }
