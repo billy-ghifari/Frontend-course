@@ -41,7 +41,7 @@
                             <p>Class is created by: {{$blog->name}}</p>
                             <h2 class="card-title">{{$blog->judul}}</h2>
                             <p class="text-kategori">
-                                {{$blog->nama_category}}
+                                {{$blog->nama}}
                             </p>
                             <p class="mb-4 preline">{{$blog->content}}</p>
                         </div>

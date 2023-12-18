@@ -40,7 +40,7 @@
                         </div>
                         <div class="card-body">
                             <h3>{{$blog->judul}}</h3>
-                            <p>{{$blog->nama_category}}</p>
+                            <p>{{$blog->nama}}</p>
                             <p>{{ Str::limit($blog->content, 50)  }}</p>
                             <div class="row">
                                 <div class="col-2">
