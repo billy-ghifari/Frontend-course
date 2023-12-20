@@ -1240,6 +1240,7 @@
 }
 
 .section-4-blogpage .row .card .card-body .p-descript {
+  white-space: pre-line;
   font-size: 13px;
   color: #696984;
 }
@@ -1449,6 +1450,7 @@
 }
 
 .section-2-course .col-3 .pb-2 .p-descript {
+
   font-size: 13px;
   color: #696984;
 }

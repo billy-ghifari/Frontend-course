@@ -26,6 +26,8 @@ class ApiEndPoint
     public static $catblog                                         = "/api/getallcatblog/";
 
     //admin
+    public static $makeadmin                                       = "/api/registeradmin";
+
     public static $getallonsiswa                                   = "/api/getallonsiswa";
     public static $allblog                                         = "/api/allblog";
     public static $alladmin                                        = "/api/getalladmin";
@@ -35,9 +37,13 @@ class ApiEndPoint
     public static $allkelas                                        = "/api/getkelas";
     public static $countkelas                                      = "/api/getallkelas";
     public static $detailkelas                                     = "/api/getkelasbyid/";
+    public static $categorykelas                                   = "/api/getallcategory";
+    public static $createkelas                                     = "/api/createkelas";
+
 
     public static $detailmateri                                    = "/api/getmateri/";
     public static $countmateri                                     = "/api/getallmateri";
+    public static $createmateri                                    = "/api/createmateri";
 
     public static $countblog                                       = "/api/getallblog";
     public static $detailblog                                      = "/api/getoneblog/";

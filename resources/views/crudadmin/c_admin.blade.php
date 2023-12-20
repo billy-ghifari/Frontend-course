@@ -36,7 +36,8 @@
                     <div class="card-body">
                         <h2 class="card-title">Create Admin</h2>
                         <p>Please enter data into the form below</p>
-                        <form action="#">
+                        <form action="createadmin" method="post" enctype="multipart/form-data">
+                            @csrf
                             <div class="form-body">
                                 <div class="row">
                                     <div class="col-4">
@@ -49,12 +50,12 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Input Name">
+                                            <input type="text" name="name" class="form-control" placeholder="Input Name">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Input Email">
+                                            <input type="email" name="email" class="form-control" placeholder="Input Email">
                                         </div>
                                     </div>
                                 </div>
@@ -69,11 +70,11 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Input Password">
+                                            <input type="password" name="password" class="form-control" placeholder="Input Password">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <input class="form-control" type="file" id="formFile">
+                                        <input class="form-control" name="photo" type="file" id="formFile">
                                     </div>
                                 </div>
                                 <div class="form-actions mt-5 mb-3">

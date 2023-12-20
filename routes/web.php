@@ -5,6 +5,7 @@ use App\Http\Controllers\C_auth;
 use App\Http\Controllers\C_Blog;
 use App\Http\Controllers\C_Course;
 use App\Http\Controllers\C_Kelas;
+use App\Http\Controllers\C_materi;
 use App\Http\Controllers\C_Mentor;
 use App\Http\Controllers\C_Siswa;
 use Illuminate\Support\Facades\Route;
@@ -58,6 +59,9 @@ Route::get('view_createadmin', [C_admin::class, 'c_admin']);
 Route::get('view_updateadmin', [C_admin::class, 'u_admin']);
 Route::get('view_deleteadmin', [C_admin::class, 'd_admin']);
 
+Route::post('createadmin', [C_admin::class, 'makeadmin']);
+
+
 /*
 <!-- ======= CRUD Mentor ======= --> */
 Route::get('viewmentor', [C_Mentor::class, 'r_mentor']);
@@ -72,7 +76,11 @@ Route::get('view_updatekelas', [C_Kelas::class, 'u_kelas']);
 Route::get('viewkelas', [C_Kelas::class, 'index']);
 
 Route::get('/detailkelas/{id}', [C_Kelas::class, 'detailkelas']);
-Route::get('createkelas', [C_Kelas::class, 'createkelas']);
+Route::post('createkelas', [C_Kelas::class, 'creatingkelas']);
+
+Route::get('view_createmateri', [C_materi::class, 'addmateri']);
+Route::post('createmateri', [C_materi::class, 'creatingmateri']);
+
 
 /*
 <!-- ======= CRUD Blog ======= --> */

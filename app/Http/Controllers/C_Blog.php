@@ -27,14 +27,15 @@ class C_Blog extends Controller
         $response1 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$paginateblog);
         $blog = json_decode($response1)->data->data;
 
-        // dd($blog);
-        // die;
 
         $response2 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$categoryblog);
         $catblog = json_decode($response2)->data;
 
         $response3 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$paginatesomeblog);
         $someblog = json_decode($response3)->data->data;
+
+        // dd($blog);
+        // die;
 
         $someblogskip = array_slice($someblog, 2);
 

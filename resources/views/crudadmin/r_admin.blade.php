@@ -42,6 +42,7 @@
                                         <th>No</th>
                                         <th>Name</th>
                                         <th>Status</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -50,6 +51,14 @@
                                         <td>{{$loop->iteration}}</td>
                                         <td>{{$admin->name}}</td>
                                         <td>{{$admin->status}}</td>
+                                        <td>
+                                            <div class="row justify-content-center">
+                                                <button type="button" class="col-2 btn waves-effect waves-light btn-success">update</button>
+                                                <form class="col-1" action="">
+                                                    <button type="button" class="btn waves-effect waves-light btn-danger">delete</button>
+                                                </form>
+                                            </div>
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>

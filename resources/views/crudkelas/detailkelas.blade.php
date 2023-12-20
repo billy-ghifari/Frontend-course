@@ -40,7 +40,7 @@
                         <div class="card-body">
                             <p>Class is created by: {{$kelas->name}}</p>
                             <h2 class="card-title">{{$kelas->nama}}</h2>
-                            <p class="mb-4">{{$kelas->deskripsi}}</p>
+                            <p class="mb-4 preline">{{$kelas->deskripsi}}</p>
                             <div class="table-responsive">
                                 <table class="table table-bordered">
                                     <thead>
@@ -50,6 +50,7 @@
                                             <th scope="col">Durasi</th>
                                             <th scope="col">Link</th>
                                             <th scope="col">Deskripsi</th>
+                                            <th scope="col">action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -59,7 +60,11 @@
                                             <td>{{$materi->judul_materi}}</td>
                                             <td>{{$materi->durasi}} menit</td>
                                             <td>{{$materi->link_materi}}</td>
-                                            <td>{{$materi->deskripsi_materi}}</td>
+                                            <td>{{Str::limit($materi->deskripsi_materi,100)}}</td>
+                                            <td>
+                                                <button type="button" class="btn waves-effect waves-light btn-success">Edit</button>
+                                                <button type="button" class="btn m-2 waves-effect waves-light btn-danger">Delete</button>
+                                            </td>
                                         </tr>
                                         @endforeach
                                     </tbody>

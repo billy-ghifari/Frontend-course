@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-6 pt-3">
                         <p>Course by <span>Dinta Indonesia</span></p>
-                        <h2>{{$kelas->nama}}
+                        <h2>{{Str::limit($kelas->nama, 70)}}
                         </h2>
                         <p style="padding-bottom:5px;">{{$kelas->deskripsi}}
                         </p>
@@ -194,14 +194,14 @@
                             <div class="row pt-3">
                                 <div class="col-12 right">
                                     <img src="/assets/images/Group259.png" width="17" height="17">
-                                    <span>{{$blog->nama_category}}</span>
+                                    <span>{{$blog->nama}}</span>
                                 </div>
                                 <p>{{$blog->judul}}
                                 </p>
                             </div>
                         </div>
                         <div class="card-body pt-0 pl-3">
-                            <p class="p-descript">{{$blog->content}}
+                            <p class="p-descript">{{Str::limit($blog->content, 100)}}
                             </p>
                             <div class="row pt-2">
                                 <div class="col-12 right">

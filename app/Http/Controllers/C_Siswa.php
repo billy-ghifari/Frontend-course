@@ -20,7 +20,7 @@ class C_Siswa extends Controller
         $token = session('token');
 
         $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$allsiswa);
-        $siswa = json_decode($response)->data;
+        $siswa = json_decode($response)->data->data;
 
         // dd($siswa);
         // die;

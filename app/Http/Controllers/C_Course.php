@@ -43,7 +43,7 @@ class C_Course extends Controller
         // dd($kelas);
         // die;
 
-        return view('course', [
+        return view('course.course', [
             'somekelas' => $somekelas,
             'kelas' => $kelas,
             'urlapi' => $this->urlApi,
@@ -52,6 +52,6 @@ class C_Course extends Controller
 
     public function coursedetail()
     {
-        return view('coursedetail');
+        return view('course/coursedetail');
     }
 }

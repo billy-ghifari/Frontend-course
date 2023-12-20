@@ -36,26 +36,42 @@
                     <div class="card-body">
                         <h2 class="card-title">Create Kelas</h2>
                         <p>Please enter data into the form below</p>
-                        <form action="#">
+                        <form action="/createkelas" method="post" enctype="multipart/form-data">
+                            @csrf
                             <div class="form-body">
-
                                 <label>Name</label>
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Enter the name of the uploader ">
+                                            <input type="text" name="nama" class="form-control" placeholder="Masukkan nama kelas">
                                         </div>
                                     </div>
                                 </div>
-                                <label>Deskipsi</label>
+                                <label>Category</label>
+                                <div>
+                                    <select name="r_id_category" id="">
+                                        @foreach ($category as $cat)
+                                        <option value="{{$cat->id}}">{{$cat->nama_category}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
+                                <label>Deskripsi</label>
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="mb-3">
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="3"></textarea>
                                         </div>
                                     </div>
                                 </div>
 
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="mb-3">
+                                            <input class="form-control" name="foto_thumbnail" type="file" id="formFile">
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="form-actions mt-5 mb-3">
                                     <div class="text-left">
