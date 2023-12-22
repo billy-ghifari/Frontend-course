@@ -38,7 +38,7 @@ Route::controller(C_auth::class)->group(function () {
 Route::get('admin', [C_admin::class, 'index']);
 
 
-Route::get('/blogdetail', [C_Blog::class, 'blogdetail']);
+Route::get('/blogdetail/{id}', [C_Blog::class, 'blogdetail']);
 Route::get('/blogpage', [C_Blog::class, 'index']);
 Route::get('/searchview', [C_Blog::class, 'searchview']);
 
@@ -66,7 +66,7 @@ Route::get('view_deletementor', [C_Mentor::class, 'd_mentor']);
 
 /*
 <!-- ======= CRUD Kelas ======= --> */
-Route::get('view_createkelas', [C_Kelas::class, 'c_kelas']);
+Route::get('view_createkelas', [C_Kelas::class, 'c_kelas']); 
 Route::get('view_updatekelas', [C_Kelas::class, 'u_kelas']);
 Route::get('viewkelas', [C_Kelas::class, 'r_kelas']);
 

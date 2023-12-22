@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/dtc-blueicon.png">
     <title>DTC E-Learning</title>
     <!-- Custom CSS -->
     <link href="/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
@@ -70,6 +70,9 @@
     <script src="/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
     <script src="/assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
     <script src="/dist/js/pages/dashboards/dashboard1.min.js"></script>
+
+
+
 </body>
 
 </html>

@@ -29,11 +29,10 @@
 </head>
 
 <body>
-
-    <!-- ======= Sidebar ======= -->
-    @include('templates.partials.sidebar')
-    <!-- End Sidebar -->
-
+        <!-- ======= Sidebar ======= -->
+        @include('templates.partials.sidebar')
+        <!-- End Sidebar -->
+ 
     <!-- ======= Main ======= -->
     <main id="main" class="main">
         @yield('content')

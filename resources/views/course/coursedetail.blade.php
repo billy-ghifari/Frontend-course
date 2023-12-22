@@ -1,35 +1,5 @@
 @extends('templates.default')
 
-<<<<<<< HEAD
-=======
-@section('head')
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- Tell the browser to be responsive to screen width -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<!-- Favicon icon -->
-<link rel="icon" type="image/png" sizes="16x16" href="photo/dtc.png">
-<title>DTC E-Learning</title>
-<!-- Custom CSS -->
-<link href="/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
-<link href="/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
-<link href="/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
-<!-- Custom CSS -->
-<link href="dist/css/style.min.css" rel="stylesheet">
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js  doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-
-<!-- Template Main CSS File -->
-<link href="/dist/css/style.css" rel="stylesheet">
-@endsection
-
->>>>>>> origin/rafha
 @section('content')
 
 <div class="justify-content-between">
@@ -85,95 +55,131 @@
     <div class="section-1-coursedetail mt-3 mb-3">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-9">
-                    <div class="row row-btn">
-                        <button class="btn btn-deactive mr-4" type="button">Overview</button>
-                        <button class="btn btn-deactive mr-4" type="button">Overview</button>
-                        <button class="btn btn-deactive mr-4" type="button">Overview</button>
-                        <button class="btn btn-active" type="button">Overview</button>
+                <div class="col-6 pl-0">
+
+                    <div class="slider-btn2"></div>
+                    <div class="row">
+                        <div id="btn2">
+                            <button id="btncourse1" class="login ml-0 " onclick="changeTextColor('btncourse1')">Deskripsi</button>
+                        </div>
+                        <div id="btn3">
+                            <button id="btncourse2" class="signup ml-0 " onclick="changeTextColor('btncourse2')">Overview</button>
+                        </div>
                     </div>
-                    <div class="card mt-4 pt-3 pb-3">
-                        <div class="row pt-3">
-                            <div class="col-4 pl-5">
-                                <div class="card pt-3 pb-3">
-                                    <p class="p-review">4 out of 5</p>
-                                    <div class="row pb-3">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p>Top Rating</p>
+                    <!-- Form section that contains the login and the signup form -->
+
+                    <div class=" form-section" style="width: 1200px;">
+
+                        <!-- login form -->
+                        <div class="course-box ml-0" style="width: 600px;">
+                            <div class="card mt-4 pt-3 pb-3">
+                                <div class="text">
+                                    <h2>Deskripsi</h2>
+                                    <p>UI (User Interface) adalah elemen visual dan interaktif dari sebuah aplikasi atau situs web yang memungkinkan pengguna berinteraksi dengan produk tersebut. Ini termasuk tata letak, warna, ikon, tombol, dan elemen desain lainnya yang dirancang untuk menciptakan antarmuka yang mudah dipahami dan menarik bagi pengguna.
+
+                                        Sementara itu, UX (User Experience) merujuk pada keseluruhan pengalaman pengguna saat berinteraksi dengan produk atau layanan. UX berfokus pada bagaimana pengguna merasakan, memahami, dan menavigasi antarmuka tersebut. Hal ini melibatkan penelitian, pengujian, dan perancangan untuk menciptakan pengalaman yang efisien, nyaman, dan memuaskan bagi pengguna.</p>
                                 </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="row pl-4 pt-2">
-                                    <div class="col-3">
-                                        <p>5 stars</p>
+                                <hr>
+                                <div class="row pt-2">
+                                    <div class="col-6">
+                                        <img src="/assets/images/Group237.png">
+                                        <span>Lina</span>
                                     </div>
-                                    <div class="col-9 pt-2">
-                                        <div class="progress rating">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
+                                    <div class="col-6 pt-5">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
                                     </div>
                                 </div>
-                                <div class="row pl-4 pt-2" style="height: 30px;">
-                                    <div class="col-3">
-                                        <p>4 stars</p>
-                                    </div>
-                                    <div class="col-9 pt-2">
-                                        <div class="progress rating">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row pl-4 pt-2" style="height: 30px;">
-                                    <div class="col-3">
-                                        <p>3 stars</p>
-                                    </div>
-                                    <div class="col-9 pt-2">
-                                        <div class="progress rating">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row pl-4 pt-2" style="height: 30px;">
-                                    <div class="col-3">
-                                        <p>2 stars</p>
-                                    </div>
-                                    <div class="col-9 pt-2">
-                                        <div class="progress rating">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row pl-4 pt-2" style="height: 30px;">
-                                    <div class="col-3">
-                                        <p>1 stars</p>
-                                    </div>
-                                    <div class="col-9 pt-2">
-                                        <div class="progress rating">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <p class="p-foot">Class, launched less than a year ago by Blackboard co-founder Michael Chasen,<br>integrates exclusively...</p>
                             </div>
                         </div>
-                        <hr>
-                        <div class="row pt-2">
-                            <div class="col-6">
-                                <img src="/assets/images/Group237.png">
-                                <span>Lina</span>
-                            </div>
-                            <div class="col-6 pt-5">
-                                <i class="far fa-clock"><span>3 Month</span></i>
+
+                        <!-- signup form -->
+                        <div class="course-box" style="width: 600px; margin-left: 40rem">
+                            <div class="card mt-4 pt-3 pb-3">
+                                <div class="row pt-3">
+                                    <div class="col-4 pl-5">
+                                        <div class="card pt-3 pb-3">
+                                            <p class="p-review">4 out of 5</p>
+                                            <div class="row pb-3">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p>Top Rating</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="row pl-4 pt-2">
+                                            <div class="col-3">
+                                                <p>5 stars</p>
+                                            </div>
+                                            <div class="col-9 pt-2">
+                                                <div class="progress rating">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row pl-4 pt-2" style="height: 30px;">
+                                            <div class="col-3">
+                                                <p>4 stars</p>
+                                            </div>
+                                            <div class="col-9 pt-2">
+                                                <div class="progress rating">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row pl-4 pt-2" style="height: 30px;">
+                                            <div class="col-3">
+                                                <p>3 stars</p>
+                                            </div>
+                                            <div class="col-9 pt-2">
+                                                <div class="progress rating">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row pl-4 pt-2" style="height: 30px;">
+                                            <div class="col-3">
+                                                <p>2 stars</p>
+                                            </div>
+                                            <div class="col-9 pt-2">
+                                                <div class="progress rating">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row pl-4 pt-2" style="height: 30px;">
+                                            <div class="col-3">
+                                                <p>1 stars</p>
+                                            </div>
+                                            <div class="col-9 pt-2">
+                                                <div class="progress rating">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row pt-2">
+                                    <div class="col-6">
+                                        <img src="/assets/images/Group237.png">
+                                        <span>Lina</span>
+                                    </div>
+                                    <div class="col-6 pt-5">
+                                        <i class="far fa-clock"><span>3 Month</span></i>
+                                    </div>
+                                </div>
+                                <p class="p-foot">Class, launched less than a year ago by Blackboard co-founder Michael Chasen,<br>integrates exclusively...</p>
                             </div>
                         </div>
-                        <p class="p-foot">Class, launched less than a year ago by Blackboard co-founder Michael Chasen,<br>integrates exclusively...</p>
                     </div>
+
                 </div>
-                <div class="col-3">
+                <div class="col-6">
                 </div>
             </div>
         </div>

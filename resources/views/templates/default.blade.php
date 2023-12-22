@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/dtc-blueicon.png">
     <title>DTC E-Learning</title>
     <!-- Custom CSS -->
     <link href="/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
@@ -102,6 +102,37 @@
                 e.preventDefault();
             }
         });
+    </script>
+
+    <script>
+        let signup = document.querySelector(".signup");
+        let login = document.querySelector(".login");
+        let slider = document.querySelector(".slider-btn2");
+        let formSection = document.querySelector(".form-section");
+
+        signup.addEventListener("click", () => {
+            slider.classList.add("moveslider2");
+            formSection.classList.add("form-section-move2");
+        });
+
+        login.addEventListener("click", () => {
+            slider.classList.remove("moveslider2");
+            formSection.classList.remove("form-section-move2");
+        });
+    </script>
+
+    <script>
+        function changeTextColor(clickedButtonId) {
+            var buttons = ['btncourse1', 'btncourse2'];
+
+            // Remove "clicked" class from all buttons
+            buttons.forEach(function(buttonId) {
+                document.getElementById(buttonId).style.color = '#898989';
+            });
+
+            // Add "clicked" class to the clicked button
+            document.getElementById(clickedButtonId).style.color = 'white';
+        }
     </script>
 
 </body>

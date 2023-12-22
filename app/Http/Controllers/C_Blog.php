@@ -52,16 +52,23 @@ class C_Blog extends Controller
         ]);
     }
 
-    public function blogdetail()
+    public function blogdetail($id)
     {
         $token = session('token');
 
-        $response3 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$paginatesomeblog);
-        $someblog = json_decode($response3)->data->data;
+        $response1 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$detailblog . $id);
+        $detailblog = json_decode($response1)->classData;
+
+        // dd($detailblog);
+        // die;
+
+        $response2 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$paginatesomeblog);
+        $someblog = json_decode($response2)->data->data;
 
         $someblogskip = array_slice($someblog, 2);
 
         return view('blog/blogdetail', [
+            'blog' => $detailblog,
             'someblog' => $someblog,
             'someblogskip' => $someblogskip,
             'urlapi' => $this->urlApi, // Assuming the data key holds the actual blog data // Assuming the pagination data is separate
