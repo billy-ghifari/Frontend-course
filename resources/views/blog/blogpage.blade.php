@@ -32,6 +32,7 @@
     <div class="section-1-blogpage">
         <div class="container">
             <div class="padding-top">
+                @if ($kelas)
                 <div class="row">
                     <div class="col-6 pt-3">
                         <p>Course by <span>Dinta Indonesia</span></p>
@@ -45,12 +46,18 @@
                         <img src="{{ $urlapi }}/kelas/{{ $kelas->foto_thumbnail }}">
                     </div>
                 </div>
+                @else
+                <div class="m-5" style="text-align: center;">
+                    <h2 style="color: #2F327D; font-weight: bold;"> Masih Belum Ada Kelas</h2>
+                </div>
+                @endif
             </div>
         </div>
     </div>
     <div class="section-2-blogpage">
         <div class="container">
             <p>Reading blog list</p>
+            @if ($catblog)
             <div class="row">
 
                 <div class="card-floating-1 pt-2">
@@ -72,6 +79,11 @@
                 </div>
                 @endforeach
             </div>
+            @else
+            <div class="m-5" style="text-align: center;">
+                <h2 style="color: #2F327D; font-weight: bold;"> Masih Belum Ada Kategori</h2>
+            </div>
+            @endif
         </div>
 
     </div>
@@ -85,6 +97,7 @@
                     <button class="btn" type="button" id="see-all-blog">See all</button>
                 </div>
             </div>
+            @if ($someblog)
             <div class="row mt-3 mid">
                 <div class="col-6">
                     <div class="card card-left">
@@ -96,7 +109,7 @@
                         <div class="card-body pt-1">
                             <img src="{{ $urlapi }}/profile/{{ $someblog[0]->photo }}" id="profilepict">
                             <span class="span-name">{{$someblog[0]->name}}</span>
-                            <p class="p-descript">{{ Str::limit($someblog[1]->content, 100)  }}
+                            <p class="p-descript">{{ Str::limit($someblog[0]->content, 100)  }}
                             </p>
                             <div class="row pt-4">
                                 <div class="col-6 left">
@@ -141,7 +154,7 @@
             <div class="hidden-blog" style="display: none;" id="hidden">
                 <div class="row mt-3 mid">
                     @foreach($someblogskip as $someblogskip)
-                    <div class="col-6">
+                    <div class="col-6 ps-1">
                         <div class="card card-left">
                             <div class="card-head">
                                 <img src="{{ $urlapi }}/blog/{{ $someblogskip->foto_thumbnail }}">
@@ -169,6 +182,11 @@
                     @endforeach
                 </div>
             </div>
+            @else
+            <div class="m-5" style="text-align: center;">
+                <h2 style="color: #2F327D; font-weight: bold;"> Masih Belum Ada Blog</h2>
+            </div>
+            @endif
             <div class="row hidden-button pr-2 mb-5 ">
                 <button class="btn" type="button" id="hide-all-articles">Hide</button>
             </div>
@@ -185,6 +203,7 @@
                     <button class="btn" type="button" id="see-all-articles">see all</button>
                 </div>
             </div>
+            @if ($blog)
             <div class="row">
                 @foreach($blog as $blog)
                 <div class="col-3">
@@ -214,6 +233,11 @@
                 </div>
                 @endforeach
             </div>
+            @else
+            <div class="m-5" style="text-align: center;">
+                <h2 style="color: #2F327D; font-weight: bold;"> Masih Belum Ada Blog</h2>
+            </div>
+            @endif
             <div class="hidden-articles" style="display: none;">
                 <div class="row">
                     <div class="col-3">

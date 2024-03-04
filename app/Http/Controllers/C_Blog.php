@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Constants\ApiEndPoint;
 use App\Models\category;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Validator;
@@ -27,25 +28,25 @@ class C_Blog extends Controller
         $response1 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$paginateblog);
         $blog = json_decode($response1)->data->data;
 
-
         $response2 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$categoryblog);
         $catblog = json_decode($response2)->data;
 
         $response3 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$paginatesomeblog);
         $someblog = json_decode($response3)->data->data;
 
-        // dd($blog);
+
+        $catblogskip = array_slice($catblog, 3);
+
+        // dd($response2);
         // die;
 
         $someblogskip = array_slice($someblog, 2);
 
-        // dd($kelas);
-        // die;
 
 
         return view('blog/blogpage', [
             'blog' => $blog,
-            'catblog' => $catblog,
+            'catblog' => $catblogskip,
             'someblog' => $someblog,
             'someblogskip' => $someblogskip,
             'kelas' => $kelas,
@@ -88,6 +89,97 @@ class C_Blog extends Controller
             'blogs' => $blog,
             'urlapi' => $this->urlApi
         ]);
+    }
+
+    public function deleteblog($id)
+    {
+        $token = session('token');
+
+        $response = Http::withToken($token)->delete($this->urlApi . ApiEndPoint::$delblog . $id);
+
+        if ($response->successful()) {
+
+            return redirect('/viewblog')->with('success', 'Membuat blog berhasil');
+        } else {
+            $responseData = $response->json();
+            return back()->with('error', 'Pembuatan blog gagal: ' . $responseData['message']);
+        }
+    }
+
+    public function u_blog($id)
+    {
+
+        $token = session('token');
+
+        $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$catblog);
+        $catblog = json_decode($response)->data->original;
+
+        $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$detailblog . $id);
+        $blog = json_decode($response)->classData;
+
+        $foto_thumbnail = json_decode($response)->classData->foto_thumbnail;
+
+
+        // dd($catblog);
+        // die;
+
+        return view('crudblog/u_blog', [
+            'category' => $catblog,
+            'blog'     => $blog,
+            'foto_thumbnail' => $foto_thumbnail
+        ]);
+    }
+
+    public function updateblog(Request $request, $id)
+    {
+        $token = session('token');
+
+        try {
+
+            $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$uuid . session('uuid'));
+            $uuid = json_decode($response);
+
+            $validate = Validator::make($request->all(), [
+                'judul'             => 'required',
+                'r_id_category'     => 'required',
+                'content'           => 'required',
+            ]);
+
+            $validated = $validate->validated();
+            $foto_thumbnail = fopen($request->file('foto_thumbnail'), 'r');
+
+            $response = Http::withToken($token)
+                ->attach('foto_thumbnail', $foto_thumbnail)
+                ->post($this->urlApi . ApiEndPoint::$editblog . $id, [
+                    'r_id_non_siswa'    => $uuid,
+                    'judul'             => $validated['judul'],
+                    'r_id_category'     => $validated['r_id_category'],
+                    'content'           => $validated['content']
+                ]);
+
+
+            // dd($response->json());
+            // die;
+
+            if ($response->successful()) {
+                // Registration was successful
+                // $responseData = $response->json();
+                // dd($responseData);
+                // die;
+                return redirect('/viewblog')->with('success', 'Membuat blog berhasil');
+            } else {
+                // Registration failed, handle errors
+                // dd($response->json());
+                // die;
+                $responseData = $response->json();
+                return back()->with('error', 'Pembuatan blog gagal: ' . $responseData);
+            }
+        } catch (\Throwable $th) {
+            // Handle exceptions, log errors, or perform other actions as needed
+            dd($th);
+            // dd($request->all());
+            return back()->with('error', 'An error occurred during creating.');
+        }
     }
 
     public function c_blog()

@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <!-- Favicon icon -->
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/dtc-blueicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="photo/dtc.png">
 <title>DTC E-Learning</title>
 <!-- Custom CSS -->
 <link href="/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
@@ -34,45 +34,53 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title">Create Kelas</h2>
+                        <h2 class="card-title">Create Blog</h2>
                         <p>Please enter data into the form below</p>
-                        <form action="/createkelas" method="post" enctype="multipart/form-data">
+                        <form action="updateblog/{{$blog->id}}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-body">
-                                <label>Name</label>
+                                <label>Judul</label>
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="form-group">
-                                            <input type="text" name="nama" class="form-control" placeholder="Masukkan nama kelas">
+                                            <input type="text" name="judul" class="form-control" placeholder="Input Judul" value="{{old('judul', $blog->judul) ,}}">
                                         </div>
                                     </div>
                                 </div>
-                                <label>Category</label>
-                                <div>
-                                    <select name="r_id_category" id="">
-                                        @foreach ($category as $cat)
-                                        <option value="{{$cat->id}}">{{$cat->nama}}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
+                                <label for="">Kategori</label>
+                                <div class="row pb-3">
+                                    <div class="col-12">
+                                        <div class="dropdown dropdown-category">
+                                            <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pilih Kategori
+                                                <select name="r_id_category" id="">
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        @foreach ($category as $cat)
+                                                        <option value="{{$cat->id}}" class="dropdown-item" {{$blog->nama == $cat->nama  ? 'selected' : ''}}>{{ $cat->nama }}</option>
+                                                        @endforeach
+                                                    </div>
+                                                </select>
+                                            </button>
+                                        </div>
+                                    </div>
 
-                                <label>Deskripsi</label>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="mb-3">
-                                            <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                        </div>
-                                    </div>
                                 </div>
+                                <label for="Content">Content</label>
+                                <div class="mb-3">
+                                    <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Content">{{$blog->content}}</textarea>
+                                </div>
+                                <label>Thumbnail Blog</label>
 
                                 <div class="row">
                                     <div class="col-5">
                                         <div class="mb-3">
-                                            <input class="form-control" name="foto_thumbnail" type="file" id="formFile">
+                                            <input class="form-control" value="{{old('foto_thumbnail', $blog->foto_thumbnail)}}" name="foto_thumbnail" type="file" id="formFile">
+                                            <span>{{$blog->foto_thumbnail}} 'gambar terakhir'</span>
+                                            <br>
+                                            <span>masukkan thumbnail yang sama atau ganti thumbnail</span>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="form-actions mt-5 mb-3">
                                     <div class="text-left">
                                         <button type="submit" class="btn btn-info">Submit</button>

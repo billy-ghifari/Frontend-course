@@ -32,13 +32,13 @@ class C_Course extends Controller
         $somekelas = json_decode($response)->data->data;
 
 
-        if (!$kelas) {
-            return response()->json('tidak ditemukan');
-        }
+        // if (!$kelas) {
+        //     return response()->json('tidak ditemukan');
+        // }
 
-        if (!$somekelas) {
-            return response()->json('tidak ditemukan');
-        }
+        // if (!$somekelas) {
+        //     return response()->json('tidak ditemukan');
+        // }
 
         // dd($kelas);
         // die;

@@ -31,8 +31,8 @@
 <div class="page-wrapper pt-5">
     <div class="main-detailblog">
         <div class="container-fluid">
-            <div class="jumbotron justify-between">
-                <img src="{{$urlapi}}/kelas/{{$kelas->foto_thumbnail}}" alt="">
+            <div class="">
+                <img src="{{$urlapi}}/kelas/{{$kelas->foto_thumbnail}}" class="fixed-image" alt="">
             </div>
             <div class=" row">
                 <div class="col-12">
@@ -63,7 +63,11 @@
                                             <td>{{Str::limit($materi->deskripsi_materi,100)}}</td>
                                             <td>
                                                 <button type="button" class="btn waves-effect waves-light btn-success">Edit</button>
-                                                <button type="button" class="btn m-2 waves-effect waves-light btn-danger">Delete</button>
+                                                <form action="/restoremateri/{{$materi->id}}" method="post">
+                                                    @csrf
+                                                    @method('PUT')
+                                                    <button type="submit" class="btn m-2 waves-effect waves-light btn-danger">Delete</button>
+                                                </form>
                                             </td>
                                         </tr>
                                         @endforeach

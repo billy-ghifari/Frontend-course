@@ -37,20 +37,30 @@
 @else
 <div class="page-wrapper">
     <div class="container-fluid">
+        <li class="m-4 nav-item d-none d-md-block">
+            <a class="nav-link" href="javascript:void(0)">
+                <form action="" method="post">
+                    <div class="customize-input">
+                        <input class="form-control custom-shadow custom-radius border-0 bg-white" type="search" placeholder="Search" aria-label="Search">
+                        <i class="form-control-icon"></i>
+                    </div>
+                </form>
+            </a>
+        </li>
         <div class="row">
             @foreach($kelas as $kelas)
             <div class="col-4">
                 <a href="/detailkelas/{{$kelas->id}}">
-                    <div class="card card-kelas">
-                        <div class="card-head">
-                            <img src="{{$urlapi}}/kelas/{{$kelas->foto_thumbnail}}" alt="" width="290px">
+                    <div class="card card-kelas ">
+                        <div class="card-head aligncenter">
+                            <img src="{{$urlapi}}/kelas/{{$kelas->foto_thumbnail}}" class="object-fit-cover" width="290px" height="180px" alt="" >
                         </div>
                         <div class="card-body">
                             <h3>{{$kelas->nama}}</h3>
                             <p>{{Str::limit($kelas->deskripsi),50}}</p>
                             <div class="row">
                                 <div class="col-2">
-                                    <img src="{{$urlapi}}/profile/{{$kelas->photo}}" id="profilepict" alt="" height="35" width="35">
+                                    <img src="{{$urlapi}}/profile/{{$kelas->photo}}"  id="profilepict" alt="" height="35" width="35">
                                 </div>
                                 <div class="col-8">
                                     <span>{{$kelas->name}}</span>
@@ -58,8 +68,8 @@
                             </div>
                         </div>
                         <div class="card-bottom pb-4">
-                            <button type="button" class="btn btn-danger btn-sm mr-2">Delete</button>
-                            <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                            <a href="/view_updatekelas/{{$kelas->id}}" type="button" class="btn btn-secondary btn-sm">Edit</a>
+                            <a href="#" type="button" class="btn btn-danger btn-sm mr-2">Delete</a>
                         </div>
                     </div>
                 </a>

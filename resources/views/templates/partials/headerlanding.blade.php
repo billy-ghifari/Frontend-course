@@ -7,20 +7,20 @@
             <div class="col-8" style="margin-top:27px ;">
                 <ul class="nav justify-content-center">
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="#" style="color: white;">Home</a>
+                        <a class="nav-link" href="landingpage" style="color: white;">Home</a>
                     </li>
                     <li class="nav-item mr-4">
                         <a class="nav-link" href="/course" style="color: white;">Courses</a>
                     </li>
                     <li class=" nav-item mr-4">
-                        <a class="nav-link" href="/blogpage" style="color: white;">Blog</a>
+                        <a class="nav-link" style="color: white;" href="/blogpage">Blog</a>
                     </li>
                     <li class="nav-item mr-4">
                         <a class="nav-link" href="#" style="color: white;">About Us</a>
                     </li>
-                    <a href="#" class="btn ml-1" style="width:115px; height:45px; border-radius:38px; background-color:white; color:black; padding-top:9px;">Login
+                    <a href="/auth" class="btn ml-1" style="width:115px; height:45px; border-radius:38px; background-color:white; color:black; padding-top:9px;">Login
                     </a>
-                    <a href="#" class="btn ml-3" style="width:115px; height:45px; border-radius:38px; background-color:#80cfd1; color:white; padding-top:9px;">Sign Up
+                    <a href="/auth" class="btn ml-3" style="width:115px; height:45px; border-radius:38px; background-color:#80cfd1; color:white; padding-top:9px;">Sign Up
                     </a>
                 </ul>
 

@@ -4,6 +4,25 @@
 @import url(icons/simple-line-icons/css/simple-line-icons.css);
 @import url(icons/themify-icons/themify-icons.css);
 
+* {
+  font-family: 'poppins', 'sans-serif';
+}
+
+.fixed-image {
+  width: 974px;
+  object-fit: cover;
+  height: 300px;
+}
+
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
 /* /////////admin blog///////// */
 
 #blogadmin {

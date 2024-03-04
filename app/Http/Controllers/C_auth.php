@@ -41,18 +41,29 @@ class C_auth extends Controller
                 'password' => $validated['password'],
             ]);
 
+
+
             $user = json_decode($response)->user->name;
 
+            // dd($user);
+            // die;
+
             $token = $response->json('token');
+
 
 
             session(['name' => $user]);
             session(['token' => $token]);
             session()->save();
 
+            // dd($user->name);
+            // die;
             return redirect('/blogpage');
         } catch (\Throwable $th) {
             $responseData = $response->json();
+
+            dd($response);
+            die;
             return back()->with('error', 'Registration failed: ' . $responseData['message']);
         }
     }
@@ -85,6 +96,7 @@ class C_auth extends Controller
             ]);
 
 
+
             $role = json_decode($response)->data->role;
 
 
@@ -105,12 +117,11 @@ class C_auth extends Controller
             session(['uuid' => $uuid]);
             session()->save();
 
-            // dd(session()->all());
-            // die;
 
             return redirect('/admin');
         } catch (\Throwable $th) {
             $responseData = $response->json();
+
             return back()->with('error', 'Registration failed: ' . $responseData['message']);
         }
     }

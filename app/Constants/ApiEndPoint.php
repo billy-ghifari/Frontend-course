@@ -17,16 +17,30 @@ class ApiEndPoint
     public static $paginatekelas                                   = "/api/paginatekelas";
     public static $paginatesomekelas                               = "/api/paginatesomekelas";
 
+    public static $editkelas                                       = "/api/editkelas/";
+
+
+
+
     // blog
     public static $createblog                                      = "/api/createblog";
+
     public static $paginateblog                                    = "/api/paginateblog";
     public static $paginatesomeblog                                = "/api/paginatesomeblog";
     public static $categoryblog                                    = "/api/paginatecatblog";
     public static $getonekelas                                     = "/api/getonekelas";
     public static $catblog                                         = "/api/getallcatblog/";
 
+    public static $editblog                                        = "/api/editblog/";
+
+    public static $delblog                                         = "/api/deleteblog/";
+
+
     //admin
-    public static $makeadmin                                       = "/api/registeradmin";
+    public static $makeadmin                                       = "/api/makeadmin";
+    public static $makementor                                      = "/api/makementor";
+
+    public static $deleteacc                                       = "/api/deleteadmin/";
 
     public static $getallonsiswa                                   = "/api/getallonsiswa";
     public static $allblog                                         = "/api/allblog";
@@ -44,6 +58,8 @@ class ApiEndPoint
     public static $detailmateri                                    = "/api/getmateri/";
     public static $countmateri                                     = "/api/getallmateri";
     public static $createmateri                                    = "/api/createmateri";
+    public static $restoremateri                                   = "/api/restoremateri/";
+    public static $deletemateri                                    = "/api/deletemateri/";
 
     public static $countblog                                       = "/api/getallblog";
     public static $detailblog                                      = "/api/getoneblog/";

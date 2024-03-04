@@ -94,6 +94,7 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link mb-3" href="/trash" aria-expanded="false"><i class="fas fa-trash-alt"></i><span class="hide-menu">Trash</span></a></li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Extra</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/logout" aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span class="hide-menu">Logout</span></a></li>

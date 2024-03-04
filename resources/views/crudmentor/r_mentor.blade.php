@@ -42,6 +42,7 @@
                                         <th>No</th>
                                         <th>Name</th>
                                         <th>Status</th>
+                                        <th>Activator</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -53,10 +54,14 @@
                                         <td>{{$mentor->status}}</td>
                                         <td>
                                             @if($mentor->status == 'non')
-                                            <button type="button" class="btn waves-effect waves-light btn-success">Activation</button>
+                                            <a href="" type="button" class="btn waves-effect waves-light btn-success">Activation</a>
                                             @else
-                                            <button type="button" class="btn waves-effect waves-light btn-danger">Non-Activation</button>
+                                            <a href="" type="button" class="btn waves-effect waves-light btn-danger">Non-Activation</a>
                                             @endif
+                                        </td>
+                                        <td>
+                                            <a href="" type="button" class="btn waves-effect waves-light btn-success"><i class=" fas fa-pencil-alt"></i></a>
+                                            <a href="" type="button" class="btn waves-effect waves-light btn-danger"><i class=" fas fa-trash"></i></a>
                                         </td>
                                     </tr>
                                     @endforeach

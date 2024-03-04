@@ -86,4 +86,17 @@ class C_materi extends Controller
             return back()->with('error', 'An error occurred during creating.');
         }
     }
+
+
+    public function restore($id)
+    {
+        $token = session('token');
+
+        $response =  Http::withToken($token)->put($this->urlApi . ApiEndPoint::$deletemateri . $id);
+
+        return back();
+
+        // dd($restore);
+        // die;
+    }
 }

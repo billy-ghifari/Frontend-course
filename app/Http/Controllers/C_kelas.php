@@ -41,7 +41,7 @@ class C_Kelas extends Controller
         $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$categorykelas);
         $category = json_decode($response)->data->original;
 
-        // dd($category);
+        // dd($category[0]);
         // die;
 
         return view('crudkelas/c_kelas', [
@@ -99,9 +99,25 @@ class C_Kelas extends Controller
         }
     }
 
-    public function u_update()
+    public function u_kelas($id)
     {
-        return view('crudkelas/u_kelas');
+        $token = session('token');
+
+        $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$categorykelas);
+        $catkelas = json_decode($response)->data->original;
+
+        // dd($catkelas);
+        // die;
+
+        $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$detailkelas . $id);
+        $kelas = json_decode($response)->classData;
+
+        $foto_thumbnail = json_decode($response)->classData->foto_thumbnail;
+        return view('crudkelas/u_kelas', [
+            'category' => $catkelas,
+            'kelas' => $kelas,
+            'foto' => $foto_thumbnail
+        ]);
     }
 
     public function detailkelas($id)
@@ -110,10 +126,11 @@ class C_Kelas extends Controller
         $token = session('token');
 
         $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$detailkelas . $id);
-        $kelas = json_decode($response)->classData;
+        $kelas = json_decode($response);
 
-        $response = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$detailmateri . $id);
-        $materi = json_decode($response)->materi;
+        $response1 = Http::withToken($token)->get($this->urlApi . ApiEndPoint::$detailmateri . $id);
+        $materi = json_decode($response1)->materi;
+
 
         // dd($kelas);
         // die;

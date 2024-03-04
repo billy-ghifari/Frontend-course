@@ -1,5 +1,6 @@
 @extends('templates.defaultadmin')
 
+
 @section('head')
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,29 +29,30 @@
 @endsection
 
 @section('content')
-<div class="page-wrapper pt-5">
-    <div class="main-detailkelas">
-        <div class="container-fluid">
-            <div class="">
-                <img src="{{$urlapi}}/blog/{{$blog->foto_thumbnail}}" class="fixed-image" alt="">
-            </div>
-            <div class=" row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <p>Class is created by: {{$blog->name}}</p>
-                            <h2 class="card-title">{{$blog->judul}}</h2>
-                            <p class="text-kategori">
-                                {{$blog->nama}}
-                            </p>
-                            <p class="mb-4 preline">{{$blog->content}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="page-wrapper">
+    <h1 class="ml-4">Activity</h1>
+    <div class="container-fluid">
+        <div>
+            <table class="table table-bordered" style="background-color:white;">
+                <thead style="text-align: center;">
+                    <th>no</th>
+                    <th>data category</th>
+                    <th>title</th>
+                    <th>time</th>
+                    <th>action</th>
+                </thead>
+                <tbody>
+                    <td>1</td>
+                    <td>blog</td>
+                    <td>backend</td>
+                    <td>1 jam yang lalu</td>
+                    <td style="text-align: center;">
+                        <form action=""><button class="btn btn-success">restore</button></form>
+                    </td>
+
+                </tbody>
+            </table>
         </div>
     </div>
-
-
 </div>
 @endsection
